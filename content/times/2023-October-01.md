@@ -1,7 +1,13 @@
 ---
-title: 'Example Post 13'
+title: '2023-October-01'
 date: 2019-07-18T17:18:05+01:00
 draft: false
+description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+tags: ["markdown", "css", "html", "themes"]
+categories: ["themes", "syntax"]
+aliases: ["migrate-from-jekyl"]
+ShowToc: true
+TocOpen: true
 ---
 # Iuvenum referre
 
