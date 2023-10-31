@@ -39,12 +39,30 @@
     </item>
     
     <item>
-      <title>Fixing bootstrap theme not getting recognized</title>
-      <link>https://blog.simon-hu.org/posts/2023.10.31-fixing-theme-no-getting-recognised/</link>
+      <title>Drupal custom module (PSR4) standard</title>
+      <link>https://blog.simon-hu.org/posts/2023.10.31-drupal-custom-module-psr4-standards/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.simon-hu.org/posts/2023.10.31-fixing-theme-no-getting-recognised/</guid>
+      <guid>https://blog.simon-hu.org/posts/2023.10.31-drupal-custom-module-psr4-standards/</guid>
+      <description>[Drupal Custom Module] PHP PSR Standards</description>
+    </item>
+    
+    <item>
+      <title>Fixing bootstrap theme not getting recognized</title>
+      <link>https://blog.simon-hu.org/posts/2023.10.31-fixing-theme-not-getting-recognised/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.10.31-fixing-theme-not-getting-recognised/</guid>
       <description>Quick fix to the issue of theme not getting recognized after upgrading from drupal-9 to drupal-10</description>
+    </item>
+    
+    <item>
+      <title>Fixing module not getting recognized</title>
+      <link>https://blog.simon-hu.org/posts/2023.11.01-fixing-module-not-getting-recognised/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.11.01-fixing-module-not-getting-recognised/</guid>
+      <description>Quick fix to the issue of module not getting recognized after upgrading from drupal-9 to drupal-10</description>
     </item>
     
     <item>
