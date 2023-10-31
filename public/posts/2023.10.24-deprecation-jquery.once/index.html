@@ -1,0 +1,158 @@
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Deprecation of "jquery.once" api | Simon's Blog</title><meta name=keywords content="D9 - D10 Upgrade"><meta name=description content="Fixing custom modules&rsquo; code that are dependent of jquery.once which is changing its api in newest drupal 10, hence making it compatible for the upgrade."><meta name=author content="Suowei Hu"><link rel=canonical href=https://blog.simon-hu.org/posts/2023.10.24-deprecation-jquery.once/><meta name=google-site-verification content="XYZabc"><meta name=yandex-verification content="XYZabc"><meta name=msvalidate.01 content="XYZabc"><link crossorigin=anonymous href=/assets/css/stylesheet.89e7a3cfb9906f56d1ff70930818833a11ce408c7bcab0b72a35ffe53439a75c.css integrity="sha256-ieejz7mQb1bR/3CTCBiDOhHOQIx7yrC3KjX/5TQ5p1w=" rel="preload stylesheet" as=style><script defer crossorigin=anonymous src=/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG+9vmJ0cTS+ovo0FeA=" onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://blog.simon-hu.org/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://blog.simon-hu.org/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://blog.simon-hu.org/favicon-32x32.png><link rel=apple-touch-icon href=https://blog.simon-hu.org/apple-touch-icon.png><link rel=mask-icon href=https://blog.simon-hu.org/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><noscript><style>#theme-toggle,.top-link{display:none}</style></noscript><script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(e,t,n,s,o,i,a){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,i=t.createElement(n),a=t.getElementsByTagName(n)[0],i.async=1,i.src=s,a.parentNode.insertBefore(i,a)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-123-45","auto"),ga("send","pageview"))</script><meta property="og:title" content="Deprecation of &#34;jquery.once&#34; api"><meta property="og:description" content="Fixing custom modules&rsquo; code that are dependent of jquery.once which is changing its api in newest drupal 10, hence making it compatible for the upgrade."><meta property="og:type" content="article"><meta property="og:url" content="https://blog.simon-hu.org/posts/2023.10.24-deprecation-jquery.once/"><meta property="og:image" content="https://blog.simon-hu.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:section" content="posts"><meta property="og:site_name" content="Simon's Blog"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://blog.simon-hu.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta name=twitter:title content="Deprecation of &#34;jquery.once&#34; api"><meta name=twitter:description content="Fixing custom modules&rsquo; code that are dependent of jquery.once which is changing its api in newest drupal 10, hence making it compatible for the upgrade."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://blog.simon-hu.org/posts/"},{"@type":"ListItem","position":2,"name":"Deprecation of \"jquery.once\" api","item":"https://blog.simon-hu.org/posts/2023.10.24-deprecation-jquery.once/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Deprecation of \"jquery.once\" api","name":"Deprecation of \u0022jquery.once\u0022 api","description":"Fixing custom modules\u0026rsquo; code that are dependent of jquery.once which is changing its api in newest drupal 10, hence making it compatible for the upgrade.","keywords":["D9 - D10 Upgrade"],"articleBody":"You can follow the following template + example to update your modules to make it drupal 10 compatible:\nTemplate: your-module-name.libraries.yml\n1 2 3 4 5 6 7 8 drupal.form: js: js/your-library-file.js: {} dependencies: - some-origina/dependency + - core/drupal + - core/jquery + - core/once your-library-file.js\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 - (function ($, window, Drupal, drupalSettings) { + (function ($, window, Drupal, drupalSettings, once) { ... Drupal.behaviors.myfeature = { attach(context) { - const elements = once('myfeature', '[data-myfeature]', context); + const $elements = $(once('myfeature', '[data-myfeature]', context)); .... - elements.forEach(processingCallback); + $elements.each(processingCallback); } }; function processingCallback(index, value) {} ... - })(jQuery, this, Drupal, drupalSettings); + })(jQuery, this, Drupal, drupalSettings, once); Example bootstrap.libraries.yml\n1 2 3 4 5 6 7 8 drupal.form: js: js/misc/form.js: {} dependencies: - bootstrap/theme + - core/drupal + - core/jquery + - core/once form.js\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 - (function ($, window, Drupal, drupalSettings) { + (function ($, window, Drupal, drupalSettings, once) { Drupal.behaviors.bootstrapForm = { attach: function (context) { if (drupalSettings.bootstrap \u0026\u0026 drupalSettings.bootstrap.forms_has_error_value_toggle) { - var $context = $(context); - $context.find('.form-item.has-error:not(.form-type-password.has-feedback)').once('error').each(function () { - const $elements = $(once('myfeature', '[data-myfeature]', context)); - var $formItem = $(this); - var $input = $formItem.find(':input'); - $input.on('keyup focus blur', function () { - if (this.defaultValue !== void 0) { - $formItem[this.defaultValue !== this.value ? 'removeClass' : 'addClass']('has-error'); - $input[this.defaultValue !== this.value ? 'removeClass' : 'addClass']('error'); - } - }); - }); + const $elements = $(once('.form-item.has-error:not(.form-type-password.has-feedback)', 'error', context)); + $elements.each(function () { + const $elements = $(once('myfeature', '[data-myfeature]', context)); + var $formItem = $(this); + var $input = $formItem.find(':input'); + $input.on('keyup focus blur', function () { + if (this.defaultValue !== void 0) { + $formItem[this.defaultValue !== this.value ? 'removeClass' : 'addClass']('has-error'); + $input[this.defaultValue !== this.value ? 'removeClass' : 'addClass']('error'); + } + }); + }); } } }; - })(jQuery, this, Drupal, drupalSettings); + })(jQuery, this, Drupal, drupalSettings, once); Reference:\nhttps://www.drupal.org/node/3158256 ","wordCount":"359","inLanguage":"en","datePublished":"0001-01-01T00:00:00Z","dateModified":"0001-01-01T00:00:00Z","author":{"@type":"Person","name":"Suowei Hu"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.simon-hu.org/posts/2023.10.24-deprecation-jquery.once/"},"publisher":{"@type":"Organization","name":"Simon's Blog","logo":{"@type":"ImageObject","url":"https://blog.simon-hu.org/favicon.ico"}}}</script></head><body id=top><header class=header><nav class=nav><div class=logo><a href=https://blog.simon-hu.org/ accesskey=h title="Simon's Blog (Alt + H)">Simon's Blog</a><div class=logo-switches></div></div><ul id=menu><li><a href=https://blog.simon-hu.org/categories/ title=Categories><span>Categories</span></a></li><li><a href=https://blog.simon-hu.org/tags/ title=Tags><span>Tags</span></a></li><li><a href=https://blog.simon-hu.org/search/ title="Search (Alt + /)" accesskey=/><span>Search</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><h1 class=post-title>Deprecation of "jquery.once" api</h1><div class=post-meta>2 min&nbsp;·&nbsp;359 words&nbsp;·&nbsp;Suowei Hu&nbsp;|&nbsp;<a href=https://github.com/SuoweiHu/SuoweiHu.github.io/content/posts/2023.10.24%20Deprecation%20jquery.once.md rel="noopener noreferrer" target=_blank>Edit</a></div></header><div class=post-content><p>You can follow the following template + example to update your modules to make it drupal 10 compatible:</p><hr><p>Template:
+<code>your-module-name.libraries.yml</code></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-diff data-lang=diff><span class=line><span class=cl>drupal.form:
+</span></span><span class=line><span class=cl>  js:
+</span></span><span class=line><span class=cl>    js/your-library-file.js: {}
+</span></span><span class=line><span class=cl>  dependencies:
+</span></span><span class=line><span class=cl>    - some-origina/dependency
+</span></span><span class=line><span class=cl><span class=gi>+   - core/drupal
+</span></span></span><span class=line><span class=cl><span class=gi>+   - core/jquery
+</span></span></span><span class=line><span class=cl><span class=gi>+   - core/once
+</span></span></span></code></pre></td></tr></table></div></div><p><code>your-library-file.js</code></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-diff data-lang=diff><span class=line><span class=cl><span class=gd>- (function ($, window, Drupal, drupalSettings) {
+</span></span></span><span class=line><span class=cl><span class=gd></span><span class=gi>+ (function ($, window, Drupal, drupalSettings, once) {
+</span></span></span><span class=line><span class=cl><span class=gi></span>
+</span></span><span class=line><span class=cl>...
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Drupal.behaviors.myfeature = {
+</span></span><span class=line><span class=cl>    attach(context) {
+</span></span><span class=line><span class=cl><span class=gd>-     const elements  =  once(&#39;myfeature&#39;, &#39;[data-myfeature]&#39;, context);
+</span></span></span><span class=line><span class=cl><span class=gd></span><span class=gi>+     const $elements =  $(once(&#39;myfeature&#39;, &#39;[data-myfeature]&#39;, context));
+</span></span></span><span class=line><span class=cl><span class=gi></span>      ....
+</span></span><span class=line><span class=cl><span class=gd>-     elements.forEach(processingCallback);
+</span></span></span><span class=line><span class=cl><span class=gd></span><span class=gi>+     $elements.each(processingCallback);
+</span></span></span><span class=line><span class=cl><span class=gi></span>    }
+</span></span><span class=line><span class=cl>  };
+</span></span><span class=line><span class=cl>  function processingCallback(index, value) {}
+</span></span><span class=line><span class=cl>...
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=gd>- })(jQuery, this, Drupal, drupalSettings);
+</span></span></span><span class=line><span class=cl><span class=gd></span><span class=gi>+ })(jQuery, this, Drupal, drupalSettings, once);
+</span></span></span></code></pre></td></tr></table></div></div><hr><p>Example
+<code>bootstrap.libraries.yml</code></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-diff data-lang=diff><span class=line><span class=cl>drupal.form:
+</span></span><span class=line><span class=cl>  js:
+</span></span><span class=line><span class=cl>    js/misc/form.js: {}
+</span></span><span class=line><span class=cl>  dependencies:
+</span></span><span class=line><span class=cl>    - bootstrap/theme
+</span></span><span class=line><span class=cl><span class=gi>+   - core/drupal
+</span></span></span><span class=line><span class=cl><span class=gi>+   - core/jquery
+</span></span></span><span class=line><span class=cl><span class=gi>+   - core/once
+</span></span></span></code></pre></td></tr></table></div></div><p><code>form.js</code></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-diff data-lang=diff><span class=line><span class=cl><span class=gd>- (function ($, window, Drupal, drupalSettings) {
+</span></span></span><span class=line><span class=cl><span class=gd></span><span class=gi>+ (function ($, window, Drupal, drupalSettings, once) {
+</span></span></span><span class=line><span class=cl><span class=gi></span>
+</span></span><span class=line><span class=cl>  Drupal.behaviors.bootstrapForm = {
+</span></span><span class=line><span class=cl>    attach: function (context) {
+</span></span><span class=line><span class=cl>      if (drupalSettings.bootstrap &amp;&amp; drupalSettings.bootstrap.forms_has_error_value_toggle) {
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=gd>-       var $context = $(context);
+</span></span></span><span class=line><span class=cl><span class=gd>-       $context.find(&#39;.form-item.has-error:not(.form-type-password.has-feedback)&#39;).once(&#39;error&#39;).each(function () {
+</span></span></span><span class=line><span class=cl><span class=gd>-       const $elements =  $(once(&#39;myfeature&#39;, &#39;[data-myfeature]&#39;, context));
+</span></span></span><span class=line><span class=cl><span class=gd>-         var $formItem = $(this);
+</span></span></span><span class=line><span class=cl><span class=gd>-         var $input = $formItem.find(&#39;:input&#39;);
+</span></span></span><span class=line><span class=cl><span class=gd>-         $input.on(&#39;keyup focus blur&#39;, function () {
+</span></span></span><span class=line><span class=cl><span class=gd>-           if (this.defaultValue !== void 0) {
+</span></span></span><span class=line><span class=cl><span class=gd>-             $formItem[this.defaultValue !== this.value ? &#39;removeClass&#39; : &#39;addClass&#39;](&#39;has-error&#39;);
+</span></span></span><span class=line><span class=cl><span class=gd>-             $input[this.defaultValue !== this.value ? &#39;removeClass&#39; : &#39;addClass&#39;](&#39;error&#39;);
+</span></span></span><span class=line><span class=cl><span class=gd>-           }
+</span></span></span><span class=line><span class=cl><span class=gd>-         });
+</span></span></span><span class=line><span class=cl><span class=gd>-       });
+</span></span></span><span class=line><span class=cl><span class=gd></span>
+</span></span><span class=line><span class=cl><span class=gi>+        const $elements =  $(once(&#39;.form-item.has-error:not(.form-type-password.has-feedback)&#39;, &#39;error&#39;, context));
+</span></span></span><span class=line><span class=cl><span class=gi>+        $elements.each(function () {
+</span></span></span><span class=line><span class=cl><span class=gi>+            const $elements =  $(once(&#39;myfeature&#39;, &#39;[data-myfeature]&#39;, context));
+</span></span></span><span class=line><span class=cl><span class=gi>+            var $formItem = $(this);
+</span></span></span><span class=line><span class=cl><span class=gi>+            var $input = $formItem.find(&#39;:input&#39;);
+</span></span></span><span class=line><span class=cl><span class=gi>+            $input.on(&#39;keyup focus blur&#39;, function () {
+</span></span></span><span class=line><span class=cl><span class=gi>+                if (this.defaultValue !== void 0) {
+</span></span></span><span class=line><span class=cl><span class=gi>+                    $formItem[this.defaultValue !== this.value ? &#39;removeClass&#39; : &#39;addClass&#39;](&#39;has-error&#39;);
+</span></span></span><span class=line><span class=cl><span class=gi>+                    $input[this.defaultValue !== this.value ? &#39;removeClass&#39; : &#39;addClass&#39;](&#39;error&#39;);
+</span></span></span><span class=line><span class=cl><span class=gi>+                  }
+</span></span></span><span class=line><span class=cl><span class=gi>+            });
+</span></span></span><span class=line><span class=cl><span class=gi>+        });
+</span></span></span><span class=line><span class=cl><span class=gi></span>
+</span></span><span class=line><span class=cl>      }
+</span></span><span class=line><span class=cl>    }
+</span></span><span class=line><span class=cl>  };
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=gd>- })(jQuery, this, Drupal, drupalSettings);
+</span></span></span><span class=line><span class=cl><span class=gd></span><span class=gi>+ })(jQuery, this, Drupal, drupalSettings, once);
+</span></span></span></code></pre></td></tr></table></div></div><hr><p>Reference:</p><ul><li><a href=https://www.drupal.org/node/3158256>https://www.drupal.org/node/3158256</a></li></ul></div><footer class=post-footer><ul class=post-tags><li><a href=https://blog.simon-hu.org/tags/d9-d10-upgrade/>D9 - D10 Upgrade</a></li></ul><nav class=paginav><a class=next href=https://blog.simon-hu.org/posts/2023.10.31-deprecation-drupal_get_path-drupal_get_filename/><span class=title>Next »</span><br><span>Deprecation of "path/filename" api</span></a></nav></footer></article></main><footer class=footer><span>&copy; 2023 <a href=https://blog.simon-hu.org/>Simon's Blog</a></span><br><span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerHTML="copy";function s(){t.innerHTML="copied!",setTimeout(()=>{t.innerHTML="copy"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.appendChild(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t):e.parentNode.appendChild(t))})</script></body></html>

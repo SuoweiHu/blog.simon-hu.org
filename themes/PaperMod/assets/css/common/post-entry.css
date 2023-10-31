@@ -42,6 +42,11 @@
     transition: transform 0.1s;
     border: 1px solid var(--border);
 }
+.post-entry .entry-header h2{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 
 .post-entry:active {
     transform: scale(0.96);

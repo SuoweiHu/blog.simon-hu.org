@@ -10,42 +10,51 @@
       <link>https://blog.simon-hu.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.simon-hu.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://blog.simon-hu.org/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Markdown Syntax Guide</title>
-      <link>https://blog.simon-hu.org/posts/example-markdown-syntax/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Deprecation of &#34;jquery.once&#34; api</title>
+      <link>https://blog.simon-hu.org/posts/2023.10.24-deprecation-jquery.once/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.simon-hu.org/posts/example-markdown-syntax/</guid>
-      <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
+      <guid>https://blog.simon-hu.org/posts/2023.10.24-deprecation-jquery.once/</guid>
+      <description>Fixing custom modules&amp;rsquo; code that are dependent of jquery.once which is changing its api in newest drupal 10, hence making it compatible for the upgrade.</description>
     </item>
     
     <item>
-      <title>Rich Content</title>
-      <link>https://blog.simon-hu.org/posts/example-rich-content/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Deprecation of &#34;path/filename&#34; api</title>
+      <link>https://blog.simon-hu.org/posts/2023.10.31-deprecation-drupal_get_path-drupal_get_filename/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.simon-hu.org/posts/example-rich-content/</guid>
-      <description>A brief description of Hugo Shortcodes</description>
+      <guid>https://blog.simon-hu.org/posts/2023.10.31-deprecation-drupal_get_path-drupal_get_filename/</guid>
+      <description>Fixing custom modules&amp;rsquo; code that are dependent of function drupal_get_path() and drupal_get_filename() which is deprecating in newest drupal 10, hence making it compatible for the upgrade (only for temporal purpose).</description>
     </item>
     
     <item>
-      <title>Placeholder Text</title>
-      <link>https://blog.simon-hu.org/posts/example-placeholder-text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Deprecation of &#34;url&#34; api</title>
+      <link>https://blog.simon-hu.org/posts/2023.10.31-deprecation-file_create_url-and-file_url_transform_relative/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.simon-hu.org/posts/example-placeholder-text/</guid>
-      <description>Lorem Ipsum Dolor Si Amet</description>
+      <guid>https://blog.simon-hu.org/posts/2023.10.31-deprecation-file_create_url-and-file_url_transform_relative/</guid>
+      <description>Fixing custom modules&amp;rsquo; code that are dependent of function file_create_url() and file_url_transform_relative() which is deprecating in newest drupal 10, hence making it compatible for the upgrade (only for temporal purpose).</description>
     </item>
     
     <item>
-      <title>Math Typesetting</title>
-      <link>https://blog.simon-hu.org/posts/example-math-typesetting/</link>
-      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Fixing bootstrap theme not getting recognized</title>
+      <link>https://blog.simon-hu.org/posts/2023.10.31-fixing-theme-no-getting-recognised/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.simon-hu.org/posts/example-math-typesetting/</guid>
-      <description>A brief guide to setup KaTeX</description>
+      <guid>https://blog.simon-hu.org/posts/2023.10.31-fixing-theme-no-getting-recognised/</guid>
+      <description>Quick fix to the issue of theme not getting recognized after upgrading from drupal-9 to drupal-10</description>
+    </item>
+    
+    <item>
+      <title>Websites downloads the PHP-File instead of opening the website</title>
+      <link>https://blog.simon-hu.org/posts/2023.10.27-downloads-file-instead-of-opening-it/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.10.27-downloads-file-instead-of-opening-it/</guid>
+      <description>This tutorial provides step-by-step instructions to address the strange problem where, upon accessing a website, the index.php file begins to download instead of opening as intended. Users may encounter a dialog box prompting them to download the file, unsure of how to proceed when faced with options to open, close, or cancel. This article aims to guide you in resolving this issue effectively.
+Solution 1: Rebooting your web development environment Sometimes it will be a easy fix like rebooting your development environment / software, for my instance I am using MAMP, and by stopping the server and opening it again, solved 99% of my issues</description>
     </item>
     
   </channel>

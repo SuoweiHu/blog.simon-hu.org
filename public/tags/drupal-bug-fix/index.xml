@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Drupal Bug Fix on Simon&#39;s Blog</title>
+    <link>https://blog.simon-hu.org/tags/drupal-bug-fix/</link>
+    <description>Recent content in Drupal Bug Fix on Simon&#39;s Blog</description>
+    <image>
+      <title>Simon&#39;s Blog</title>
+      <url>https://blog.simon-hu.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://blog.simon-hu.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://blog.simon-hu.org/tags/drupal-bug-fix/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fixing bootstrap theme not getting recognized</title>
+      <link>https://blog.simon-hu.org/posts/2023.10.31-fixing-theme-no-getting-recognised/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.10.31-fixing-theme-no-getting-recognised/</guid>
+      <description>Quick fix to the issue of theme not getting recognized after upgrading from drupal-9 to drupal-10</description>
+    </item>
+    
+    <item>
+      <title>Websites downloads the PHP-File instead of opening the website</title>
+      <link>https://blog.simon-hu.org/posts/2023.10.27-downloads-file-instead-of-opening-it/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.10.27-downloads-file-instead-of-opening-it/</guid>
+      <description>This tutorial provides step-by-step instructions to address the strange problem where, upon accessing a website, the index.php file begins to download instead of opening as intended. Users may encounter a dialog box prompting them to download the file, unsure of how to proceed when faced with options to open, close, or cancel. This article aims to guide you in resolving this issue effectively.
+Solution 1: Rebooting your web development environment Sometimes it will be a easy fix like rebooting your development environment / software, for my instance I am using MAMP, and by stopping the server and opening it again, solved 99% of my issues</description>
+    </item>
+    
+  </channel>
+</rss>

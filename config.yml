@@ -1,6 +1,6 @@
 baseURL: "https://blog.simon-hu.org/"
 title: Simon's Blog
-paginate: 3
+paginate: 10
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -28,17 +28,17 @@ params:
 
   ShowReadingTime: true
   ShowShareButtons: false
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: true
+  ShowPostNavLinks: false
+  ShowBreadCrumbs: false
   ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: false
   UseHugoToc: true
   disableSpecial1stPost: false
-  disableScrollToTop: false
-  comments: false
+  disableScrollToTop: true
+  comments: true
   hidemeta: false
-  hideSummary: false
+  hideSummary: true
   showtoc: false
   tocopen: false
   hideFooter: false
@@ -59,7 +59,7 @@ params:
 
   # profile-mode
   profileMode:
-    enabled: true # needs to be explicitly set
+    enabled: false # needs to be explicitly set
     title: "Simon's Blog"
     subtitle: "So, you found me. Welcome to my blog. I am a software engineer who works at OPC IT Pty Limited. I am responsible for the daily maintenance and development of Drupal websites at my workplace, and in this blog I write about programming, technology, and other things that I learn during my professional journey. You can find me via the following..."
     imageUrl: "/android-chrome-512x512.png"
@@ -126,6 +126,10 @@ menu:
       name: Categories
       url: /categories/
       weight: 10
+    # - identifier: series
+    #   name: Series
+    #   url: /series/
+    #   weight: 20
     # - identifier: time
     #   name: Time
     #   url: /times/
