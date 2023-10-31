@@ -122,26 +122,26 @@ menu:
     #   name: Archive
     #   url: /archives/
     #   weight: 10
-    # - identifier: categories
-    #   name: Categories
-    #   url: /categories/
-    #   weight: 20
-    - identifier: time
-      name: Time
-      url: /times/
+    - identifier: categories
+      name: Categories
+      url: /categories/
       weight: 10
-    - identifier: search
-      name: Search
-      url: /search/
+    # - identifier: time
+    #   name: Time
+    #   url: /times/
+    #   weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
       weight: 20
-    # - identifier: tags
-    #   name: tags
-    #   url: /tags/
-    #   weight: 20
     # - identifier: example
     #   name: example.org
     #   url: https://example.org
     #   weight: 30
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 90
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
