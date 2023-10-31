@@ -138,7 +138,7 @@ You can go through few videos which are available on YouTube for getting to know
 **Use appropriately**
 
 ```yml
-baseURL: "https://examplesite.com/"
+baseURL: "https://baseURL.com/"
 title: ExampleSite
 paginate: 5
 theme: PaperMod

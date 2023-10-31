@@ -85,6 +85,8 @@ params:
       url: "mailto:suowei.h@gmail.com"
     - name: cv
       url: "/resume"
+    - name: medium
+      url: "https://suowei-hu.medium.com/"
 
   analytics:
     google:
