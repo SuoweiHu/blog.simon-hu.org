@@ -1,6 +1,6 @@
 baseURL: "https://blog.simon-hu.org/"
 title: Simon's Blog
-paginate: 5
+paginate: 3
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -17,7 +17,7 @@ minify:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Simon's Blog
-  description: "The simplest solution is almost always the best - Occam's Razor"
+  description: "So, you found me. Welcome to my blog. I am a software engineer who works at OPC IT Pty Limited. I am responsible for the daily maintenance and development of Drupal websites at my workplace, and in this blog I write about programming, technology, and other things that I learn during my professional journey. You can find me via the following..."
   keywords: [Blog, Portfolio, PaperMod]
   author: "Suowei Hu"
   # author: ["Me", "You"] # multiple authors
@@ -46,25 +46,25 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
+    # safari_pinned_tab: "<link / abs url>"
 
   label:
     text: "Simon's Blog"
-    icon: /apple-touch-icon.png
+    # icon: /apple-touch-icon.png
     iconHeight: 35
 
   # profile-mode
   profileMode:
-    enabled: false # needs to be explicitly set
+    enabled: true # needs to be explicitly set
     title: "Simon's Blog"
-    subtitle: "The simplest solution is almost always the best - Occam's Razor"
-    imageUrl: "<img location>"
-    imageWidth: 120
-    imageHeight: 120
+    subtitle: "So, you found me. Welcome to my blog. I am a software engineer who works at OPC IT Pty Limited. I am responsible for the daily maintenance and development of Drupal websites at my workplace, and in this blog I write about programming, technology, and other things that I learn during my professional journey. You can find me via the following..."
+    imageUrl: "/android-chrome-512x512.png"
+    imageWidth: 150
+    imageHeight: 150
     imageTitle: my image
     buttons:
       - name: Posts
@@ -157,3 +157,7 @@ outputs:
         - HTML
         - RSS
         - JSON # is necessary
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
