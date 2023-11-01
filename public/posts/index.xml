@@ -66,6 +66,16 @@
     </item>
     
     <item>
+      <title>How does Mail works with DNS MX records</title>
+      <link>https://blog.simon-hu.org/posts/2023.11.01-mail-server-and-dns-mx-record/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.11.01-mail-server-and-dns-mx-record/</guid>
+      <description>Breakdown of the email address In general a email address is in formatted as username @ domain.com, we can break it down into:
+Address after the @ sign, here domain.com, this is the domain of the target mail server, your server will check MX records of this domain from the DNS server, and sends the email to the corresponding IP of the domain. Address before the @ sign, here username, is where the mail receiving server will put your emails at.</description>
+    </item>
+    
+    <item>
       <title>Websites downloads the PHP-File instead of opening the website</title>
       <link>https://blog.simon-hu.org/posts/2023.10.27-downloads-file-instead-of-opening-it/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
