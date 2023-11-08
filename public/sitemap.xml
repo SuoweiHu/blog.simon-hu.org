@@ -4,7 +4,13 @@
   <url>
     <loc>https://blog.simon-hu.org/archives/</loc>
   </url><url>
+    <loc>https://blog.simon-hu.org/posts/2023.11.08-browser-cors-policy-and-csrf-attack/</loc>
+  </url><url>
     <loc>https://blog.simon-hu.org/categories/</loc>
+  </url><url>
+    <loc>https://blog.simon-hu.org/tags/cors-policy/</loc>
+  </url><url>
+    <loc>https://blog.simon-hu.org/tags/cross-origin/</loc>
   </url><url>
     <loc>https://blog.simon-hu.org/tags/d9-d10-upgrade/</loc>
   </url><url>
@@ -13,6 +19,8 @@
     <loc>https://blog.simon-hu.org/posts/2023.10.31-deprecation-drupal_get_path-drupal_get_filename/</loc>
   </url><url>
     <loc>https://blog.simon-hu.org/posts/2023.10.31-deprecation-file_create_url-and-file_url_transform_relative/</loc>
+  </url><url>
+    <loc>https://blog.simon-hu.org/tags/dns/</loc>
   </url><url>
     <loc>https://blog.simon-hu.org/categories/drupal/</loc>
   </url><url>
@@ -25,6 +33,12 @@
     <loc>https://blog.simon-hu.org/posts/2023.11.01-fixing-module-not-getting-recognised/</loc>
   </url><url>
     <loc>https://blog.simon-hu.org/posts/2023.11.01-mail-server-and-dns-mx-record/</loc>
+  </url><url>
+    <loc>https://blog.simon-hu.org/tags/mail-server/</loc>
+  </url><url>
+    <loc>https://blog.simon-hu.org/tags/mx-record/</loc>
+  </url><url>
+    <loc>https://blog.simon-hu.org/categories/network/</loc>
   </url><url>
     <loc>https://blog.simon-hu.org/posts/</loc>
   </url><url>

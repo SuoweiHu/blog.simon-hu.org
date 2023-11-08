@@ -12,6 +12,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language><atom:link href="https://blog.simon-hu.org/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Browser CORS policy</title>
+      <link>https://blog.simon-hu.org/posts/2023.11.08-browser-cors-policy-and-csrf-attack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.11.08-browser-cors-policy-and-csrf-attack/</guid>
+      <description>Intuition To begin with we need to answer a simple question, why do we need to block traffic from one site to another site, and have everything controlled in this CORS policy ?
+Imagine there&amp;rsquo;s two site, site A is a legitimate banking website that provides online finance services, site B is a phishing website that tries to spoof the website A. As a developer you might be aware of API&amp;rsquo;s, and the legitimate banking website is using exactly that to transfer money from account to account, for instance: &amp;ldquo;https://bank-site-a.</description>
+    </item>
+    
+    <item>
       <title>Deprecation of &#34;jquery.once&#34; api</title>
       <link>https://blog.simon-hu.org/posts/2023.10.24-deprecation-jquery.once/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

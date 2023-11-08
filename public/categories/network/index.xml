@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Network on Simon&#39;s Blog</title>
+    <link>https://blog.simon-hu.org/categories/network/</link>
+    <description>Recent content in Network on Simon&#39;s Blog</description>
+    <image>
+      <title>Simon&#39;s Blog</title>
+      <url>https://blog.simon-hu.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://blog.simon-hu.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://blog.simon-hu.org/categories/network/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Browser CORS policy</title>
+      <link>https://blog.simon-hu.org/posts/2023.11.08-browser-cors-policy-and-csrf-attack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.11.08-browser-cors-policy-and-csrf-attack/</guid>
+      <description>Intuition To begin with we need to answer a simple question, why do we need to block traffic from one site to another site, and have everything controlled in this CORS policy ?
+Imagine there&amp;rsquo;s two site, site A is a legitimate banking website that provides online finance services, site B is a phishing website that tries to spoof the website A. As a developer you might be aware of API&amp;rsquo;s, and the legitimate banking website is using exactly that to transfer money from account to account, for instance: &amp;ldquo;https://bank-site-a.</description>
+    </item>
+    
+    <item>
+      <title>How does Mail works with DNS MX records</title>
+      <link>https://blog.simon-hu.org/posts/2023.11.01-mail-server-and-dns-mx-record/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.11.01-mail-server-and-dns-mx-record/</guid>
+      <description>Breakdown of the email address In general a email address is in formatted as username @ domain.com, we can break it down into:
+Address after the @ sign, here domain.com, this is the domain of the target mail server, your server will check MX records of this domain from the DNS server, and sends the email to the corresponding IP of the domain. Address before the @ sign, here username, is where the mail receiving server will put your emails at.</description>
+    </item>
+    
+  </channel>
+</rss>

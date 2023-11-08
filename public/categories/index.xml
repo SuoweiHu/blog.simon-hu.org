@@ -20,5 +20,14 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Network</title>
+      <link>https://blog.simon-hu.org/categories/network/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/categories/network/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
