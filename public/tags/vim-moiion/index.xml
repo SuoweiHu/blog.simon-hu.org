@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Keybinding on Simon&#39;s Blog</title>
-    <link>https://blog.simon-hu.org/tags/keybinding/</link>
-    <description>Recent content in Keybinding on Simon&#39;s Blog</description>
+    <title>Vim Moiion on Simon&#39;s Blog</title>
+    <link>https://blog.simon-hu.org/tags/vim-moiion/</link>
+    <description>Recent content in Vim Moiion on Simon&#39;s Blog</description>
     <image>
       <title>Simon&#39;s Blog</title>
       <url>https://blog.simon-hu.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 10 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.simon-hu.org/tags/keybinding/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.simon-hu.org/tags/vim-moiion/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Vim Learning Diary 2</title>
       <link>https://blog.simon-hu.org/posts/2023.11.11-my-vim-learning-diary-2/</link>

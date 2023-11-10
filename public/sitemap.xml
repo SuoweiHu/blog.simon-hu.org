@@ -41,7 +41,10 @@
     <loc>https://blog.simon-hu.org/categories/vim/</loc>
     <lastmod>2023-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.simon-hu.org/tags/vim-motion/</loc>
+    <loc>https://blog.simon-hu.org/tags/vim-diary/</loc>
+    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/tags/vim-moiion/</loc>
     <lastmod>2023-11-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.simon-hu.org/posts/2023.11.08-browser-cors-policy-and-csrf-attack/</loc>
@@ -60,9 +63,6 @@
     <lastmod>2023-11-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.simon-hu.org/tags/vim-configuration/</loc>
-    <lastmod>2023-11-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.simon-hu.org/tags/vim-diary/</loc>
     <lastmod>2023-11-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.simon-hu.org/tags/vim-tutorial/</loc>
@@ -114,5 +114,7 @@
     <loc>https://blog.simon-hu.org/search/</loc>
   </url><url>
     <loc>https://blog.simon-hu.org/series/</loc>
+  </url><url>
+    <loc>https://blog.simon-hu.org/posts/2023.11.10-vim-reading-list/</loc>
   </url>
 </urlset>

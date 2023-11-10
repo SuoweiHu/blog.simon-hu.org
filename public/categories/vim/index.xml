@@ -18,8 +18,11 @@
       <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://blog.simon-hu.org/posts/2023.11.11-my-vim-learning-diary-2/</guid>
-      <description>Vim Motion / Vim Keybinding Here I will keep a note of some of the vim motion &amp;amp; keybinding I found useful:
-Copy current line and paste the line below 1 2 3 4 5 6 7 yyp # yy: yank current line into default register # p: paste the default register into the next line (the line below current cursor) Vyp # V: enter visual line mode # y: yank the current selected line (by default you will be selecting the current line) # p: paste the default register into the next line (the line below current cursor) Reference Vim Motions Guide (2022) - Vim Salesman</description>
+      <description>Vim Motion / Keybinding Here I will keep some of the vim motion &amp;amp; keybinding. (meanwhile I will keep updating this to remove those that I got very familiar, and add those that I found useful along the journey):
+o/O: add cursor above/below current line
+==: fixing indentation for current line
+=ap: fixing indentation for current paragraph (the inner-most function-like scope structure under cursor)
+yyp : copy current line and paste the line below</description>
     </item>
     
     <item>
@@ -30,6 +33,16 @@ Copy current line and paste the line below 1 2 3 4 5 6 7 yyp # yy: yank current 
       <guid>https://blog.simon-hu.org/posts/2023.11.10-my-vim-learning-diary-1/</guid>
       <description>Why do &amp;ldquo;I&amp;rdquo; want to use vim ? Why not VS Code ? To begin with, I am not quite the typical teenage young boy, he who have not tried; I have been coding for more than 4 years now, and at this point I already have some of the tools of my taste.
 If you&amp;rsquo;d ask for my favorite my current pick is &amp;ldquo;VS Code&amp;rdquo;. Why? because I do not code on any particular language (hence no IDE) and I just happen to land on VS Code by accident, if I would first met &amp;ldquo;Sublime&amp;rdquo;, the answer could be different.</description>
+    </item>
+    
+    <item>
+      <title>Vim Reading List</title>
+      <link>https://blog.simon-hu.org/posts/2023.11.10-vim-reading-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.11.10-vim-reading-list/</guid>
+      <description>Vim motion / key-binding
+(https://sean-warman.medium.com/why-vim-is-better-than-vscode-d09e2355eb37) </description>
     </item>
     
   </channel>

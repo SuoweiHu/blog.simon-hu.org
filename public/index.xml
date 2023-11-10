@@ -29,8 +29,11 @@ I ran composer require drush/drush which will install the most recent compatible
       <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://blog.simon-hu.org/posts/2023.11.11-my-vim-learning-diary-2/</guid>
-      <description>Vim Motion / Vim Keybinding Here I will keep a note of some of the vim motion &amp;amp; keybinding I found useful:
-Copy current line and paste the line below 1 2 3 4 5 6 7 yyp # yy: yank current line into default register # p: paste the default register into the next line (the line below current cursor) Vyp # V: enter visual line mode # y: yank the current selected line (by default you will be selecting the current line) # p: paste the default register into the next line (the line below current cursor) Reference Vim Motions Guide (2022) - Vim Salesman</description>
+      <description>Vim Motion / Keybinding Here I will keep some of the vim motion &amp;amp; keybinding. (meanwhile I will keep updating this to remove those that I got very familiar, and add those that I found useful along the journey):
+o/O: add cursor above/below current line
+==: fixing indentation for current line
+=ap: fixing indentation for current paragraph (the inner-most function-like scope structure under cursor)
+yyp : copy current line and paste the line below</description>
     </item>
     
     <item>
@@ -137,6 +140,16 @@ Solution 1: Rebooting your web development environment Sometimes it will be a ea
       <description> </description>
     </item>
     
+    
+    <item>
+      <title>Vim Reading List</title>
+      <link>https://blog.simon-hu.org/posts/2023.11.10-vim-reading-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.11.10-vim-reading-list/</guid>
+      <description>Vim motion / key-binding
+(https://sean-warman.medium.com/why-vim-is-better-than-vscode-d09e2355eb37) </description>
+    </item>
     
   </channel>
 </rss>
