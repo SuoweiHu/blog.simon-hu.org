@@ -22,7 +22,7 @@ params:
   author: "Suowei Hu"
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
-  DateFormat: "January 2, 2006"
+  DateFormat: "2015-12-29"
   defaultTheme: light # dark, light
   disableThemeToggle: true
 
@@ -118,14 +118,14 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    # - identifier: archives
-    #   name: Archive
-    #   url: /archives/
-    #   weight: 10
+    - identifier: archives
+      name: Archive
+      url: /archives/
+      weight: 10
     - identifier: categories
       name: Categories
       url: /categories/
-      weight: 10
+      weight: 20
     # - identifier: series
     #   name: Series
     #   url: /series/
@@ -137,7 +137,7 @@ menu:
     - identifier: tags
       name: Tags
       url: /tags/
-      weight: 20
+      weight: 30
     # - identifier: example
     #   name: example.org
     #   url: https://example.org

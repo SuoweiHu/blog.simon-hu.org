@@ -10,11 +10,12 @@
       <link>https://blog.simon-hu.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://blog.simon-hu.org/tags/drupal-8/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Fri, 10 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.simon-hu.org/tags/drupal-8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Install drush on drupal 8 site (using downgraded composer ver.1)</title>
       <link>https://blog.simon-hu.org/posts/2023.11.10-install-drush-on-drupal-8-and-composer-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://blog.simon-hu.org/posts/2023.11.10-install-drush-on-drupal-8-and-composer-1/</guid>
       <description>Intuition I was recently working on a client site, and I got to the issue where the site will show &amp;ldquo;Page unavailable&amp;rdquo; upon login. And upon the suspicion of a mis-placed module or uncleared cache, I wanted to install drush to perform some drush commands.

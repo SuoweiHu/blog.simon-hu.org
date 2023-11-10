@@ -2,64 +2,90 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.simon-hu.org/archives/</loc>
-  </url><url>
-    <loc>https://blog.simon-hu.org/posts/2023.11.08-browser-cors-policy-and-csrf-attack/</loc>
-  </url><url>
-    <loc>https://blog.simon-hu.org/categories/</loc>
-  </url><url>
     <loc>https://blog.simon-hu.org/tags/composer-1/</loc>
-  </url><url>
-    <loc>https://blog.simon-hu.org/tags/cors-policy/</loc>
-  </url><url>
-    <loc>https://blog.simon-hu.org/tags/cross-origin/</loc>
-  </url><url>
-    <loc>https://blog.simon-hu.org/tags/d9-d10-upgrade/</loc>
-  </url><url>
-    <loc>https://blog.simon-hu.org/posts/2023.10.24-deprecation-jquery.once/</loc>
-  </url><url>
-    <loc>https://blog.simon-hu.org/posts/2023.10.31-deprecation-drupal_get_path-drupal_get_filename/</loc>
-  </url><url>
-    <loc>https://blog.simon-hu.org/posts/2023.10.31-deprecation-file_create_url-and-file_url_transform_relative/</loc>
-  </url><url>
-    <loc>https://blog.simon-hu.org/tags/dns/</loc>
-  </url><url>
-    <loc>https://blog.simon-hu.org/categories/drupal/</loc>
+    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.simon-hu.org/tags/drupal-8/</loc>
-  </url><url>
-    <loc>https://blog.simon-hu.org/tags/drupal-bug-fix/</loc>
-  </url><url>
-    <loc>https://blog.simon-hu.org/posts/2023.10.31-drupal-custom-module-psr4-standards/</loc>
+    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.simon-hu.org/tags/drush/</loc>
-  </url><url>
-    <loc>https://blog.simon-hu.org/posts/2023.10.31-fixing-theme-not-getting-recognised/</loc>
-  </url><url>
-    <loc>https://blog.simon-hu.org/posts/2023.11.01-fixing-module-not-getting-recognised/</loc>
-  </url><url>
-    <loc>https://blog.simon-hu.org/posts/2023.11.01-mail-server-and-dns-mx-record/</loc>
+    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.simon-hu.org/posts/2023.11.10-install-drush-on-drupal-8-and-composer-1/</loc>
-  </url><url>
-    <loc>https://blog.simon-hu.org/tags/mail-server/</loc>
-  </url><url>
-    <loc>https://blog.simon-hu.org/tags/mx-record/</loc>
-  </url><url>
-    <loc>https://blog.simon-hu.org/categories/network/</loc>
+    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.simon-hu.org/posts/</loc>
+    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/</loc>
+    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/tags/</loc>
+    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/posts/2023.11.08-browser-cors-policy-and-csrf-attack/</loc>
+    <lastmod>2023-11-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/categories/</loc>
+    <lastmod>2023-11-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/tags/cors-policy/</loc>
+    <lastmod>2023-11-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/tags/cross-origin/</loc>
+    <lastmod>2023-11-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/categories/network/</loc>
+    <lastmod>2023-11-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/tags/d9-d10-upgrade/</loc>
+    <lastmod>2023-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/tags/dns/</loc>
+    <lastmod>2023-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/categories/drupal/</loc>
+    <lastmod>2023-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/tags/drupal-bug-fix/</loc>
+    <lastmod>2023-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/posts/2023.11.01-fixing-module-not-getting-recognised/</loc>
+    <lastmod>2023-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/posts/2023.11.01-mail-server-and-dns-mx-record/</loc>
+    <lastmod>2023-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/tags/mail-server/</loc>
+    <lastmod>2023-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/tags/mx-record/</loc>
+    <lastmod>2023-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/posts/2023.10.31-deprecation-drupal_get_path-drupal_get_filename/</loc>
+    <lastmod>2023-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/posts/2023.10.31-deprecation-file_create_url-and-file_url_transform_relative/</loc>
+    <lastmod>2023-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/posts/2023.10.31-drupal-custom-module-psr4-standards/</loc>
+    <lastmod>2023-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/posts/2023.10.31-fixing-theme-not-getting-recognised/</loc>
+    <lastmod>2023-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/posts/2023.10.27-downloads-file-instead-of-opening-it/</loc>
+    <lastmod>2023-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/posts/2023.10.24-deprecation-jquery.once/</loc>
+    <lastmod>2023-10-24T11:30:03+11:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/archives/</loc>
   </url><url>
     <loc>https://blog.simon-hu.org/resume/</loc>
   </url><url>
     <loc>https://blog.simon-hu.org/search/</loc>
   </url><url>
     <loc>https://blog.simon-hu.org/series/</loc>
-  </url><url>
-    <loc>https://blog.simon-hu.org/</loc>
-  </url><url>
-    <loc>https://blog.simon-hu.org/tags/</loc>
-  </url><url>
-    <loc>https://blog.simon-hu.org/posts/2023.10.27-downloads-file-instead-of-opening-it/</loc>
   </url>
 </urlset>
