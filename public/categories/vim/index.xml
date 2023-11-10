@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Vim on Simon&#39;s Blog</title>
+    <link>https://blog.simon-hu.org/categories/vim/</link>
+    <description>Recent content in Vim on Simon&#39;s Blog</description>
+    <image>
+      <title>Simon&#39;s Blog</title>
+      <url>https://blog.simon-hu.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://blog.simon-hu.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 10 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.simon-hu.org/categories/vim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Vim Learning Diary 2</title>
+      <link>https://blog.simon-hu.org/posts/2023.11.11-my-vim-learning-diary-2/</link>
+      <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.11.11-my-vim-learning-diary-2/</guid>
+      <description>Vim Motion / Vim Keybinding Here I will keep a note of some of the vim motion &amp;amp; keybinding I found useful:
+Copy current line and paste the line below 1 2 3 4 5 6 7 yyp # yy: yank current line into default register # p: paste the default register into the next line (the line below current cursor) Vyp # V: enter visual line mode # y: yank the current selected line (by default you will be selecting the current line) # p: paste the default register into the next line (the line below current cursor) Reference Vim Motions Guide (2022) - Vim Salesman</description>
+    </item>
+    
+    <item>
+      <title>My Vim Learning Diary 1</title>
+      <link>https://blog.simon-hu.org/posts/2023.11.10-my-vim-learning-diary-1/</link>
+      <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.11.10-my-vim-learning-diary-1/</guid>
+      <description>Why do &amp;ldquo;I&amp;rdquo; want to use vim ? Why not VS Code ? To begin with, I am not quite the typical teenage young boy, he who have not tried; I have been coding for more than 4 years now, and at this point I already have some of the tools of my taste.
+If you&amp;rsquo;d ask for my favorite my current pick is &amp;ldquo;VS Code&amp;rdquo;. Why? because I do not code on any particular language (hence no IDE) and I just happen to land on VS Code by accident, if I would first met &amp;ldquo;Sublime&amp;rdquo;, the answer could be different.</description>
+    </item>
+    
+  </channel>
+</rss>
