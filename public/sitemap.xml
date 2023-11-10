@@ -8,6 +8,8 @@
   </url><url>
     <loc>https://blog.simon-hu.org/categories/</loc>
   </url><url>
+    <loc>https://blog.simon-hu.org/tags/composer-1/</loc>
+  </url><url>
     <loc>https://blog.simon-hu.org/tags/cors-policy/</loc>
   </url><url>
     <loc>https://blog.simon-hu.org/tags/cross-origin/</loc>
@@ -24,15 +26,21 @@
   </url><url>
     <loc>https://blog.simon-hu.org/categories/drupal/</loc>
   </url><url>
+    <loc>https://blog.simon-hu.org/tags/drupal-8/</loc>
+  </url><url>
     <loc>https://blog.simon-hu.org/tags/drupal-bug-fix/</loc>
   </url><url>
     <loc>https://blog.simon-hu.org/posts/2023.10.31-drupal-custom-module-psr4-standards/</loc>
+  </url><url>
+    <loc>https://blog.simon-hu.org/tags/drush/</loc>
   </url><url>
     <loc>https://blog.simon-hu.org/posts/2023.10.31-fixing-theme-not-getting-recognised/</loc>
   </url><url>
     <loc>https://blog.simon-hu.org/posts/2023.11.01-fixing-module-not-getting-recognised/</loc>
   </url><url>
     <loc>https://blog.simon-hu.org/posts/2023.11.01-mail-server-and-dns-mx-record/</loc>
+  </url><url>
+    <loc>https://blog.simon-hu.org/posts/2023.11.10-install-drush-on-drupal-8-and-composer-1/</loc>
   </url><url>
     <loc>https://blog.simon-hu.org/tags/mail-server/</loc>
   </url><url>

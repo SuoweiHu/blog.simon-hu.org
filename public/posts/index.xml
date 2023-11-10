@@ -86,6 +86,17 @@ Address after the @ sign, here domain.com, this is the domain of the target mail
     </item>
     
     <item>
+      <title>Install drush on drupal 8 site (using downgraded composer ver.1)</title>
+      <link>https://blog.simon-hu.org/posts/2023.11.10-install-drush-on-drupal-8-and-composer-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.11.10-install-drush-on-drupal-8-and-composer-1/</guid>
+      <description>Intuition I was recently working on a client site, and I got to the issue where the site will show &amp;ldquo;Page unavailable&amp;rdquo; upon login. And upon the suspicion of a mis-placed module or uncleared cache, I wanted to install drush to perform some drush commands.
+I ran composer require drush/drush which will install the most recent compatible drush on my current working directory, but then I got this error:
+1 2 3 4 5 6 .</description>
+    </item>
+    
+    <item>
       <title>Websites downloads the PHP-File instead of opening the website</title>
       <link>https://blog.simon-hu.org/posts/2023.10.27-downloads-file-instead-of-opening-it/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
