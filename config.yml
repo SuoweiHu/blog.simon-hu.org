@@ -22,7 +22,7 @@ params:
   author: "Suowei Hu"
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
-  DateFormat: "2015-12-29"
+  DateFormat: "Jan 2, 2006"
   defaultTheme: light # dark, light
   disableThemeToggle: true
 
