@@ -18,8 +18,19 @@
       <pubDate>Mon, 13 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://blog.simon-hu.org/posts/2023.11.13-export-google-analytics-to-sheets-manual/</guid>
-      <description>Step-1: First, proceed to the page you would like to export. For instance in thise example I want to export the &amp;ldquo;all page&amp;rsquo;s views and performances&amp;rdquo;, (located at &amp;ldquo;behavior &amp;gt; site content &amp;gt; all pages&amp;rdquo;).
-Step-2: Second, you will need to narrow down the number of records you would like to export via selecting a desired &amp;ldquo;date range&amp;rdquo; and &amp;ldquo;row, page&amp;rdquo;. The export will only happen on the data that is currently getting displayed, if you want to export more data, you&amp;rsquo;ll either have to change the date, or the number or rows and pages.</description>
+      <description>In this tutorial I will guide you through how to export google analytics data manually on the Google Analytics page
+Step-1: open panel exporting from First, proceed to the page you would like to export. For instance in thise example I want to export the &amp;ldquo;all page&amp;rsquo;s views and performances&amp;rdquo;, (located at &amp;ldquo;behavior &amp;gt; site content &amp;gt; all pages&amp;rdquo;).
+Step-2: narrow down the records Second, you will need to narrow down the number of records you would like to export via selecting a desired &amp;ldquo;date range&amp;rdquo; and &amp;ldquo;row, page&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Export Google Analytics to Google Sheets (using Add-on)</title>
+      <link>https://blog.simon-hu.org/posts/2023.11.13-export-google-analytics-to-sheets-using-add-on/</link>
+      <pubDate>Mon, 13 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.11.13-export-google-analytics-to-sheets-using-add-on/</guid>
+      <description>Step-1 : Google Account Logged-in To begin with, make sure you are logged in the proper google account, we will use the same account for all of the Google related product in the upcoming steps, including &amp;ldquo;Google Analytics&amp;rdquo; and &amp;ldquo;Google Sheets&amp;rdquo;.
+Step-2: Install Add-on Secondly, with the same google account open &amp;ldquo;google sheet&amp;rdquo;, then open &amp;ldquo;extension &amp;gt; add-on &amp;gt; get add-on&amp;quot; and install the google analytics add-on as denoted in the screenshot:</description>
     </item>
     
     <item>
@@ -44,24 +55,11 @@ I ran composer require drush/drush which will install the most recent compatible
     </item>
     
     <item>
-      <title>My Vim Learning Diary 2</title>
-      <link>https://blog.simon-hu.org/posts/2023.11.11-my-vim-learning-diary-2/</link>
-      <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.simon-hu.org/posts/2023.11.11-my-vim-learning-diary-2/</guid>
-      <description>Vim Motion / Keybinding Here I will keep some of the vim motion &amp;amp; keybinding. (meanwhile I will keep updating this to remove those that I got very familiar, and add those that I found useful along the journey):
-o/O: add cursor above/below current line
-==: fixing indentation for current line
-=ap: fixing indentation for current paragraph (the inner-most function-like scope structure under cursor)
-yyp : copy current line and paste the line below</description>
-    </item>
-    
-    <item>
       <title>Vim Reading List</title>
-      <link>https://blog.simon-hu.org/posts/2023.11.10-vim-reading-list/</link>
+      <link>https://blog.simon-hu.org/posts/2023.11.13-vim-reading-list/</link>
       <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.simon-hu.org/posts/2023.11.10-vim-reading-list/</guid>
+      <guid>https://blog.simon-hu.org/posts/2023.11.13-vim-reading-list/</guid>
       <description>Vim Privilege
 Medium - Why Vim is better than VSCode
 FreeCodeCamp - Why Vim Is More than Just an Editor
@@ -163,6 +161,19 @@ Solution 1: Rebooting your web development environment Sometimes it will be a ea
       
       <guid>https://blog.simon-hu.org/posts/2023.10.24-deprecation-jquery.once/</guid>
       <description>Fixing custom modules&amp;rsquo; code that are dependent of jquery.once which is changing its api in newest drupal 10, hence making it compatible for the upgrade.</description>
+    </item>
+    
+    <item>
+      <title>My Vim Learning Diary 2</title>
+      <link>https://blog.simon-hu.org/posts/2023.11.11-my-vim-learning-diary-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.11.11-my-vim-learning-diary-2/</guid>
+      <description>Vim Motion / Keybinding Here I will keep some of the vim motion &amp;amp; keybinding. (meanwhile I will keep updating this to remove those that I got very familiar, and add those that I found useful along the journey):
+o/O: add cursor above/below current line
+==: fixing indentation for current line
+=ap: fixing indentation for current paragraph (the inner-most function-like scope structure under cursor)
+yyp : copy current line and paste the line below</description>
     </item>
     
   </channel>

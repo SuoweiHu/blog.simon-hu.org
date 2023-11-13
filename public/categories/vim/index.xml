@@ -13,24 +13,11 @@
     <language>en</language>
     <lastBuildDate>Fri, 10 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.simon-hu.org/categories/vim/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My Vim Learning Diary 2</title>
-      <link>https://blog.simon-hu.org/posts/2023.11.11-my-vim-learning-diary-2/</link>
-      <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.simon-hu.org/posts/2023.11.11-my-vim-learning-diary-2/</guid>
-      <description>Vim Motion / Keybinding Here I will keep some of the vim motion &amp;amp; keybinding. (meanwhile I will keep updating this to remove those that I got very familiar, and add those that I found useful along the journey):
-o/O: add cursor above/below current line
-==: fixing indentation for current line
-=ap: fixing indentation for current paragraph (the inner-most function-like scope structure under cursor)
-yyp : copy current line and paste the line below</description>
-    </item>
-    
-    <item>
       <title>Vim Reading List</title>
-      <link>https://blog.simon-hu.org/posts/2023.11.10-vim-reading-list/</link>
+      <link>https://blog.simon-hu.org/posts/2023.11.13-vim-reading-list/</link>
       <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.simon-hu.org/posts/2023.11.10-vim-reading-list/</guid>
+      <guid>https://blog.simon-hu.org/posts/2023.11.13-vim-reading-list/</guid>
       <description>Vim Privilege
 Medium - Why Vim is better than VSCode
 FreeCodeCamp - Why Vim Is More than Just an Editor
@@ -48,6 +35,19 @@ ThePrimeagen - How to Vim in 2023: Tips and Tricks</description>
       <guid>https://blog.simon-hu.org/posts/2023.11.10-my-vim-learning-diary-1/</guid>
       <description>Why do &amp;ldquo;I&amp;rdquo; want to use vim ? Why not VS Code ? To begin with, I am not quite the typical teenage young boy, he who have not tried; I have been coding for more than 4 years now, and at this point I already have some of the tools of my taste.
 If you&amp;rsquo;d ask for my favorite my current pick is &amp;ldquo;VS Code&amp;rdquo;. Why? because I do not code on any particular language (hence no IDE) and I just happen to land on VS Code by accident, if I would first met &amp;ldquo;Sublime&amp;rdquo;, the answer could be different.</description>
+    </item>
+    
+    <item>
+      <title>My Vim Learning Diary 2</title>
+      <link>https://blog.simon-hu.org/posts/2023.11.11-my-vim-learning-diary-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.11.11-my-vim-learning-diary-2/</guid>
+      <description>Vim Motion / Keybinding Here I will keep some of the vim motion &amp;amp; keybinding. (meanwhile I will keep updating this to remove those that I got very familiar, and add those that I found useful along the journey):
+o/O: add cursor above/below current line
+==: fixing indentation for current line
+=ap: fixing indentation for current paragraph (the inner-most function-like scope structure under cursor)
+yyp : copy current line and paste the line below</description>
     </item>
     
   </channel>

@@ -10,12 +10,11 @@
       <link>https://blog.simon-hu.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Fri, 10 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.simon-hu.org/tags/vim-moiion/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://blog.simon-hu.org/tags/vim-moiion/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Vim Learning Diary 2</title>
       <link>https://blog.simon-hu.org/posts/2023.11.11-my-vim-learning-diary-2/</link>
-      <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://blog.simon-hu.org/posts/2023.11.11-my-vim-learning-diary-2/</guid>
       <description>Vim Motion / Keybinding Here I will keep some of the vim motion &amp;amp; keybinding. (meanwhile I will keep updating this to remove those that I got very familiar, and add those that I found useful along the journey):
