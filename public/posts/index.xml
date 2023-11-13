@@ -11,7 +11,27 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 10 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.simon-hu.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.simon-hu.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Export Google Analytics to Google Sheets (Manual)</title>
+      <link>https://blog.simon-hu.org/posts/2023.11.13-export-google-analytics-to-sheets-manual/</link>
+      <pubDate>Mon, 13 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.11.13-export-google-analytics-to-sheets-manual/</guid>
+      <description>Step-1: First, proceed to the page you would like to export. For instance in thise example I want to export the &amp;ldquo;all page&amp;rsquo;s views and performances&amp;rdquo;, (located at &amp;ldquo;behavior &amp;gt; site content &amp;gt; all pages&amp;rdquo;).
+Step-2: Second, you will need to narrow down the number of records you would like to export via selecting a desired &amp;ldquo;date range&amp;rdquo; and &amp;ldquo;row, page&amp;rdquo;. The export will only happen on the data that is currently getting displayed, if you want to export more data, you&amp;rsquo;ll either have to change the date, or the number or rows and pages.</description>
+    </item>
+    
+    <item>
+      <title>Shield for Apache Server using htaccess/htpasswd</title>
+      <link>https://blog.simon-hu.org/posts/2023.11.13-apache-server-shield-using-htaccess-file/</link>
+      <pubDate>Mon, 13 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.11.13-apache-server-shield-using-htaccess-file/</guid>
+      <description>PENDING &amp;hellip;.. (Manual Replacement for the &amp;ldquo;Drupal Shield&amp;rdquo; )
+Reference LINK-1: How to password protect a website folder using .htaccess LINK-2: Password protecting your site with an .htaccess file (NOT RECOMMENDED) </description>
+    </item>
+    
     <item>
       <title>Install drush on drupal 8 site (using downgraded composer ver.1)</title>
       <link>https://blog.simon-hu.org/posts/2023.11.10-install-drush-on-drupal-8-and-composer-1/</link>
@@ -34,6 +54,21 @@ o/O: add cursor above/below current line
 ==: fixing indentation for current line
 =ap: fixing indentation for current paragraph (the inner-most function-like scope structure under cursor)
 yyp : copy current line and paste the line below</description>
+    </item>
+    
+    <item>
+      <title>Vim Reading List</title>
+      <link>https://blog.simon-hu.org/posts/2023.11.10-vim-reading-list/</link>
+      <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.11.10-vim-reading-list/</guid>
+      <description>Vim Privilege
+Medium - Why Vim is better than VSCode
+FreeCodeCamp - Why Vim Is More than Just an Editor
+Vim Motion / Vim Keybindings
+Vim Salesman - Vim Motions Guide (2022) Vim Configuration
+ThePrimeagen - 0 to LSP : Neovim RC From Scratch
+ThePrimeagen - How to Vim in 2023: Tips and Tricks</description>
     </item>
     
     <item>
@@ -128,16 +163,6 @@ Solution 1: Rebooting your web development environment Sometimes it will be a ea
       
       <guid>https://blog.simon-hu.org/posts/2023.10.24-deprecation-jquery.once/</guid>
       <description>Fixing custom modules&amp;rsquo; code that are dependent of jquery.once which is changing its api in newest drupal 10, hence making it compatible for the upgrade.</description>
-    </item>
-    
-    <item>
-      <title>Vim Reading List</title>
-      <link>https://blog.simon-hu.org/posts/2023.11.10-vim-reading-list/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.simon-hu.org/posts/2023.11.10-vim-reading-list/</guid>
-      <description>Vim motion / key-binding
-(https://sean-warman.medium.com/why-vim-is-better-than-vscode-d09e2355eb37) </description>
     </item>
     
   </channel>

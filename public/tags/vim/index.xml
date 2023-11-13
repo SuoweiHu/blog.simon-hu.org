@@ -26,6 +26,21 @@ yyp : copy current line and paste the line below</description>
     </item>
     
     <item>
+      <title>Vim Reading List</title>
+      <link>https://blog.simon-hu.org/posts/2023.11.10-vim-reading-list/</link>
+      <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.11.10-vim-reading-list/</guid>
+      <description>Vim Privilege
+Medium - Why Vim is better than VSCode
+FreeCodeCamp - Why Vim Is More than Just an Editor
+Vim Motion / Vim Keybindings
+Vim Salesman - Vim Motions Guide (2022) Vim Configuration
+ThePrimeagen - 0 to LSP : Neovim RC From Scratch
+ThePrimeagen - How to Vim in 2023: Tips and Tricks</description>
+    </item>
+    
+    <item>
       <title>My Vim Learning Diary 1</title>
       <link>https://blog.simon-hu.org/posts/2023.11.10-my-vim-learning-diary-1/</link>
       <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
@@ -33,16 +48,6 @@ yyp : copy current line and paste the line below</description>
       <guid>https://blog.simon-hu.org/posts/2023.11.10-my-vim-learning-diary-1/</guid>
       <description>Why do &amp;ldquo;I&amp;rdquo; want to use vim ? Why not VS Code ? To begin with, I am not quite the typical teenage young boy, he who have not tried; I have been coding for more than 4 years now, and at this point I already have some of the tools of my taste.
 If you&amp;rsquo;d ask for my favorite my current pick is &amp;ldquo;VS Code&amp;rdquo;. Why? because I do not code on any particular language (hence no IDE) and I just happen to land on VS Code by accident, if I would first met &amp;ldquo;Sublime&amp;rdquo;, the answer could be different.</description>
-    </item>
-    
-    <item>
-      <title>Vim Reading List</title>
-      <link>https://blog.simon-hu.org/posts/2023.11.10-vim-reading-list/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.simon-hu.org/posts/2023.11.10-vim-reading-list/</guid>
-      <description>Vim motion / key-binding
-(https://sean-warman.medium.com/why-vim-is-better-than-vscode-d09e2355eb37) </description>
     </item>
     
   </channel>
