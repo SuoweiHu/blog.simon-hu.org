@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.simon-hu.org/posts/</loc>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/</loc>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/posts/2023.11.14-vscode-color-theme-customization/</loc>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.simon-hu.org/categories/</loc>
     <lastmod>2023-11-13T00:00:00+00:00</lastmod>
   </url><url>
@@ -23,9 +32,6 @@
     <loc>https://blog.simon-hu.org/tags/htaccess/</loc>
     <lastmod>2023-11-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.simon-hu.org/posts/</loc>
-    <lastmod>2023-11-13T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.simon-hu.org/tags/server/</loc>
     <lastmod>2023-11-13T00:00:00+00:00</lastmod>
   </url><url>
@@ -33,9 +39,6 @@
     <lastmod>2023-11-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.simon-hu.org/posts/2023.11.13-apache-server-shield-using-htaccess-file/</loc>
-    <lastmod>2023-11-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.simon-hu.org/</loc>
     <lastmod>2023-11-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.simon-hu.org/tags/</loc>

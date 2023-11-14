@@ -11,7 +11,18 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 13 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.simon-hu.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.simon-hu.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VS Code Custom Color Theme</title>
+      <link>https://blog.simon-hu.org/posts/2023.11.14-vscode-color-theme-customization/</link>
+      <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.11.14-vscode-color-theme-customization/</guid>
+      <description>Customizing Color Theme Themes from the market Keeping this section for the sake of clean article structure, I will not spend any words on this one, if you have any questions simply refer to Google or the following official documentation:
+Reference:
+VS Code Documentation - Color Themes from the Marketplace VS Code Documentation - Selecting the Color Theme VS Code Documentation - Auto Switching based on OS Color Theme Theme Customization in Settings.</description>
+    </item>
+    
     <item>
       <title>Export Google Analytics to Google Sheets (Manual)</title>
       <link>https://blog.simon-hu.org/posts/2023.11.13-export-google-analytics-to-sheets-manual/</link>
@@ -61,7 +72,7 @@ I ran composer require drush/drush which will install the most recent compatible
       
       <guid>https://blog.simon-hu.org/posts/2023.11.13-vim-reading-list/</guid>
       <description>Vim Privilege
-Medium - Why Vim is better than VSCode
+Medium - Why Vim is better than VSCode (About Vim Motion combination of &amp;ldquo;c,i,d&amp;rdquo; command and &amp;ldquo;w,p,&amp;rdquo;,{&amp;quot;)
 FreeCodeCamp - Why Vim Is More than Just an Editor
 Vim Motion / Vim Keybindings
 Vim Salesman - Vim Motions Guide (2022) Vim Configuration
