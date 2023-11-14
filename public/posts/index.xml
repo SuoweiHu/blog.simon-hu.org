@@ -13,6 +13,15 @@
     <language>en</language>
     <lastBuildDate>Tue, 14 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.simon-hu.org/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>How to apply patch in drupal ?</title>
+      <link>https://blog.simon-hu.org/posts/2023.11.14-how-to-apply-patch-in-drupal/</link>
+      <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.11.14-how-to-apply-patch-in-drupal/</guid>
+      <description>PENDING &amp;hellip;. https://gorannikolovski.com/blog/how-to-apply-a-patch-in-drupal</description>
+    </item>
+    
+    <item>
       <title>VS Code Custom Color Theme</title>
       <link>https://blog.simon-hu.org/posts/2023.11.14-vscode-color-theme-customization/</link>
       <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
@@ -21,6 +30,15 @@
       <description>Customizing Color Theme Themes from the market Keeping this section for the sake of clean article structure, I will not spend any words on this one, if you have any questions simply refer to Google or the following official documentation:
 Reference:
 VS Code Documentation - Color Themes from the Marketplace VS Code Documentation - Selecting the Color Theme VS Code Documentation - Auto Switching based on OS Color Theme Theme Customization in Settings.</description>
+    </item>
+    
+    <item>
+      <title>What/Why Google Tag Manager (GTM)</title>
+      <link>https://blog.simon-hu.org/posts/2023.11.14-what-and-why-google-tag-manager/</link>
+      <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.11.14-what-and-why-google-tag-manager/</guid>
+      <description>Intuition To begin with, I looked for the definition of &amp;ldquo;tag&amp;rdquo; in the Google Tag Manager&amp;rsquo;s context, according to their official documentation, they refer tags as &amp;ldquo;segments of code provided by analytics, marketing, and support vendors to help you integrate their product into your website or mobile apps&amp;rdquo;, so bascially you can think of tag like a chunk of script for third party plug-in (like for example: HotJar (a digital expereience insight and behavior analytics tool))</description>
     </item>
     
     <item>

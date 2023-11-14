@@ -2,17 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.simon-hu.org/categories/</loc>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/tags/drupal/</loc>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/categories/drupal/</loc>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/tags/google-tag-manager/</loc>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/categories/google-tag-manager-gtm/</loc>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/tags/gtm/</loc>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/posts/2023.11.14-how-to-apply-patch-in-drupal/</loc>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/tags/patch/</loc>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.simon-hu.org/posts/</loc>
     <lastmod>2023-11-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.simon-hu.org/</loc>
     <lastmod>2023-11-14T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://blog.simon-hu.org/tags/</loc>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.simon-hu.org/posts/2023.11.14-vscode-color-theme-customization/</loc>
     <lastmod>2023-11-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.simon-hu.org/categories/</loc>
-    <lastmod>2023-11-13T00:00:00+00:00</lastmod>
+    <loc>https://blog.simon-hu.org/posts/2023.11.14-what-and-why-google-tag-manager/</loc>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.simon-hu.org/posts/2023.11.13-export-google-analytics-to-sheets-manual/</loc>
     <lastmod>2023-11-13T00:00:00+00:00</lastmod>
@@ -41,13 +68,7 @@
     <loc>https://blog.simon-hu.org/posts/2023.11.13-apache-server-shield-using-htaccess-file/</loc>
     <lastmod>2023-11-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.simon-hu.org/tags/</loc>
-    <lastmod>2023-11-13T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.simon-hu.org/tags/composer-1/</loc>
-    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.simon-hu.org/categories/drupal/</loc>
     <lastmod>2023-11-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.simon-hu.org/tags/drupal-8/</loc>
