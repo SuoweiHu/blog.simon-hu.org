@@ -11,13 +11,22 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 14 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.simon-hu.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.simon-hu.org/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Drupal</title>
       <link>https://blog.simon-hu.org/tags/drupal/</link>
-      <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://blog.simon-hu.org/tags/drupal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Drupal Error</title>
+      <link>https://blog.simon-hu.org/tags/drupal-error/</link>
+      <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/tags/drupal-error/</guid>
       <description></description>
     </item>
     
@@ -76,11 +85,47 @@
     </item>
     
     <item>
+      <title>Keybinding</title>
+      <link>https://blog.simon-hu.org/tags/keybinding/</link>
+      <pubDate>Mon, 13 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/tags/keybinding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Server</title>
       <link>https://blog.simon-hu.org/tags/server/</link>
       <pubDate>Mon, 13 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://blog.simon-hu.org/tags/server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vim</title>
+      <link>https://blog.simon-hu.org/tags/vim/</link>
+      <pubDate>Mon, 13 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/tags/vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vim Diary</title>
+      <link>https://blog.simon-hu.org/tags/vim-diary/</link>
+      <pubDate>Mon, 13 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/tags/vim-diary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vim Moiion</title>
+      <link>https://blog.simon-hu.org/tags/vim-moiion/</link>
+      <pubDate>Mon, 13 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/tags/vim-moiion/</guid>
       <description></description>
     </item>
     
@@ -112,15 +157,6 @@
     </item>
     
     <item>
-      <title>Vim</title>
-      <link>https://blog.simon-hu.org/tags/vim/</link>
-      <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.simon-hu.org/tags/vim/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>CORS Policy</title>
       <link>https://blog.simon-hu.org/tags/cors-policy/</link>
       <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
@@ -144,15 +180,6 @@
       <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://blog.simon-hu.org/tags/vim-configuration/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Vim Diary</title>
-      <link>https://blog.simon-hu.org/tags/vim-diary/</link>
-      <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.simon-hu.org/tags/vim-diary/</guid>
       <description></description>
     </item>
     
@@ -207,24 +234,6 @@
       <pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://blog.simon-hu.org/tags/mx-record/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Keybinding</title>
-      <link>https://blog.simon-hu.org/tags/keybinding/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.simon-hu.org/tags/keybinding/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Vim Moiion</title>
-      <link>https://blog.simon-hu.org/tags/vim-moiion/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.simon-hu.org/tags/vim-moiion/</guid>
       <description></description>
     </item>
     
