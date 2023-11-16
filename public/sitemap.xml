@@ -3,21 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.simon-hu.org/categories/</loc>
-    <lastmod>2023-11-15T00:00:00+00:00</lastmod>
+    <lastmod>2023-11-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/categories/drupal/</loc>
+    <lastmod>2023-11-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/posts/2023.11.16-drupal-debug-bracktrace/</loc>
+    <lastmod>2023-11-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/posts/</loc>
+    <lastmod>2023-11-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/</loc>
+    <lastmod>2023-11-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.simon-hu.org/tags/drupal/</loc>
     <lastmod>2023-11-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.simon-hu.org/categories/drupal/</loc>
+    <loc>https://blog.simon-hu.org/posts/2023.11.15-cpanel-drupal-settings.php/</loc>
     <lastmod>2023-11-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.simon-hu.org/tags/drupal-error/</loc>
-    <lastmod>2023-11-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.simon-hu.org/posts/</loc>
-    <lastmod>2023-11-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.simon-hu.org/</loc>
     <lastmod>2023-11-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.simon-hu.org/tags/</loc>

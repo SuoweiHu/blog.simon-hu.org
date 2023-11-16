@@ -11,17 +11,35 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 15 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.simon-hu.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.simon-hu.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Drupal Debug Trick: debug_backtrace / debug_print_backtrace</title>
+      <link>https://blog.simon-hu.org/posts/2023.11.16-drupal-debug-bracktrace/</link>
+      <pubDate>Thu, 16 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.11.16-drupal-debug-bracktrace/</guid>
+      <description>PENDING &amp;hellip; ORIGINAL POST ↓ I find this useful as a less memory intensive Drupal-friendly way to backtrace PHP as a one-off code snippet to temporarily drop into a troublesome location without installing modules or server-side tools:
+1 2 3 4 5 6 $trace = debug_backtrace(); $backtrace_lite = array(); foreach( $trace as $call ) { $backtrace_lite[] = $call[&amp;#39;function&amp;#39;].&amp;#34; &amp;#34;.$call[&amp;#39;file&amp;#39;].&amp;#34; line &amp;#34;.$call[&amp;#39;line&amp;#39;]; } debug( $backtrace_lite, &amp;#34;TRACE&amp;#34;, true ); It gets the backtrace into Drupal&amp;rsquo;s debugging system, but strips it down to the essentials to avoid failures when massive objects are involved.</description>
+    </item>
+    
+    <item>
+      <title>Drupal CLI - reading database configuration (at CPanel)</title>
+      <link>https://blog.simon-hu.org/posts/2023.11.15-cpanel-drupal-settings.php/</link>
+      <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.11.15-cpanel-drupal-settings.php/</guid>
+      <description>Version-1 1 2 3 4 5 6 7 8 9 10 11 12 settings=$( echo &amp;#34;sites/default/settings.php&amp;#34; ); database=$( cat &amp;#34;${settings}&amp;#34; | grep &amp;#34;&amp;#39;database&amp;#39; =&amp;gt;&amp;#34; | grep -v &amp;#34;*&amp;#34; | grep -v &amp;#34;#&amp;#34; | sed -n &amp;#34;s/&amp;#39;database&amp;#39; =&amp;gt; &amp;#39;\([^&amp;#39;]*\)&amp;#39;.*/\1/p&amp;#34; | sed -e &amp;#39;s/^[[:space:]]*//&amp;#39;) ; username=$( cat &amp;#34;${settings}&amp;#34; | grep &amp;#34;&amp;#39;username&amp;#39; =&amp;gt;&amp;#34; | grep -v &amp;#34;*&amp;#34; | grep -v &amp;#34;#&amp;#34; | sed -n &amp;#34;s/&amp;#39;username&amp;#39; =&amp;gt; &amp;#39;\([^&amp;#39;]*\)&amp;#39;.*/\1/p&amp;#34; | sed -e &amp;#39;s/^[[:space:]]*//&amp;#39;) ; password=$( cat &amp;#34;${settings}&amp;#34; | grep &amp;#34;&amp;#39;password&amp;#39; =&amp;gt;&amp;#34; | grep -v &amp;#34;*&amp;#34; | grep -v &amp;#34;#&amp;#34; | sed -n &amp;#34;s/&amp;#39;password&amp;#39; =&amp;gt; &amp;#39;\([^&amp;#39;]*\)&amp;#39;.</description>
+    </item>
+    
     <item>
       <title>The &#39;entity:user&#39; context is required and not present</title>
       <link>https://blog.simon-hu.org/posts/2023.11.15-the-entityuser-context-is-required-and-not-present/</link>
       <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://blog.simon-hu.org/posts/2023.11.15-the-entityuser-context-is-required-and-not-present/</guid>
-      <description>Error Message My Solution File: public_html/core/lib/Drupal/Core/ParamConverter/EntityConverter.php b/core/lib/Drupal/Core/ParamConverter/EntityConverter.php
+      <description>Error Message 1 Drupal\Component\Plugin\Exception\ContextException: The &amp;#39;entity:user&amp;#39; context is required and not present. in Drupal\Core\Plugin\Context\Context-&amp;gt;getContextValue() (line 73 of core/lib/Drupal/Core/Plugin/Context/Context.php). Working Solution for Me File: public_html/core/lib/Drupal/Core/ParamConverter/EntityConverter.php b/core/lib/Drupal/Core/ParamConverter/EntityConverter.php
 1 2 3 4 5 6 7 8 9 - if (isset($contexts[$context_id])) { - $account = $contexts[$context_id]-&amp;gt;getContextValue(); - unset($account-&amp;gt;_skipProtectedUserFieldConstraint); - unset($contexts[$context_id]); - } + if (isset($contexts[$context_id]) &amp;amp;&amp;amp; $contexts[$context_id]-&amp;gt;hasContextValue()) { + $account = $contexts[$context_id]-&amp;gt;getContextValue(); + unset($account-&amp;gt;_skipProtectedUserFieldConstraint, $contexts[$context_id]); + } Reference
-https://www.drupal.org/project/drupal/issues/3056234 https://www.drupal.org/files/issues/2023-09-08/3056234-44.patch Community Solution 1 File: public_html/core/lib/Drupal/Core/ParamConverter/EntityConverter.php b/core/lib/Drupal/Core/ParamConverter/EntityConverter.php
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 diff --git a/core/lib/Drupal/Core/ParamConverter/EntityConverter.</description>
+https://www.drupal.org/project/drupal/issues/3056234 https://www.drupal.org/files/issues/2023-09-08/3056234-44.patch Community Solution 1 File: public_html/core/lib/Drupal/Core/ParamConverter/EntityConverter.</description>
     </item>
     
     <item>
