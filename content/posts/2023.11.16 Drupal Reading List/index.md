@@ -1,6 +1,6 @@
 ---
 title: "Drupal Reading List"
-date: "2023-11-10"
+date: "2023-11-16"
 categories: ["Learning"]
 ---
 
