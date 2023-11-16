@@ -116,6 +116,15 @@ Reference LINK-1: How to password protect a website folder using .htaccess LINK-
     </item>
     
     <item>
+      <title>Drupal Reading List</title>
+      <link>https://blog.simon-hu.org/posts/2023.11.16-drupal-reading-list/</link>
+      <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.11.16-drupal-reading-list/</guid>
+      <description> jQuery Crash Course Series: https://www.youtube.com/watch?v=3nrLc_JOF7k&amp;amp;list=PLgT1LClcgVzFMNgCvv2ar0ZEg_ORBv2bw; PHP and Symfony: https://www.youtube.com/watch?v=a7_WFUlFS94; https://www.youtube.com/watch?v=QPky3r2prEI; https://www.youtube.com/watch?v=Bo0guUbL5uo; </description>
+    </item>
+    
+    <item>
       <title>Install drush on drupal 8 site (using downgraded composer ver.1)</title>
       <link>https://blog.simon-hu.org/posts/2023.11.10-install-drush-on-drupal-8-and-composer-1/</link>
       <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>

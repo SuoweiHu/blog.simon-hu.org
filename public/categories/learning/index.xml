@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Learning on Simon&#39;s Blog</title>
+    <link>https://blog.simon-hu.org/categories/learning/</link>
+    <description>Recent content in Learning on Simon&#39;s Blog</description>
+    <image>
+      <title>Simon&#39;s Blog</title>
+      <url>https://blog.simon-hu.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://blog.simon-hu.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 10 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.simon-hu.org/categories/learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Drupal Reading List</title>
+      <link>https://blog.simon-hu.org/posts/2023.11.16-drupal-reading-list/</link>
+      <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.11.16-drupal-reading-list/</guid>
+      <description> jQuery Crash Course Series: https://www.youtube.com/watch?v=3nrLc_JOF7k&amp;amp;list=PLgT1LClcgVzFMNgCvv2ar0ZEg_ORBv2bw; PHP and Symfony: https://www.youtube.com/watch?v=a7_WFUlFS94; https://www.youtube.com/watch?v=QPky3r2prEI; https://www.youtube.com/watch?v=Bo0guUbL5uo; </description>
+    </item>
+    
+    <item>
+      <title>Vim Reading List</title>
+      <link>https://blog.simon-hu.org/posts/2023.11.13-vim-reading-list/</link>
+      <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.11.13-vim-reading-list/</guid>
+      <description>Vim Privilege
+Medium - Why Vim is better than VSCode (About Vim Motion combination of &amp;ldquo;c,i,d&amp;rdquo; command and &amp;ldquo;w,p,&amp;rdquo;,{&amp;quot;)
+FreeCodeCamp - Why Vim Is More than Just an Editor
+Vim Motion / Vim Keybindings
+Vim Salesman - Vim Motions Guide (2022) Vim Configuration
+ThePrimeagen - 0 to LSP : Neovim RC From Scratch
+ThePrimeagen - How to Vim in 2023: Tips and Tricks</description>
+    </item>
+    
+  </channel>
+</rss>

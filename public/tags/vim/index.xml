@@ -26,21 +26,6 @@ yyp : copy current line and paste the line below</description>
     </item>
     
     <item>
-      <title>Vim Reading List</title>
-      <link>https://blog.simon-hu.org/posts/2023.11.13-vim-reading-list/</link>
-      <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.simon-hu.org/posts/2023.11.13-vim-reading-list/</guid>
-      <description>Vim Privilege
-Medium - Why Vim is better than VSCode (About Vim Motion combination of &amp;ldquo;c,i,d&amp;rdquo; command and &amp;ldquo;w,p,&amp;rdquo;,{&amp;quot;)
-FreeCodeCamp - Why Vim Is More than Just an Editor
-Vim Motion / Vim Keybindings
-Vim Salesman - Vim Motions Guide (2022) Vim Configuration
-ThePrimeagen - 0 to LSP : Neovim RC From Scratch
-ThePrimeagen - How to Vim in 2023: Tips and Tricks</description>
-    </item>
-    
-    <item>
       <title>My Vim Learning Diary 1</title>
       <link>https://blog.simon-hu.org/posts/2023.11.10-my-vim-learning-diary-1/</link>
       <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>

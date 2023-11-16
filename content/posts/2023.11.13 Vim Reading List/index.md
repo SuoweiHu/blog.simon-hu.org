@@ -1,8 +1,7 @@
 ---
 title: "Vim Reading List"
 date: "2023-11-10"
-tags: ["Vim"]
-categories: ["Vim"]
+categories: ["Learning"]
 ---
 
 Vim Privilege
