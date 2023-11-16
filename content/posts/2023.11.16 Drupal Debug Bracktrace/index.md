@@ -26,3 +26,10 @@ It gets the backtrace into Drupal's debugging system, but strips it down to the 
 - [Drupal Answers - 1](https://drupal.stackexchange.com/questions/195219/how-to-get-a-backtrace-in-drupal-without-problems-like-out-of-memory-when-huge)
 - [Drupal Answers - 2](https://drupal.stackexchange.com/questions/239099/how-to-use-dddebug-backtrace-for-an-error-debugging)
 - [PHP Documentation - debug_backtrace](https://www.php.net/manual/en/function.debug-backtrace.php)
+
+
+## Example Screenshot
+
+![2023.11.16 - 161209](2023.11.16%20-%20161209.jpg)
+
+![2023.11.16 - 161203](2023.11.16%20-%20161203.jpg)
