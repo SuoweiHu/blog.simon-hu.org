@@ -1,10 +1,10 @@
 ---
-title: "Vim Reading List"
+title: "Reading List - Vim"
 date: "2023-11-10"
 categories: ["Learning"]
 ---
 
-Vim Privilege
+## Vim Privilege
 
 -   [x] [Medium - Why Vim is better than VSCode (About Vim Motion combination of "c,i,d" command and "w,p,",{")](https://sean-warman.medium.com/why-vim-is-better-than-vscode-d09e2355eb37)
 
@@ -12,13 +12,13 @@ Vim Privilege
 
 
 
-Vim Motion / Vim Keybindings
+## Vim Motion / Vim Keybindings
 
 -   [ ] [Vim Salesman - Vim Motions Guide (2022)](https://www.youtube.com/watch?v=hsFnJgmLOLk)
 
 
 
-Vim Configuration
+## Vim Configuration
 
 -   [x] [ThePrimeagen - 0 to LSP : Neovim RC From Scratch](https://www.youtube.com/watch?v=w7i4amO_zaE&t=1s)
 
