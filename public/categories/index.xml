@@ -22,6 +22,15 @@
     </item>
     
     <item>
+      <title>Learning</title>
+      <link>https://blog.simon-hu.org/categories/learning/</link>
+      <pubDate>Thu, 16 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/categories/learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Google Tag Manager (GTM)</title>
       <link>https://blog.simon-hu.org/categories/google-tag-manager-gtm/</link>
       <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
@@ -54,15 +63,6 @@
       <pubDate>Mon, 13 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://blog.simon-hu.org/categories/vim/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Learning</title>
-      <link>https://blog.simon-hu.org/categories/learning/</link>
-      <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.simon-hu.org/categories/learning/</guid>
       <description></description>
     </item>
     

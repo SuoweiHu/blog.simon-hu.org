@@ -11,6 +11,12 @@
     <loc>https://blog.simon-hu.org/posts/2023.11.16-drupal-debug-bracktrace/</loc>
     <lastmod>2023-11-16T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://blog.simon-hu.org/posts/2023.11.16-drupal-reading-list/</loc>
+    <lastmod>2023-11-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/categories/learning/</loc>
+    <lastmod>2023-11-16T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.simon-hu.org/posts/</loc>
     <lastmod>2023-11-16T00:00:00+00:00</lastmod>
   </url><url>
@@ -104,16 +110,10 @@
     <loc>https://blog.simon-hu.org/tags/drupal-8/</loc>
     <lastmod>2023-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.simon-hu.org/posts/2023.11.16-drupal-reading-list/</loc>
-    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.simon-hu.org/tags/drush/</loc>
     <lastmod>2023-11-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.simon-hu.org/posts/2023.11.10-install-drush-on-drupal-8-and-composer-1/</loc>
-    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.simon-hu.org/categories/learning/</loc>
     <lastmod>2023-11-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.simon-hu.org/posts/2023.11.13-vim-reading-list/</loc>

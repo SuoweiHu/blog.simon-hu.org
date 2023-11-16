@@ -23,6 +23,15 @@
     </item>
     
     <item>
+      <title>Drupal Reading List</title>
+      <link>https://blog.simon-hu.org/posts/2023.11.16-drupal-reading-list/</link>
+      <pubDate>Thu, 16 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.11.16-drupal-reading-list/</guid>
+      <description> jQuery Crash Course Series: https://www.youtube.com/watch?v=3nrLc_JOF7k&amp;amp;list=PLgT1LClcgVzFMNgCvv2ar0ZEg_ORBv2bw; PHP and Symfony: https://www.youtube.com/watch?v=a7_WFUlFS94; https://www.youtube.com/watch?v=QPky3r2prEI; https://www.youtube.com/watch?v=Bo0guUbL5uo; </description>
+    </item>
+    
+    <item>
       <title>Drupal CLI - reading database configuration (at CPanel)</title>
       <link>https://blog.simon-hu.org/posts/2023.11.15-cpanel-drupal-settings.php/</link>
       <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
@@ -113,15 +122,6 @@ yyp : copy current line and paste the line below</description>
       <guid>https://blog.simon-hu.org/posts/2023.11.13-apache-server-shield-using-htaccess-file/</guid>
       <description>PENDING &amp;hellip;.. (Manual Replacement for the &amp;ldquo;Drupal Shield&amp;rdquo; )
 Reference LINK-1: How to password protect a website folder using .htaccess LINK-2: Password protecting your site with an .htaccess file (NOT RECOMMENDED) </description>
-    </item>
-    
-    <item>
-      <title>Drupal Reading List</title>
-      <link>https://blog.simon-hu.org/posts/2023.11.16-drupal-reading-list/</link>
-      <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.simon-hu.org/posts/2023.11.16-drupal-reading-list/</guid>
-      <description> jQuery Crash Course Series: https://www.youtube.com/watch?v=3nrLc_JOF7k&amp;amp;list=PLgT1LClcgVzFMNgCvv2ar0ZEg_ORBv2bw; PHP and Symfony: https://www.youtube.com/watch?v=a7_WFUlFS94; https://www.youtube.com/watch?v=QPky3r2prEI; https://www.youtube.com/watch?v=Bo0guUbL5uo; </description>
     </item>
     
     <item>
