@@ -5,7 +5,7 @@ categories: ["Learning"]
 
 ## Vim Privilege
 
--   [x] [Medium - Why Vim is better than VSCode (About Vim Motion combination of "c,i,d" command and "w,p,",{")](https://sean-warman.medium.com/why-vim-is-better-than-vscode-d09e2355eb37)
+-   [x] [Medium - Why Vim is better than VSCode (About Vim Motion combination of "c,i,d" command and "l,w,p,",{")](https://sean-warman.medium.com/why-vim-is-better-than-vscode-d09e2355eb37)
 
 -   [ ] [FreeCodeCamp - Why Vim Is More than Just an Editor](https://www.freecodecamp.org/news/vim-language-and-motions-explained/)
 
