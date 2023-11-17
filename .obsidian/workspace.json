@@ -1,0 +1,155 @@
+{
+  "main": {
+    "id": "8dfc3c5b5d35860a",
+    "type": "split",
+    "children": [
+      {
+        "id": "2e8398ec654eebfb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b286ba06502b4a7d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/posts/2023-11-17 Why SCSS (CSS vs SCSS)/index.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e731e8a6ba2a5116",
+    "type": "split",
+    "children": [
+      {
+        "id": "2fa798a666cae04e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "56b85628633eec76",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "557cfa839e3131a4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e47bed8cb57b21ab",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "cd7d1a562a5ae953",
+    "type": "split",
+    "children": [
+      {
+        "id": "b884fa1a37cd9f60",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7b16060f5b80e33a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "content/posts/2023-11-17 Why SCSS (CSS vs SCSS)/index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "24b1a3ae2716817f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "content/posts/2023-11-17 Why SCSS (CSS vs SCSS)/index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "233e8f14eee4efc8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "214288ae4bf3e8a9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "content/posts/2023-11-17 Why SCSS (CSS vs SCSS)/index.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": true,
+      "graph:Open graph view": true,
+      "daily-notes:Open today's daily note": true,
+      "templates:Insert template": true,
+      "command-palette:Open command palette": true
+    }
+  },
+  "active": "b286ba06502b4a7d",
+  "lastOpenFiles": [
+    "Untitled.canvas",
+    "posts/2023.11.13 Export Google Analytics to Sheets - Using Add-on/index.md",
+    "posts/2023.11.13 Export Google Analytics to Sheets - Using Add-on/2023.11.13 - 133746.jpg",
+    "posts/2023.11.10 My VIM Learning Diary 1/index.md"
+  ]
+}
