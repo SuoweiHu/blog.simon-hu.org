@@ -1,6 +1,5 @@
 ---
 title: "Reading List - Vim"
-date: "2023-11-10"
 categories: ["Learning"]
 ---
 

@@ -3,7 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.simon-hu.org/categories/</loc>
-    <lastmod>2023-11-16T00:00:00+00:00</lastmod>
+    <lastmod>2023-11-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/categories/learning/</loc>
+    <lastmod>2023-11-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/read/reading-list-bullet-journal/</loc>
+    <lastmod>2023-11-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/read/</loc>
+    <lastmod>2023-11-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.simon-hu.org/</loc>
+    <lastmod>2023-11-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.simon-hu.org/categories/drupal/</loc>
     <lastmod>2023-11-16T00:00:00+00:00</lastmod>
@@ -11,16 +23,10 @@
     <loc>https://blog.simon-hu.org/posts/2023.11.16-drupal-debug-bracktrace/</loc>
     <lastmod>2023-11-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.simon-hu.org/posts/2023.11.16-drupal-reading-list/</loc>
-    <lastmod>2023-11-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.simon-hu.org/categories/learning/</loc>
-    <lastmod>2023-11-16T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.simon-hu.org/posts/</loc>
     <lastmod>2023-11-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.simon-hu.org/</loc>
+    <loc>https://blog.simon-hu.org/read/reading-list-drupal-related/</loc>
     <lastmod>2023-11-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.simon-hu.org/tags/drupal/</loc>
@@ -116,9 +122,6 @@
     <loc>https://blog.simon-hu.org/posts/2023.11.10-install-drush-on-drupal-8-and-composer-1/</loc>
     <lastmod>2023-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.simon-hu.org/posts/2023.11.13-vim-reading-list/</loc>
-    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.simon-hu.org/posts/2023.11.08-browser-cors-policy-and-csrf-attack/</loc>
     <lastmod>2023-11-08T00:00:00+00:00</lastmod>
   </url><url>
@@ -181,7 +184,9 @@
   </url><url>
     <loc>https://blog.simon-hu.org/archives/</loc>
   </url><url>
-    <loc>https://blog.simon-hu.org/resume/</loc>
+    <loc>https://blog.simon-hu.org/read/reading-list-git/</loc>
+  </url><url>
+    <loc>https://blog.simon-hu.org/read/reading-list-vim-cli-tui/</loc>
   </url><url>
     <loc>https://blog.simon-hu.org/search/</loc>
   </url><url>

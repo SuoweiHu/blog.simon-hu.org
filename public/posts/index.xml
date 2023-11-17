@@ -23,15 +23,6 @@
     </item>
     
     <item>
-      <title>Drupal Reading List</title>
-      <link>https://blog.simon-hu.org/posts/2023.11.16-drupal-reading-list/</link>
-      <pubDate>Thu, 16 Nov 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.simon-hu.org/posts/2023.11.16-drupal-reading-list/</guid>
-      <description> jQuery Crash Course Series: https://www.youtube.com/watch?v=3nrLc_JOF7k&amp;amp;list=PLgT1LClcgVzFMNgCvv2ar0ZEg_ORBv2bw; PHP and Symfony: https://www.youtube.com/watch?v=a7_WFUlFS94; https://www.youtube.com/watch?v=QPky3r2prEI; https://www.youtube.com/watch?v=Bo0guUbL5uo; </description>
-    </item>
-    
-    <item>
       <title>Drupal CLI - reading database configuration (at CPanel)</title>
       <link>https://blog.simon-hu.org/posts/2023.11.15-cpanel-drupal-settings.php/</link>
       <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
@@ -133,21 +124,6 @@ Reference LINK-1: How to password protect a website folder using .htaccess LINK-
       <description>Intuition I was recently working on a client site, and I got to the issue where the site will show &amp;ldquo;Page unavailable&amp;rdquo; upon login. And upon the suspicion of a mis-placed module or uncleared cache, I wanted to install drush to perform some drush commands.
 I ran composer require drush/drush which will install the most recent compatible drush on my current working directory, but then I got this error:
 1 2 3 4 5 6 .</description>
-    </item>
-    
-    <item>
-      <title>Vim Reading List</title>
-      <link>https://blog.simon-hu.org/posts/2023.11.13-vim-reading-list/</link>
-      <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.simon-hu.org/posts/2023.11.13-vim-reading-list/</guid>
-      <description>Vim Privilege
-Medium - Why Vim is better than VSCode (About Vim Motion combination of &amp;ldquo;c,i,d&amp;rdquo; command and &amp;ldquo;w,p,&amp;rdquo;,{&amp;quot;)
-FreeCodeCamp - Why Vim Is More than Just an Editor
-Vim Motion / Vim Keybindings
-Vim Salesman - Vim Motions Guide (2022) Vim Configuration
-ThePrimeagen - 0 to LSP : Neovim RC From Scratch
-ThePrimeagen - How to Vim in 2023: Tips and Tricks</description>
     </item>
     
     <item>

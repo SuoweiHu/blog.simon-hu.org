@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Reads on Simon&#39;s Blog</title>
+    <link>https://blog.simon-hu.org/read/</link>
+    <description>Recent content in Reads on Simon&#39;s Blog</description>
+    <image>
+      <title>Simon&#39;s Blog</title>
+      <url>https://blog.simon-hu.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://blog.simon-hu.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 17 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.simon-hu.org/read/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reading List - Bullet Journal</title>
+      <link>https://blog.simon-hu.org/read/reading-list-bullet-journal/</link>
+      <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/read/reading-list-bullet-journal/</guid>
+      <description> 子弹笔记方法介绍 子弹笔记：高效便捷的万能笔记法&amp;amp;日程规划神器（入门） </description>
+    </item>
+    
+    <item>
+      <title>Reading List - Drupal</title>
+      <link>https://blog.simon-hu.org/read/reading-list-drupal-related/</link>
+      <pubDate>Thu, 16 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/read/reading-list-drupal-related/</guid>
+      <description>jQuery jQuery Crash Course Series: https://www.youtube.com/watch?v=3nrLc_JOF7k&amp;amp;list=PLgT1LClcgVzFMNgCvv2ar0ZEg_ORBv2bw; PHP PHP and Symfony: https://www.youtube.com/watch?v=a7_WFUlFS94; https://www.youtube.com/watch?v=QPky3r2prEI; https://www.youtube.com/watch?v=Bo0guUbL5uo; </description>
+    </item>
+    
+    <item>
+      <title>Reading List - Git</title>
+      <link>https://blog.simon-hu.org/read/reading-list-git/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/read/reading-list-git/</guid>
+      <description>Git Rebase
+Atlassian - Git Rebase Atlassian - Merge vs Rebase </description>
+    </item>
+    
+    <item>
+      <title>Reading List - Vim</title>
+      <link>https://blog.simon-hu.org/read/reading-list-vim-cli-tui/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/read/reading-list-vim-cli-tui/</guid>
+      <description>Vim Privilege Medium - Why Vim is better than VSCode (About Vim Motion combination of &amp;ldquo;c,i,d&amp;rdquo; command and &amp;ldquo;w,p,&amp;rdquo;,{&amp;quot;)
+FreeCodeCamp - Why Vim Is More than Just an Editor
+Vim Motion / Vim Keybindings Vim Salesman - Vim Motions Guide (2022) Vim Configuration ThePrimeagen - 0 to LSP : Neovim RC From Scratch
+ThePrimeagen - How to Vim in 2023: Tips and Tricks</description>
+    </item>
+    
+  </channel>
+</rss>
