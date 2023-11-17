@@ -8,6 +8,9 @@
     <loc>https://blog.simon-hu.org/categories/learning/</loc>
     <lastmod>2023-11-17T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://blog.simon-hu.org/posts/</loc>
+    <lastmod>2023-11-17T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.simon-hu.org/read/reading-list-bullet-journal/</loc>
     <lastmod>2023-11-17T00:00:00+00:00</lastmod>
   </url><url>
@@ -17,13 +20,13 @@
     <loc>https://blog.simon-hu.org/</loc>
     <lastmod>2023-11-17T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://blog.simon-hu.org/posts/2023.11.17-why-scss-css-vs-scss/</loc>
+    <lastmod>2023-11-17T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.simon-hu.org/categories/drupal/</loc>
     <lastmod>2023-11-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.simon-hu.org/posts/2023.11.16-drupal-debug-bracktrace/</loc>
-    <lastmod>2023-11-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.simon-hu.org/posts/</loc>
     <lastmod>2023-11-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.simon-hu.org/read/reading-list-drupal-related/</loc>
@@ -183,6 +186,8 @@
     <lastmod>2023-10-24T11:30:03+11:00</lastmod>
   </url><url>
     <loc>https://blog.simon-hu.org/archives/</loc>
+  </url><url>
+    <loc>https://blog.simon-hu.org/categories/css/scss/</loc>
   </url><url>
     <loc>https://blog.simon-hu.org/read/reading-list-git/</loc>
   </url><url>

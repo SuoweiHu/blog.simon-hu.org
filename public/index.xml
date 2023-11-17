@@ -22,6 +22,16 @@
     </item>
     
     <item>
+      <title>Why SCSS ? (SCSS vs CSS)</title>
+      <link>https://blog.simon-hu.org/posts/2023.11.17-why-scss-css-vs-scss/</link>
+      <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.simon-hu.org/posts/2023.11.17-why-scss-css-vs-scss/</guid>
+      <description>TLDR; SCSS is a super-set of CSS
+Intuition To begin with, why would a person be interested in this SCSS style-sheet that cannot be directly interpreted by the browser engine, but rather require extra &amp;ldquo;compilation&amp;rdquo; into the CSS style-sheet before use? This is of course because SCSS have some advanced features to CSS, however as time goes, some of the concept from SCSS also gets penetrated and adopted by the CSS standards (For instance: CSS has no nesting feature until 2023 March, CSS has no variables until 2014, for reference SCSS dates back to as far as 2007).</description>
+    </item>
+    
+    <item>
       <title>Drupal Debug Trick: debug_backtrace / debug_print_backtrace</title>
       <link>https://blog.simon-hu.org/posts/2023.11.16-drupal-debug-bracktrace/</link>
       <pubDate>Thu, 16 Nov 2023 00:00:00 +0000</pubDate>
@@ -255,7 +265,7 @@ Atlassian - Git Rebase Atlassian - Merge vs Rebase </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://blog.simon-hu.org/read/reading-list-vim-cli-tui/</guid>
-      <description>Vim Privilege Medium - Why Vim is better than VSCode (About Vim Motion combination of &amp;ldquo;c,i,d&amp;rdquo; command and &amp;ldquo;w,p,&amp;rdquo;,{&amp;quot;)
+      <description>Vim Privilege Medium - Why Vim is better than VSCode (About Vim Motion combination of &amp;ldquo;c,i,d&amp;rdquo; command and &amp;ldquo;l,w,p,&amp;rdquo;,{&amp;quot;)
 FreeCodeCamp - Why Vim Is More than Just an Editor
 Vim Motion / Vim Keybindings Vim Salesman - Vim Motions Guide (2022) Vim Configuration ThePrimeagen - 0 to LSP : Neovim RC From Scratch
 ThePrimeagen - How to Vim in 2023: Tips and Tricks</description>
