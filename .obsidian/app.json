@@ -1,3 +1,10 @@
 {
-  "promptDelete": false
+  "promptDelete": false,
+  "propertiesInDocument": "visible",
+  "vimMode": true,
+  "livePreview": false,
+  "defaultViewMode": "source",
+  "foldHeading": false,
+  "foldIndent": false,
+  "showLineNumber": true
 }
