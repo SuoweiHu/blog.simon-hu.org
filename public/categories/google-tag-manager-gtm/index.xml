@@ -14,10 +14,10 @@
     <lastBuildDate>Tue, 14 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.simon-hu.org/categories/google-tag-manager-gtm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What/Why Google Tag Manager (GTM)</title>
-      <link>https://blog.simon-hu.org/posts/2023.11.14-what-and-why-google-tag-manager/</link>
+      <link>https://blog.simon-hu.org/posts/2023-11-14-what-and-why-google-tag-manager/</link>
       <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.simon-hu.org/posts/2023.11.14-what-and-why-google-tag-manager/</guid>
+      <guid>https://blog.simon-hu.org/posts/2023-11-14-what-and-why-google-tag-manager/</guid>
       <description>Intuition To begin with, I looked for the definition of &amp;ldquo;tag&amp;rdquo; in the Google Tag Manager&amp;rsquo;s context, according to their official documentation, they refer tags as &amp;ldquo;segments of code provided by analytics, marketing, and support vendors to help you integrate their product into your website or mobile apps&amp;rdquo;, so bascially you can think of tag like a chunk of script for third party plug-in (like for example: HotJar (a digital expereience insight and behavior analytics tool))</description>
     </item>
     

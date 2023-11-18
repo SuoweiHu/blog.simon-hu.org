@@ -14,10 +14,10 @@
     <lastBuildDate>Mon, 13 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.simon-hu.org/tags/keybinding/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Vim Learning Diary 2</title>
-      <link>https://blog.simon-hu.org/posts/2023.11.11-my-vim-learning-diary-2/</link>
+      <link>https://blog.simon-hu.org/posts/2023-11-11-my-vim-learning-diary-2/</link>
       <pubDate>Mon, 13 Nov 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.simon-hu.org/posts/2023.11.11-my-vim-learning-diary-2/</guid>
+      <guid>https://blog.simon-hu.org/posts/2023-11-11-my-vim-learning-diary-2/</guid>
       <description>Vim Motion / Keybinding Here I will keep some of the vim motion &amp;amp; keybinding. (meanwhile I will keep updating this to remove those that I got very familiar, and add those that I found useful along the journey):
 o/O: add cursor above/below current line
 ==: fixing indentation for current line

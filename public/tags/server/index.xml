@@ -14,10 +14,10 @@
     <lastBuildDate>Mon, 13 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.simon-hu.org/tags/server/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Shield for Apache Server using htaccess/htpasswd</title>
-      <link>https://blog.simon-hu.org/posts/2023.11.13-apache-server-shield-using-htaccess-file/</link>
+      <link>https://blog.simon-hu.org/posts/2023-11-13-apache-server-shield-using-htaccess-file/</link>
       <pubDate>Mon, 13 Nov 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.simon-hu.org/posts/2023.11.13-apache-server-shield-using-htaccess-file/</guid>
+      <guid>https://blog.simon-hu.org/posts/2023-11-13-apache-server-shield-using-htaccess-file/</guid>
       <description>PENDING &amp;hellip;.. (Manual Replacement for the &amp;ldquo;Drupal Shield&amp;rdquo; )
 Reference LINK-1: How to password protect a website folder using .htaccess LINK-2: Password protecting your site with an .htaccess file (NOT RECOMMENDED) </description>
     </item>
