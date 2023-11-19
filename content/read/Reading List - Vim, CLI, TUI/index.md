@@ -9,12 +9,12 @@ categories: ["Learning"]
 
 -   [ ] [FreeCodeCamp - Why Vim Is More than Just an Editor](https://www.freecodecamp.org/news/vim-language-and-motions-explained/)
 
-
-
 ## Vim Motion / Vim Keybindings
 
 -   [ ] [Vim Salesman - Vim Motions Guide (2022)](https://www.youtube.com/watch?v=hsFnJgmLOLk)
 
+-   [x] [Vim Tutorial - Vim Ninja (Purchased)](https://www.vimninja.com/)
+-   [x] [Vim Tutorial - Vim.so (Too Expendsive)](https://www.learnvim.com/)
 
 
 ## Vim Configuration
