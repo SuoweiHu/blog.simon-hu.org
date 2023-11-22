@@ -20,10 +20,10 @@ other filter:   abs batch capitalize column convert_encoding country_name curren
 ## Twig filters: drupal specific filters
 ```
 * raw           : This filter should be avoided whenever possible, particularly if you're outputting data that could be user-entered.
+* clean_class   : This filter prepares a string for use as a valid HTML class name. (for instance "txt/raw" to "txt-raw")
 * render        : This filter is a wrapper for the render() function. It takes a render array and outputs rendered HTML markup. This can be useful if you want to apply an additional filter (such as stripping tags), or if you want to make a conditional based on the rendered output (for example, if you have a non-empty render array that returns an empty string). It also can be used on strings and certain objects, mainly those implementing the toString() method.
 trans           : This filter (alternatively, t) will run the variable through the Drupal t() function, which will return a translated string. This filter should be used for any interface strings manually placed in the template that will appear for users.
 placeholder     : This filter escapes content to HTML and formats it using drupal_placeholder(), which makes it display as emphasized text.
-clean_class     : This filter prepares a string for use as a valid HTML class name.
 format_date     : This filter prepares a timestamp for use as a formatted date string
 safe_join       : The safe_join filter joins several strings together with a supplied separator
 without         : The without filter creates a copy of the renderable array and removes child elements by key specified through arguments passed to the filter. The copy can be printed without these elements. The original renderable array is still available and can be used to print child elements in their entirety in the twig template.
