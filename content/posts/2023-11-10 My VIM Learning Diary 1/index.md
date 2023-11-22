@@ -43,6 +43,7 @@ At this point you might be expecting some dot points listing for the advantage, 
 
 - It is COOL !!!! No one else knows how you do it and you looks like wizards !!!!
 - It will run fast on any computer, and does not eats up much of the memory.
+- (Why not to use lazy-vim) If you would like to use lazy-vim, you might rather use vscode with the vim extension.
 
 
 
