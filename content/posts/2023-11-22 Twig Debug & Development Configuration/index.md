@@ -1,5 +1,5 @@
 ---
-title: "Twig - Debug/Development Environment Configuration"
+title: "Twig - Debug/Development Environment - Setting Configuration"
 date: "2023-11-22"
 categories: ["twig"]
 ---
