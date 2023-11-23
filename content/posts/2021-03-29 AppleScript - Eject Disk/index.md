@@ -1,6 +1,6 @@
 ---
 title: "AppleScript - Eject Disk"
-date: "2020-03-29"
+date: "2021-03-29"
 tags: ["AppleScript"]
 categories: ["Utility"]
 ---

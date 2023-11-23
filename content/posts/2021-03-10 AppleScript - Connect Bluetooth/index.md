@@ -1,6 +1,6 @@
 ---
 title: "AppleScript - Connect Bluetooth"
-date: "2020-03-10"
+date: "2021-03-10"
 tags: ["AppleScript"]
 categories: ["Utility"]
 ---
