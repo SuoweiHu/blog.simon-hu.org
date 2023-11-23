@@ -1,6 +1,6 @@
 ---
 title: "WSS Report - Hierarchy and Details "
-date: "2023-11-13"
+date: "2022-10-29"
 categories: ["Web Audit"]
 ---
 
