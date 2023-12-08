@@ -109,6 +109,6 @@ jQuery(document).ready(function(){
 ---
 
 ## Reference
-
+- [\*Avoiding Conflicts with Other Libraries](https://learn.jquery.com/using-jquery-core/avoid-conflicts-other-libraries/)
 - [https://stackoverflow.com/questions/6746352](https://stackoverflow.com/questions/6746352/replace-dollar-sign-with-jquery#:~:text=noConflict()%20%22frees%22%20the%20%22,%22%20with%20%22jQuery%22%3B%20.&text=Calling%20noConflict()%20removes%20the,the%20%24%20and%20the%20jQuery%20function.)
 - [https://dannyda.com/2022/05/22/how-to-use-jquery-where-we-cant-use-the-dollar-sign-does-not-work/](https://dannyda.com/2022/05/22/how-to-use-jquery-where-we-cant-use-the-dollar-sign-does-not-work/)
