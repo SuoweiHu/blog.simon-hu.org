@@ -1,6 +1,6 @@
 ---
 title: "Drupal Error: Update No available releases found"
-date: "2024-01-08"
+date: "2024-01-07"
 categories: ["Drupal"]
 ---
 
@@ -13,13 +13,13 @@ I found this error when inspecting one of my client's website, of "update manage
 
 ## Resolution
 
-While checking updates Drupal creates some rows inside the `key_value` table which should be deleted after checking is complete but looks like they doesn't for some reason. So deleting the related rows manually solved my problem ([reference](https://drupal.stackexchange.com/questions/232520/cannot-update-no-available-releases-found)): 
+While checking updates Drupal creates some rows inside the `key_value` table which should be deleted after checking is complete but looks like they doesn't for some reason. So deleting the related rows manually solved my problem ([reference](https://drupal.stackexchange.com/questions/232520/cannot-update-no-available-releases-found)):
 
 ```
 DELETE FROM key_value WHERE collection = 'update_fetch_task';
 ```
 
-You can run this SQL query via drush 
+You can run this SQL query via drush
 
 ```
 drush sql-query "DELETE FROM key_value WHERE collection='update_fetch_task'"
