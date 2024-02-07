@@ -1,6 +1,6 @@
 ---
 title: "CSS Media Query"
-date: "2024-02-08T091142"
+date: "2024-02-08"
 categories: ["CSS"]
 ---
 
@@ -31,7 +31,7 @@ An alternative way of using the meidia query on the html file, below are some ex
 <link rel="stylesheet" media="screen and (min-width: 701px) and (max-width: 900px)" href="example2.css">
 ```
 
-## Syntax Detail:
+## Syntax Detail
 
 
 **Operand**
