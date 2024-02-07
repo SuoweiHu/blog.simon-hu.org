@@ -65,3 +65,10 @@ Meaning of the `not`, `only`, and `and` keywords:
 |`min-width`  | Minimum width of the viewport                       |
 |`width`      | Width of the viewport (including scrollbar)         |
 
+
+
+
+## Reference
+
+- [W3School - Link1](https://www.w3schools.com/css/css3_mediaqueries.asp)
+- [W3School - Link2](https://www.w3schools.com/cssref/css3_pr_mediaquery.php)
