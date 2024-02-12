@@ -19,7 +19,7 @@ The following module is marked as installed in the core.extension configuration,
 
 If you have access to the command-line-interface and drush command, you can do it via:
 ```
-    $ ahoy drush cdel core.extension module.MYMODULE
+    $ drush cdel core.extension module.MYMODULE
 ```
 (OR) If you have acccess to the configuration synchronization, you can also do that via exporting the configuration, manually changing the `core.extension`, then importing the modified configruation again.
 
