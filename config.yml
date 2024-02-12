@@ -142,7 +142,7 @@ menu:
     #   url: https://example.org
     #   weight: 30
     - identifier: read
-      name: "<Read>"
+      name: "🔍❓❗️"
       url: /read/
       weight: 89
     - identifier: search
