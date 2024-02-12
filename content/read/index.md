@@ -1,6 +1,5 @@
 ---
 title: "Reading List - All"
-date: "2024-02-12T151759"
 categories: ["Learning"]
 ---
 
