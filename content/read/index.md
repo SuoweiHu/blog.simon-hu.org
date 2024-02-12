@@ -13,10 +13,10 @@ categories: ["Learning"]
 ## Completed
 ```markdown
 - [x] `2024-02-12T152310` CSS Trick: [Understanding Layout Algorithm](https://www.joshwcomeau.com/css/understanding-layout-algorithms/)
+- [x] `2024-02-12T152536` Git Rebase: [Atlassian - Git Rebase](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)
+- [x] `2024-02-12T152536` Git Rebase: [Atlassian - Merge vs Rebase](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
 - [x] `2023-12-30T000000` Vim Privilege: [Medium - Why Vim is better than VSCode (About Vim Motion combination of "c,i,d" command and "l,w,p,",{")](https://sean-warman.medium.com/why-vim-is-better-than-vscode-d09e2355eb37)
 - [x] `2023-12-30T000000` Vim Motion / Vim Keybindings: [Vim Tutorial - Vim Ninja (Purchased)](https://www.vimninja.com/)
 - [x] `2023-12-30T000000` Vim Motion / Vim Keybindings: [Vim Tutorial - Vim.so (Too Expendsive)](https://www.learnvim.com/)
 - [x] `2023-12-30T000000` Vim Configuration: [ThePrimeagen - 0 to LSP : Neovim RC From Scratch](https://www.youtube.com/watch?v=w7i4amO_zaE&t=1s)
-- [x] `2024-02-12T152536` Git Rebase: [Atlassian - Git Rebase](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)
-- [x] `2024-02-12T152536` Git Rebase: [Atlassian - Merge vs Rebase](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
 ```
