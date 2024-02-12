@@ -1,6 +1,6 @@
 ---
 title: "Drupal Module Installed but "
-date: "2024-02-13"
+date: "2024-02-11"
 categories: ["Drupal"]
 ---
 
