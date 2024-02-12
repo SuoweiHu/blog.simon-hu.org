@@ -3,12 +3,17 @@ title: "Reading List - All"
 categories: ["Learning"]
 ---
 
+
+<!-- █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ -->
+
 ## Pending
 - [ ] `2024-02-12T152519` CSS Trick: [Designing Beautiful Shadows in CSS](https://www.joshwcomeau.com/css/designing-shadows/)
 - [ ] `2024-02-12T152519` 子弹笔记: [方法介绍](https://zhuanlan.zhihu.com/p/87612890)
 - [ ] `2024-02-12T152519` 子弹笔记: [高效便捷的万能笔记法&日程规划神器（入门）](https://zhuanlan.zhihu.com/p/111703197)
 - [ ] `2024-02-12T152726` Drupal Rel: jQuery [Crash Course Series](https://www.youtube.com/watch?v=3nrLc_JOF7k&list=PLgT1LClcgVzFMNgCvv2ar0ZEg_ORBv2bw)
 - [ ] `2024-02-12T152726` Drupal Rel: Symfony [Symfony for beginner](https://www.youtube.com/watch?v=QPky3r2prEI)
+
+<!-- █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ -->
 
 ## Completed
 ```markdown
@@ -20,3 +25,5 @@ categories: ["Learning"]
 - [x] `2023-12-30T000000` Vim Motion / Vim Keybindings: [Vim Tutorial - Vim.so (Too Expendsive)](https://www.learnvim.com/)
 - [x] `2023-12-30T000000` Vim Configuration: [ThePrimeagen - 0 to LSP : Neovim RC From Scratch](https://www.youtube.com/watch?v=w7i4amO_zaE&t=1s)
 ```
+
+<!-- █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ -->
