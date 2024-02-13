@@ -117,14 +117,18 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
+    - identifier: read
+      name: "📙"
+      url: /read/
+      weight: 1
     - identifier: archives
-      name: Archive
+      name: Timeline
       url: /archives/
       weight: 10
-    - identifier: categories
-      name: Categories
-      url: /categories/
-      weight: 20
+    # - identifier: categories
+    #   name: Categories
+    #   url: /categories/
+    #   weight: 20
     # - identifier: series
     #   name: Series
     #   url: /series/
@@ -141,10 +145,6 @@ menu:
     #   name: example.org
     #   url: https://example.org
     #   weight: 30
-    - identifier: read
-      name: "🔍❓❗️"
-      url: /read/
-      weight: 89
     - identifier: search
       name: "Search"
       url: /search/
