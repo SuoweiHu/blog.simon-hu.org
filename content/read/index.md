@@ -1,11 +1,39 @@
 ---
-title: "Reading List - All"
+title: "Reading List"
 categories: ["Learning"]
 ---
+
+
+
+
+## Scratch Pad
+```
+css repeat(4, 1fr)
+css minmax()
+css min()
+cd -  #cd with - sign will return you to the previous directory
+cd    #cd with no argument will make you return to the root dir
+
+
+Masonry Layout In CSS Grid
+https://www.youtube.com/watch?v=KrPz_wmBsAE
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Masonry_layout
+https://www.smashingmagazine.com/native-css-masonry-layout-css-grid/
+
+
+https://icodethis.com/
+```
+
+
+<!-- ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ -->
+
+
+## Reading List
 
 | Status  |   | Kind                         |   | Title                                                                                                                                                                                            | Last Read (or add)  |
 | :-----: | - | :--------------------------: | - | :---------------------------------------------------------------------------------------------------------------------------------------------------------------                                 | :-----------------: |
 | ↓       |   |                              |   |                                                                                                                                                                                                  |                     |
+| &#9744; |   |                              |   |                                                                                                                                                                                                  | `█████████████████` |
 | &#9744; |   | **CSS**                      |   |[Josh Comeau: My Custom CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/#one-box-sizing-model-2)                                                                                      | `2024-02-13T153553` |
 | &#9744; |   | **Figma**                    |   | Figma: [design basics](https://www.figma.com/resource-library/design-basics/)                                                                                                                    | `2024-02-12T155639` |
 | &#9744; |   | **Drupal**                   |   | Drupal Rel: jQuery [Crash Course Series](https://www.youtube.com/watch?v=3nrLc_JOF7k&list=PLgT1LClcgVzFMNgCvv2ar0ZEg_ORBv2bw)                                                                    | `2024-02-12T152726` |
@@ -13,6 +41,12 @@ categories: ["Learning"]
 | &#9744; |   | **Bullet**                   |   | Bullet note: [Intro to bullet note - 1](https://zhuanlan.zhihu.com/p/87612890)                                                                                                                   | `2024-02-12T152519` |
 | &#9744; |   | **Bullet**                   |   | Bullet note: [Intro to bullet note - 2](https://zhuanlan.zhihu.com/p/111703197)                                                                                                                  | `2024-02-12T152519` |
 | ↓       |   |                              |   |                                                                                                                                                                                                  |                     |
+| &#9746; |   |                              |   |                                                                                                                                                                                                  | `█████████████████` |
+| &#9746; |   | **CSS**                      |   | [These font stacks will improve your site performance](https://www.youtube.com/watch?v=VOd6jfAImV4)                                                                                              | `2024-02-15T104202` |
+| &#9746; |   | **CSS**                      |   | [A new approach to container and wrapper classes](https://ryanmulligan.dev/blog/layout-breakouts/)                                                                                               | `2024-02-15T103357` |
+| &#9746; |   | **CSS**                      |   | [Learn CSS Grid the easy way (Kevin Powell)](https://www.youtube.com/watch?v=rg7Fvvl3taU)                                                                                                        | `2024-02-15T103357` |
+| &#9746; |   | **CSS**                      |   | [Flexbox or grid - How to decide?  (Kevin Powell)](https://www.youtube.com/watch?v=3elGSZSWTbM)                                                                                                  | `2024-02-15T103357` |
+| &#9746; |   | **CSS**                      |   | [Using CSS custom properties like this is a waste](https://www.youtube.com/watch?v=_2LwjfYc1x8)                                                                                                  | `2024-02-15T103357` |
 | &#9746; |   | **SHELL**                    |   | [Bash save ouput of a command to a variable ](https://stackoverflow.com/questions/16967982/zsh-shell-how-to-assign-something-to-a-variable-quietly)                                              | `2024-02-14T125904` |
 | &#9745; |   | **CSS**                      |   | [Josh Comeau: Designing Beautiful Shadows in CSS](https://www.joshwcomeau.com/css/designing-shadows/)                                                                                            | `2024-02-13T153318` |
 | &#9745; |   | **CSS**                      |   | position:sticky    - [Elad Shechter: CSS Position Sticky - How It Really Works!](https://elad.medium.com/css-position-sticky-how-it-really-works-54cd01dc2d46)                                   | `2024-02-13T145048` |
@@ -20,7 +54,6 @@ categories: ["Learning"]
 | &#9745; |   | **CSS**                      |   | clip-path          - [CSS clip-path maker](https://bennettfeely.com/clippy/)                                                                                                                     | `2024-02-13T142705` |
 | &#9745; |   | **CSS**                      |   | clip-path          - [CSS trick: CSS ALMANAC → PROPERTIES → C → clip-path](https://css-tricks.com/almanac/properties/c/clip-path/)                                                               | `2024-02-13T142705` |
 | &#9745; |   | **CSS**                      |   | Layout Algorithm   - [Josh Comeau: Understanding Layout Algorithm](https://www.joshwcomeau.com/css/understanding-layout-algorithms/)                                                             | `2024-02-12T152310` |
-| ↓       |   |                              |   |                                                                                                                                                                                                  |                     |
 | &#9746; |   | **BASH**                     |   | [Better-than-Grep tools for writers and developers alike](https://ddbeck.com/better-than-grep-for-writers/)                                                                                      | `2024-02-14T162041` |
 | &#9746; |   | **Git**                      |   | [Atlassian - Git Rebase](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)                                                                                                   | `2024-02-12T152310` |
 | &#9746; |   | **Git**                      |   | [Atlassian - Merge vs Rebase](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)                                                                                                       | `2024-02-12T152310` |
@@ -28,3 +61,5 @@ categories: ["Learning"]
 | &#9746; |   | **Vim**                      |   | [Motion / Vim Keybindings: Vim Tutorial - Vim Ninja (Purchased)](https://www.vimninja.com/)                                                                                                      | `2023-12-30T000000` |
 | &#9746; |   | **Vim**                      |   | [Motion / Vim Keybindings: Vim Tutorial - Vim.so (Too Expendsive)](https://www.learnvim.com/)                                                                                                    | `2023-12-30T000000` |
 | &#9746; |   | **Vim**                      |   | [Configuration: ThePrimeagen - 0 to LSP : Neovim RC From Scratch](https://www.youtube.com/watch?v=w7i4amO_zaE&t=1s)                                                                              | `2023-12-30T000000` |
+
+
