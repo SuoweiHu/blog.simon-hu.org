@@ -1,6 +1,5 @@
 ---
 title: "Web-Safe Font Family"
-description: "Font look different on different browser?"
 date: "2024-02-20"
 categories: ["CSS"]
 ---

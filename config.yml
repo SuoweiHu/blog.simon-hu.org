@@ -21,18 +21,17 @@ params:
   description: "So, you found me. Welcome to my blog. I am a software engineer who works at OPC IT Pty Limited. I am responsible for the daily maintenance and development of Drupal websites at my workplace, and in this blog I write about programming, technology, and other things that I learn during my professional journey. You can find me via the following..."
   keywords: [Blog, Portfolio, PaperMod]
   author: "Suowei Hu"
-  # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "Jan 2, 2006"
-  defaultTheme: light # dark, light
-  disableThemeToggle: true
+  defaultTheme: dark # dark, light
+  disableThemeToggle: false
 
-  ShowReadingTime: true
+  ShowReadingTime: false
   ShowShareButtons: false
   ShowPostNavLinks: false
   ShowBreadCrumbs: false
   ShowCodeCopyButtons: true
-  ShowWordCount: true
+  ShowWordCount: false
   ShowRssButtonInSectionTermList: false
   UseHugoToc: true
   disableSpecial1stPost: false
@@ -84,16 +83,8 @@ params:
       url: "https://www.linkedin.com/in/suowei-hu-0249b0181/"
     - name: email
       url: "mailto:suowei.h@gmail.com"
-    - name: medium
-      url: "https://suowei-hu.medium.com/"
-
-  analytics:
-    google:
-      SiteVerificationTag: "XYZabc"
-    bing:
-      SiteVerificationTag: "XYZabc"
-    yandex:
-      SiteVerificationTag: "XYZabc"
+    # - name: medium
+      # url: "https://suowei-hu.medium.com/"
 
   cover:
     hidden: true # hide everywhere but not in structured data
