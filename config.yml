@@ -108,10 +108,10 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: read
-      name: "📙"
-      url: /read/
-      weight: 1
+    # - identifier: read
+    #   name: "📙"
+    #   url: /read/
+    #   weight: 1
     - identifier: archives
       name: Timeline
       url: /archives/
