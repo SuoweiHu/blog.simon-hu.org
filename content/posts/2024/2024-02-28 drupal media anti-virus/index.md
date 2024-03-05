@@ -6,7 +6,7 @@ categories: ["Drupal"]
 
 
 
-## Issue Found
+## Issue Found 
 ```
 Drupal Core: 8.7.8
 Lightning: 4.0.5
@@ -17,6 +17,11 @@ Steps to reproduce.
 - Go to Content > Add Media > Image.
 - Upload an image.
 - An error should be returned reading: "The anti-virus scanner could not check the file, so the file cannot be uploaded. Contact the site administrator if this problem persists." This is the expected result since we did not configure the clamav host.
+- Create a content type with an image field. In form display set the widget as Entity Browser with Image browser in settings.
+- Go to Content > Add Content > Content type - with the image field that has entity browser widget configured.
+- Click Select Images
+- Click Upload tab
+- Upload image.
 ```
 
 ![image-20240228095014860](image-20240228095014860.png)
@@ -24,10 +29,4 @@ Steps to reproduce.
 
 
 ## Resolution Approah
-
-Go to "/admin/config/httpav" and:
-- (either) toggle "`llow unchecked (If the HTTP request fails, assume success.)`" on
-- (or) toggle "`Enabled (If files should be checked)`" off
-
-![image-20240228095029938](image-20240228095029938.png)
 
