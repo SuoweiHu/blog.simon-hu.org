@@ -23,7 +23,7 @@ params:
   author: "Suowei Hu"
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "Jan 2, 2006"
-  defaultTheme: dark # dark, light
+  defaultTheme: light # dark, light
   disableThemeToggle: false
 
   ShowReadingTime: false
@@ -81,8 +81,8 @@ params:
       url: "https://github.com/"
     - name: linkedin
       url: "https://www.linkedin.com/in/suowei-hu-0249b0181/"
-    - name: email
-      url: "mailto:suowei.h@gmail.com"
+    # - name: email
+      # url: "mailto:suowei.h@gmail.com"
     # - name: medium
       # url: "https://suowei-hu.medium.com/"
 
