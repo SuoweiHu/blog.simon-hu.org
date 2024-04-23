@@ -32,58 +32,16 @@ draft: false
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
-
-## Quick Starting Guide
-
-!!!!!!!!!!!!!!!!!!!!!!!!! PENDING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-
 ## Example
 
-!!!!!!!!!!!!!!!!!!!!!!!!! PENDING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-
-
-
-
-
-
-
+You can download the example code [here](./leaflet%20example.zip)
 
 
 
 
 
 ---
-
 ## Reference
 
 -   [Leaflet Official Documentation](https://leafletjs.com/)

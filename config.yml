@@ -18,13 +18,13 @@ params:
   timeZone: Australia/Canberra
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Simon's Blog
-  description: "So, you found me. Welcome to my blog. I am a software engineer who works at OPC IT Pty Limited. I am responsible for the daily maintenance and development of Drupal websites at my workplace, and in this blog I write about programming, technology, and other things that I learn during my professional journey. You can find me via the following..."
+  description: "So, you found me. Welcome to my blog. I am a software engineer who works at OPC IT Pty Limited. I am responsible for the daily maintenance and development of Drupal websites at my workplace, and in this blog I write about programming, technology, and other things that I learn during my professional journey. You can find me via the following...."
   keywords: [Blog, Portfolio, PaperMod]
   author: "Suowei Hu"
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "Jan 2, 2006"
   defaultTheme: light # dark, light
-  disableThemeToggle: false
+  disableThemeToggle: true
 
   ShowReadingTime: false
   ShowShareButtons: false

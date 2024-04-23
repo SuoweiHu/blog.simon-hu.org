@@ -32,52 +32,10 @@ draft: false
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 ---
-
-## Quick Starting Guide
-
-!!!!!!!!!!!!!!!!!!!!!!!!! PENDING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-
 ## Example
 
-!!!!!!!!!!!!!!!!!!!!!!!!! PENDING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-
-
-
-
-
-
-
-
-
-
+You can download the example code [here](./mapbox%20example.zip)
 
 
 ---
