@@ -78,7 +78,7 @@ The **steps** are the following:
 
 
 
------------------------------------------------------------
+----------------------------
 ## Reference
 - https://www.drupal.org/project/search_api_exclude_entity
 - https://drupal.stackexchange.com/questions/315586/what-is-the-meaning-of-fields-pending-deletion
