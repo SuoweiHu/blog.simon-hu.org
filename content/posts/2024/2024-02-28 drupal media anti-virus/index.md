@@ -30,3 +30,10 @@ Steps to reproduce.
 
 ## Resolution Approah
 
+First find the "<u>**ClamAV Anti-Virus**</u>" panel via searching over the module admin page:
+
+![2024-05-06T113748](2024-05-06T113748.png)
+
+Click on "<u>**Configure**</u>" and under **outage behavior** check "**<u>allow unchecked files</u>**", and save configuration via the bottom button
+
+![2024-05-06T113855](2024-05-06T113855.jpg)
