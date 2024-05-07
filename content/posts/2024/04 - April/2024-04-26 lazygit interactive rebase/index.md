@@ -1,14 +1,12 @@
 ---
-title: "Lazigit Interactive-Rebase (e)"
+title: "Lazigit Interactive-Rebase (e) - [PENDING]"
 date: "2024-04-26"
 categories: ["Git", "CLI"]
 ---
 
 ![2024-04-26T152158](2024-04-26T152158.jpg)
 
-**PENDING TO COMPLETE** 
-
-
+**PENDING TO COMPLETE**
 
 
 
@@ -45,7 +43,7 @@ categories: ["Git", "CLI"]
 
 ##### reoder (`<c-j>`/`c-k`)
 
->   As its name claims, change the order of the commits, but be really **careful** on using this one, as the change of git commit order **might result in conflit**. Only do use this git rebase option when the two commit are almost completly irrelevant. 
+>   As its name claims, change the order of the commits, but be really **careful** on using this one, as the change of git commit order **might result in conflit**. Only do use this git rebase option when the two commit are almost completly irrelevant.
 
 
 

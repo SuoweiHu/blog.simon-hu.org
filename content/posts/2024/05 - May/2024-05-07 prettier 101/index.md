@@ -1,5 +1,5 @@
 ---
-title: "Prettier 101"
+title: "Prettier 101 - [PENDING]"
 date: "2024-05-07"
 categories: ["Prettier"]
 ---
@@ -28,7 +28,7 @@ categories: ["Prettier"]
 
 ## Prettier vs. Linters
 
-**<u>How does it compare to ESLint/TSLint/stylelint, etc.?</u>** 
+**<u>How does it compare to ESLint/TSLint/stylelint, etc.?</u>**
 
 (https://prettier.io/docs/en/comparison)
 
@@ -46,7 +46,7 @@ categories: ["Prettier"]
 
 
 
-## Prittier Configuration 
+## Prittier Configuration
 
 (https://prettier.io/docs/en/configuration)
 

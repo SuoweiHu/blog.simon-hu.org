@@ -1,5 +1,5 @@
 ---
-title: "GocCMS Training Todo"
+title: "GocCMS Training Todo - [PENDING]"
 date: "2023-04-01"
 categories: ["Drupal"]
 ---

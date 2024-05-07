@@ -51,7 +51,7 @@ Method proposed by **[MegaChriz](https://www.drupal.org/project/feeds/issues/329
 >
 > 2. Check the log for any warnings about fields.
 >
-> 3. Try to enforce field deletion using the following command: 
+> 3. Try to enforce field deletion using the following command:
 >
 >   ```bash
 >   drush php-eval 'field_purge_batch(10000);
@@ -68,7 +68,7 @@ Method proposed by **[sealionking](https://drupal.stackexchange.com/questions/24
 >   drush php-eval 'field_purge_batch(10000);'
 >   ```
 
-Method proposed by **[4uk4](https://drupal.stackexchange.com/users/47547/4uk4)**: 
+Method proposed by **[4uk4](https://drupal.stackexchange.com/users/47547/4uk4)**:
 
 >   The fields are deleted by cron runs. But only a fixed batch size. You can configure a higher value. If you can't use drush you can do this in UI. Go to the page */admin/config/development/configuration/single/import* and add in `field.settings` a higher batch size:
 >
