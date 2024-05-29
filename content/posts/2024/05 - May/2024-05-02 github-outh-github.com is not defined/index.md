@@ -34,11 +34,11 @@ and have the following lines of configuration to set the environmental variables
 
 ```
 services:
-	cli:
-		build
-			args:
-				GITHUB_Key: ghp_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-				GOVCMS_GITHUB_TOKEN: ghp_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  cli:
+    build:
+      args:
+        GITHUB_Key: ghp_XXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        GOVCMS_GITHUB_TOKEN: ghp_XXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
 
 
