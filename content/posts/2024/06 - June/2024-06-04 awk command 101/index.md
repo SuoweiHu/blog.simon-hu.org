@@ -209,3 +209,118 @@ As the previous examples demonstrated, it is easy to perform AWK command with **
 
 
 
+
+
+
+
+
+
+## Command Baisc
+
+### Primitive Form
+
+>   (for this section, we will use [person-info](./person-info) as our data source)
+
+In awk's simplest form, the command can be used to perform action alone (`awk '{action}' input_file`); Or match a certain pattern, then perform actions only  on the matching lines (`awk '/regex_pattern/{action}' input_file`): 
+
+```
+>   awk '{print $0}' person-info 
+-|  fristName       lastName        age     city       ID
+-|  
+-|  Thomas          Shelby          30      Rio        400
+-|  Omega           Night           45      Ontario    600
+-|  Wood            Tinker          54      Lisbon     N/A
+-|  Giorgos         Georgiou        35      London     300
+-|  Timmy           Turner          32      Berlin     N/A
+```
+
+```
+>   awk '/N\/A/{print $0}' person-info   #pattern is "N/A"
+-|  Wood            Tinker          54      Lisbon     N/A
+-|  Timmy           Turner          32      Berlin     N/A
+```
+
+
+
+### Action - Built-in Variable 
+
+>   (for this example, we will use [employee.txt](./employee.txt) as our data source)
+
+You might have noticed in the previous example, we have used `'{print $0}'` as the action of the `awk` command to print out the whole line when matched, in this action, the `$0` is a build-in variable. Similarly we have: 
+
+```
+$1, $2, $3, ... :           to represent the individual fields/words seprated by seprator
+$0:                         to represent the entire line 
+NR:  (NumberRow)            current count of the number of input records (this is usually used as "line numbers")
+NF:  (NumberField)          count of the number of fields within the current input record
+FS:  (FieldSeprator)        field separator character which is used to divide fields on the input line. (The default is “white space”)
+RS:  (RecordSeprator)       current record separator character (the default record separator character is a newline)
+OFS: (OutputFieldSeprator)  similar to FS but for output of awk command
+ORS: (OutputRecordSeprator) similar to RS but for output of awk command 
+
+```
+
+And you are able to change these built-in variables via either (using `FS` as example): 
+
+-   **<u>Environmental variable</u>**: `awk -v FS=',' '{ print $1, $2 }' filename` 
+-   **<u>Inline setting</u>**: `awk -F, '{ print $1, $2 }' filename`
+-   **<u>BEGIN block setting</u>**: `awk 'BEGIN { FS = "," } { print $1, $2 }' filename`
+
+
+
+### Pattern - Regex Patterns 
+
+>   (for this secion, we will use [mail-list ](./mail-list)as our data source)
+
+You can check if a certain pattern have appeared: 
+
+```
+$  awk "/samuel.lanceolis@shu.edu/" mail-list
+-| Samuel       555-3430     samuel.lanceolis@shu.edu        A
+```
+
+You can perform **<u>matching operation on one column</u>** and <u>**print out a different column**</u>: 
+
+```
+$  awk '$1=="Samuel" { print $3 }' mail-list
+-| samuel.lanceolis@shu.edu
+```
+
+You can perform **<u>logical operations</u>** (`&&` / `||` / `!`) on the regular expression like you would do on other programming language:
+
+```
+$  awk '/edu/ && /555/' mail-list                #AND
+-| Fabius       555-1234     fabius.undevicesimus@ucb.edu    F
+-| Samuel       555-3430     samuel.lanceolis@shu.edu        A
+-| Jean-Paul    555-2127     jeanpaul.campanorum@nyu.edu     R
+```
+
+```
+$  awk '/edu/ || /gmail/' mail-list              #OR
+-| Amelia       555-5553     amelia.zodiacusque@gmail.com    F
+-| Becky        555-7685     becky.algebrarum@gmail.com      A
+-| Fabius       555-1234     fabius.undevicesimus@ucb.edu    F
+-| Samuel       555-3430     samuel.lanceolis@shu.edu        A
+-| Jean-Paul    555-2127     jeanpaul.campanorum@nyu.edu     R
+```
+
+```
+$  awk '!/edu/ && !/hotmail/ && !/gmail/' mail-list      #NOT
+-| Broderick    555-0542     broderick.aliquotiens@yahoo.com R
+-| Camilla      555-2912     camilla.infusarum@skynet.be     R
+-| Julie        555-6699     julie.perscrutabor@skeeve.com   F
+```
+
+
+
+
+
+
+
+## Reference
+
+-   [GNU Command Manual - GAWK](https://www.gnu.org/software/gawk/manual/gawk.html#Getting-Started)
+-   [GeeksForGeeks - AWK command in Unix/Linux with examples](https://www.geeksforgeeks.org/awk-command-unixlinux-examples/)
+
+-   [FreeCodeCamp - The Linux AWK Command](https://www.freecodecamp.org/news/the-linux-awk-command-linux-and-unix-usage-syntax-examples/#:~:text=The%20Basic%20Syntax%20of%20the,to%20search%20through%20mentioned%20last)
+-   [NextGen Learning - AWK Basics](https://www.youtube.com/watch?v=I-uWvNvtJcY&list=PLY-V_O-O7h4fzqbPT0kpQMl8XlPvSse9H)
