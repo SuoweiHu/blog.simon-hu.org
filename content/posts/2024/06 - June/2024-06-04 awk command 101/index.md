@@ -134,3 +134,78 @@ categories: ["CLI", "Linux"]
 
 
 
+## Command Input
+
+### awk input from stdin/stdout
+
+You can use awk command to perform actions on your **<u>standard input</u>**
+
+```
+>         awk '/How are you?/ { print "Im fine, thank you" }'
+> stdin:  How are you?           # input that matches the pattern
+> stdout: Im fine, thank you     # action that is specified by user 
+> stdin:  Random gibberish       # input that does not match 
+> stdout: (null)                 # no action performed
+```
+
+You can also use awk command to perform action on your <u>**standard output**</u>
+
+```
+>         echo "How are you? Man?" | awk '/How are you?/ { print "Im fine, thank you" }'
+> stdout: Im fine, thank you
+> 
+>         echo "How is your uncle?" | awk '/How are you?/ { print "Im fine, thank you" }'
+> stdout: (null)
+```
+
+### awk input from file 
+
+For instance you have the following file ([employee-1.txt](./employee-1.txt), [employee-2.txt](./employee-2.txt)):
+
+```txt
+ajay manager account 45000
+sunil clerk account 25000
+varun manager sales 50000
+amit manager account 47000
+```
+
+```
+tarun peon sales 15000
+deepak clerk sales 23000
+sunil peon sales 13000
+satvik director purchase 80000
+```
+
+You can then filter their content, via pattern `sales` (check if it appears in any of the line):
+
+```
+>         awk 'sales' employee-1.txt 
+> stdout: varun manager sales 50000
+> 
+>         awk 'sales' employee-2.txt 
+> stdout: tarun peon sales 15000
+> stdout: deepak clerk sales 23000
+> stdout: sunil peon sales 13000
+> 
+>         awk 'sales' employee-1.txt employee-2.txt
+> stdout: varun manager sales 50000
+> stdout: tarun peon sales 15000
+> stdout: deepak clerk sales 23000
+> stdout: sunil peon sales 13000
+```
+
+### awk action from file
+
+As the previous examples demonstrated, it is easy to perform AWK command with **<u>short</u>** pattern and action inline, but when the pattern and action gets **<u>long</u>**, you mihgtmight want to have them in a **<u>separate source file</u>**: 
+
+```
+>         echo 'BEGIN { print "Dont Panic" }' > awk_src.txt && ls
+> stdout: -rw-r--r--    1 root  staff    29 Jun  4 11:32 awk_src.txt
+> stdout: -rw-r--r--    1 root  staff    29 Jun  4 11:32 ..
+> 
+>         awk -f ./awk_src.txt
+> stdout: Don Panic 
+```
+
+
+
