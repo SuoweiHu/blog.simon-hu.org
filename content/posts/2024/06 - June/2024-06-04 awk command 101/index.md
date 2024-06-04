@@ -6,6 +6,20 @@ categories: ["CLI", "Linux"]
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
 ## Overview
 
 ### What is AWK command ?
@@ -17,6 +31,18 @@ categories: ["CLI", "Linux"]
 ### What does it specialises in ?
 
 >   Programs in `awk` are different from programs in most other languages, because `awk` programs are **<u>*data driven*</u>** (i.e., you describe the data you want to work with and then what to do when you find it). Most other languages are ***<u>procedural</u>***; you have to describe, in great detail, every step the program should take. When working with procedural languages, it is usually much harder to clearly describe the data your program will process. For this reason, `awk` programs are often refreshingly easy to read and write.
+>
+>   -- [GNU General Instruction for AWK](https://www.gnu.org/software/gawk/manual/gawk.html#Getting-Started)
+
+>   When you run `awk`, you specify an `awk` *program* that tells `awk` what to do. The program consists of a series of*rules* (it may also contain *function definitions*, an advanced feature that we will ignore for now; see [User-Defined Functions](https://www.gnu.org/software/gawk/manual/gawk.html#User_002ddefined)). Each rule specifies **<u>one pattern to search</u>** for and **<u>one action to perform</u>** upon finding the pattern.
+>
+>   Syntactically, a rule consists of a *pattern* followed by an *action*. The action is enclosed in braces to separate it from the pattern. Newlines usually separate rules. Therefore, an `awk` program looks like this:
+>
+>   ```
+>   pattern { action }
+>   pattern { action }
+>   ...
+>   ```
 >
 >   -- [GNU General Instruction for AWK](https://www.gnu.org/software/gawk/manual/gawk.html#Getting-Started)
 
@@ -32,6 +58,22 @@ categories: ["CLI", "Linux"]
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
 ## Terminologies 
 
 ### Data Source 
@@ -46,21 +88,7 @@ categories: ["CLI", "Linux"]
 -   **Field referes to a <u>sub-unit of data</u> that are contained in a record, that `awk` is able to <u>match pattern</u> or <u>execute action</u> on.** 
 -   By default, each word divided by space or tabs is considered a field; Seprated using `FS` built-in variable which by default is `\t` or `space`; and you can set it to something else like `,` to handle `csv` data input (refer to the "Built-in Variable Section")
 
-
-
 ### Patter/Action
-
->   When you run `awk`, you specify an `awk` *program* that tells `awk` what to do. The program consists of a series of*rules* (it may also contain *function definitions*, an advanced feature that we will ignore for now; see [User-Defined Functions](https://www.gnu.org/software/gawk/manual/gawk.html#User_002ddefined)). Each rule specifies **<u>one pattern to search</u>** for and **<u>one action to perform</u>** upon finding the pattern.
->
->   Syntactically, a rule consists of a *pattern* followed by an *action*. The action is enclosed in braces to separate it from the pattern. Newlines usually separate rules. Therefore, an `awk` program looks like this:
->
->   ```
->   pattern { action }
->   pattern { action }
->   ...
->   ```
->
->   -- [GNU General Instruction for AWK](https://www.gnu.org/software/gawk/manual/gawk.html#Getting-Started)
 
 #### Pattern
 
@@ -130,82 +158,6 @@ categories: ["CLI", "Linux"]
             { print factorial($1) }' filename
             ```
 
-            
-
-
-
-## Command Input
-
-### awk input from stdin/stdout
-
-You can use awk command to perform actions on your **<u>standard input</u>**
-
-```
->         awk '/How are you?/ { print "Im fine, thank you" }'
-> stdin:  How are you?           # input that matches the pattern
-> stdout: Im fine, thank you     # action that is specified by user 
-> stdin:  Random gibberish       # input that does not match 
-> stdout: (null)                 # no action performed
-```
-
-You can also use awk command to perform action on your <u>**standard output**</u>
-
-```
->         echo "How are you? Man?" | awk '/How are you?/ { print "Im fine, thank you" }'
-> stdout: Im fine, thank you
-> 
->         echo "How is your uncle?" | awk '/How are you?/ { print "Im fine, thank you" }'
-> stdout: (null)
-```
-
-### awk input from file 
-
-For instance you have the following file ([employee-1.txt](./employee-1.txt), [employee-2.txt](./employee-2.txt)):
-
-```txt
-ajay manager account 45000
-sunil clerk account 25000
-varun manager sales 50000
-amit manager account 47000
-```
-
-```
-tarun peon sales 15000
-deepak clerk sales 23000
-sunil peon sales 13000
-satvik director purchase 80000
-```
-
-You can then filter their content, via pattern `sales` (check if it appears in any of the line):
-
-```
->         awk 'sales' employee-1.txt 
-> stdout: varun manager sales 50000
-> 
->         awk 'sales' employee-2.txt 
-> stdout: tarun peon sales 15000
-> stdout: deepak clerk sales 23000
-> stdout: sunil peon sales 13000
-> 
->         awk 'sales' employee-1.txt employee-2.txt
-> stdout: varun manager sales 50000
-> stdout: tarun peon sales 15000
-> stdout: deepak clerk sales 23000
-> stdout: sunil peon sales 13000
-```
-
-### awk action from file
-
-As the previous examples demonstrated, it is easy to perform AWK command with **<u>short</u>** pattern and action inline, but when the pattern and action gets **<u>long</u>**, you mihgtmight want to have them in a **<u>separate source file</u>**: 
-
-```
->         echo 'BEGIN { print "Dont Panic" }' > awk_src.txt && ls
-> stdout: -rw-r--r--    1 root  staff    29 Jun  4 11:32 awk_src.txt
-> stdout: -rw-r--r--    1 root  staff    29 Jun  4 11:32 ..
-> 
->         awk -f ./awk_src.txt
-> stdout: Don Panic 
-```
 
 
 
@@ -214,6 +166,22 @@ As the previous examples demonstrated, it is easy to perform AWK command with **
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
 
 ## Command Baisc
 
@@ -268,6 +236,28 @@ And you are able to change these built-in variables via either (using `FS` as ex
 
 
 
+### Action - Program from file
+
+As the previous examples demonstrated, it is easy to perform AWK command with **<u>short</u>** pattern and action inline
+
+```
+>         awk '{ print "Hello" }'
+> stdout: Hello
+```
+
+But when the pattern and action gets **<u>long</u>**, you mihgtmight want to have them in a **<u>separate source file</u>**: 
+
+```
+>         echo 'BEGIN { print "Dont Panic" }' > awk_src.txt && ls
+> stdout: -rw-r--r--    1 root  staff    29 Jun  4 11:32 awk_src.txt
+> stdout: -rw-r--r--    1 root  staff    29 Jun  4 11:32 ..
+> 
+>         awk -f ./awk_src.txt
+> stdout: Don Panic 
+```
+
+
+
 ### Pattern - Regex Patterns 
 
 >   (for this secion, we will use [mail-list ](./mail-list)as our data source)
@@ -316,6 +306,104 @@ $  awk '!/edu/ && !/hotmail/ && !/gmail/' mail-list      #NOT
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+## Command Input Options
+
+### input from stdin/stdout
+
+You can use awk command to perform actions on your **<u>standard input</u>**
+
+```
+>         awk '/How are you?/ { print "Im fine, thank you" }'
+> stdin:  How are you?           # input that matches the pattern
+> stdout: Im fine, thank you     # action that is specified by user 
+> stdin:  Random gibberish       # input that does not match 
+> stdout: (null)                 # no action performed
+```
+
+You can also use awk command to perform action on your <u>**standard output**</u>
+
+```
+>         echo "How are you? Man?" | awk '/How are you?/ { print "Im fine, thank you" }'
+> stdout: Im fine, thank you
+> 
+>         echo "How is your uncle?" | awk '/How are you?/ { print "Im fine, thank you" }'
+> stdout: (null)
+```
+
+### input from file 
+
+For instance you have the following file ([employee-1.txt](./employee-1.txt), [employee-2.txt](./employee-2.txt)):
+
+```txt
+ajay manager account 45000
+sunil clerk account 25000
+varun manager sales 50000
+amit manager account 47000
+```
+
+```
+tarun peon sales 15000
+deepak clerk sales 23000
+sunil peon sales 13000
+satvik director purchase 80000
+```
+
+You can then filter their content, via pattern `sales` (check if it appears in any of the line):
+
+```
+>         awk 'sales' employee-1.txt 
+> stdout: varun manager sales 50000
+> 
+>         awk 'sales' employee-2.txt 
+> stdout: tarun peon sales 15000
+> stdout: deepak clerk sales 23000
+> stdout: sunil peon sales 13000
+> 
+>         awk 'sales' employee-1.txt employee-2.txt
+> stdout: varun manager sales 50000
+> stdout: tarun peon sales 15000
+> stdout: deepak clerk sales 23000
+> stdout: sunil peon sales 13000
+```
+
+### 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
 
 ## Reference
 
