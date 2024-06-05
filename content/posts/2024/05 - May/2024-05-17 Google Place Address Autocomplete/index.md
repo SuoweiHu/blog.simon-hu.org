@@ -79,6 +79,7 @@ PENDING EXPLAINATION ....
         </label>
     </form>
 
+    <!-- dont worry if you see the below key .... it been removed from my account already .... -->
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0q7MRzP5phqe8r26v9qi_rEoCwFFrXck&callback=initAutocomplete&libraries=places&v=weekly"
         defer></script>
@@ -170,6 +171,6 @@ window.initAutocomplete = gpla_initAutocomplete;
 
 -   [Place Autocomplete - Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/place-autocomplete)
 -   [Place Autocomplete Address Form - Sample](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-addressform#maps_places_autocomplete_addressform-html) ←★
--   [Place Searches on Inetractive Map - Sample](https://developers.google.com/maps/documentation/javascript/examples/place-search) 
+-   [Place Searches on Inetractive Map - Sample](https://developers.google.com/maps/documentation/javascript/examples/place-search)
 -   [Place AutoComplete API - Guide](https://developers.google.com/maps/documentation/places/web-service/autocomplete)
 -   [Place Widgets - PlaceAutocompleteElement class](https://developers.google.com/maps/documentation/javascript/reference/places-widget#Autocomplete)
