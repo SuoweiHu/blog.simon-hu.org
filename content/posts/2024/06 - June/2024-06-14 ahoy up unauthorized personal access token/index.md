@@ -11,11 +11,11 @@ categories: ["GovCMS"]
 
 ```
 ...
-WARN[0000] /Users/Anil/sites/latrobe-vic/docker-compose.yml: `version` is obsolete
+WARN[0000] /Users/admin/sites/XXXXX/docker-compose.yml: `version` is obsolete
 [+] Running 2/2
 ✘ mariadb Error Head "https://gitlab-registry-productio...                0.4s
 ! cli Warning   context canceled                                          0.4s
-Error response from daemon: Head "https://gitlab-registry-production.govcms.amazee.io/v2/latrobe-vic/latrobe-vic/mariadb-drupal-data/manifests/latest":
+Error response from daemon: Head "https://gitlab-registry-production.govcms.amazee.io/v2/xxxxxx/xxxxxx/mariadb-drupal-data/manifests/latest":
 unauthorized: HTTP Basic: Access denied. The provided password or token is incorrect or your account has 2FA enabled and you must use a personal access token instead of a password.
 See https://projects.govcms.gov.au/help/user/profile/account/two_factor_authentication#troubleshooting
 ...
