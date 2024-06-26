@@ -6,8 +6,6 @@ categories: ["Photography"]
 
 
 
----
-
 ## An very old-fashioned scenario: Manual Flash
 
 ### Assumption: Ignore Background
@@ -20,11 +18,11 @@ Normally when you try to shoot a photo without the flash, you are only dealing w
 
 The key step in the process that produces photo with varying brightness on different pixels, is the step where light (photon) gets transferred into electrical signal (voltage); On a pixel level, when the lights (photons) hits the CMOS, each pixel will transfer the photons that hits it into a corresponding number of photoelectrons (with a certain QE ratio); Photoelectrons are then converted into a voltage which is converted into a digital signal (a gray level). (This post explains it much better: [Photons, Electrons and Gray Levels](https://www.photometrics.com/learn/white-papers/photons-electron-and-gray-levels)).
 
-[ILLUSTRATION OF THIS PROCESS - [REF](2024-06-25T150222.png)]
+![2024-06-26T085244](2024-06-26T085244.jpg)
 
 The more photon lands on an pixel, the more electraons gets converted, the stronger the digital signal, the brighter the pixel is in the shot. A commonly used metaphor for this is water tank with caps in a rainy day, a worker will open the tank caps to collect some water in the rainy day: if the caps is opened for a constant time, the stronger the rain, the more water the tank can collect; similarly, if the rain is of a fixed intensity, the longer the worker keeps the caps open, the more water the tank can collect...
 
-[ILLUSTRATION OF TANK, WATER, CAPS]
+![2024-06-26T085411](2024-06-26T085411.jpg)
 
 ### Ambient + Flash Light
 
@@ -32,7 +30,7 @@ Now, you have a flashy flashlight in hand, you have the power to blind everyone 
 
 This is because on auto explosure setting, the camera will make sure the environment have the right explosure based on the current amibent lighting (or you can set this manually); However, on non-TTL mode, it has no awareness towards this extra attached flash light, as a result it is not only getting the ambient light (which is just the right amount to produce a correctly exposed photo) but also the extra artificial lighting produced by the flash (that are not expected), hence over-exposing the shot.
 
-[ILLUSTRATION OF AMBIENT + FLASH - [REF](2024-06-25T150222.png)]
+![2024-06-26T085335](2024-06-26T085335.jpg)
 
 In order to take a properly exposed photo (again non-TTL lens), you will need to adjust the camera setting to make it under-expose without flash.
 
@@ -43,19 +41,11 @@ Assume the object is 1m distance from the camera (and flash), the flash is set t
 
 Put it in a more straight-forward explaination: since the camera don't know the existance of the flashlight (without TTL function) you will need to get it "perpared" !
 
-[ILLUSTRATION - (+2) on flashlight & (-2) on the camera with a guy standing behind the camera]
+![2024-06-26T085434](2024-06-26T085434.jpg)
 
 
 
 
-
-
-
-
-
-
-
----
 
 ## Inverse Square Law
 
@@ -63,7 +53,7 @@ If you read the previous section carefully enough, we have set many assumptions 
 
 Certainlly you can control the last two factors, but the first factor, the distance to object, can change drastically when shooting outdoor (if you are taking a picture of your girl-fiend, animal, or other moving objects). Here comes the question: when the object moves around, how do we change "settings" to make sure the explosure level are kept consistent ? 
 
-[OBJECT MOVE AROUND ILLUSTRATION]
+![2024-06-26T085441](2024-06-26T085441.jpg)
 
 ### Amibient Light
 
@@ -84,13 +74,13 @@ Now, let's unveil the magnificent math equation
 
 -   relation between flux, luminosity, and distance:
 
-     `F = L / (4πɛ * D²)`  ([inverse square law](http://hyperphysics.phy-astr.gsu.edu/hbase/Forces/isq.html))
+     `F = L / (4πɛ * D²)`  (ref: [inverse square law](http://hyperphysics.phy-astr.gsu.edu/hbase/Forces/isq.html))
 
 -   relation between image height, object height and distance 
 
-    `H' = f * H / D` ([reference-1](https://blog.csdn.net/Bolly_He/article/details/113255526), [reference-2](https://www.mylumens.com/en/Page/40/Captured-Area-Calculator))
+    `H' = f * H / D` (ref: [my primary school math](2024-06-26T090458.jpg))
 
-    `W' = f * W / D` (equivalant)
+    `W' = f * W / D` 
 
 Image we have the same object at two distance distance `D1` and `D2` , their difference in flux can be calculated via: 
 
@@ -124,6 +114,22 @@ Then, we can calculate power per unit of area on the image sensor (CMOS):
 From above, we can derive, even the object's distance changes,  per unit of area on the sensor, the power of the light input is the same (hence the explosure is the same)
 
 ![2024-06-25T210902](2024-06-25T210902.jpg)Consequently, we can conclude for object with global ambient light, even it is placed at different location, the power of light per unit area on the sensor does not vary, hence even if the camera don't change any of the setting, the explosure of that particular object will not change.
+
+### Ambinent + Flash Light
+
+From the previous section, we have derived the object's gray level in the image has no relation with its position/distance (with global ambient light assumption). With the addition of flash light, however, this theory may or may not hold depending on different scenario.
+
+**<u>Scenario-A</u>: off-camera flash sitting on fixed distance to object**
+
+
+
+**<u>Scenario-B</u>: regular flash sitting on top of the camera (distance from flash to the object changes)**
+
+
+
+
+
+
 
 
 
