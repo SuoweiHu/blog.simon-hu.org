@@ -125,17 +125,17 @@ When the flash light sits at a **<u>still position</u>** relative to the object 
 
 Therefore, we can think of the flashlight joining the environmental lighting as a part of the global ambient light, the only difference is that you have control over the intensity. Consequently, alike we derived in the previous section for "ambient light" only condition, no matter where we place the camera, we don't need to change any settings, the amount of explosure for the object with the addition of a fixed position flash will remain constant.
 
-[ILLUSTRATION OF STILL FLASH AND MOVING CAM]
+![2024-06-27T141539](2024-06-27T141539.jpg)
 
 
 
 **<u>Scenario-B</u>: regular flash sitting on top of the camera (distance from flash to the object changes)**
 
-This scenario is more commonly seems when you are an "one men army" that works outside the studio, or you are like me: too broke to afford a wireless flash...
+This scenario is more commonly seen when you are a "one-man army" working outside the studio, or if you are like me: too broke to afford a wireless flash.
 
-When the flash light stays on your camera, its distance relative to the object is going to move as you move the camera, hence the amount of extra lighting it casts onto the object is going to be effected. (Let's assume the object is a A4 paper facing camera in front-facing direction, and you only move the camera forwards or backwards)
+When the flashlight stays on your camera, its distance relative to the object will change as you move the camera. This change affects the amount of extra lighting it casts onto the object. Let's assume the object is an A4 paper facing the camera in a front-facing direction, and you only move the camera forwards or backwards.
 
-[ILLUSTRATION OF THE ON CAMERA FLASH MOVE TOGETHER]
+![2024-06-27T141547](2024-06-27T141547.jpg)
 
 Firstly, the distance between the camera and object `D` , and the distance between the light and object `D(L)` are the same:  `D = D(L)`
 
@@ -202,7 +202,9 @@ Lastly we can calculate the luminosity of the object on the perspective of the c
 ≈  D2² : D1²   (when the ambient light is dark)
 ```
 
-[ILLUSTRATION OF HOW LIGHT DROPS AS FLASH+CAM MOVE]
+Hence, we can conclude that the light from the flash perceived by the camera (after reflecting off the object) will decrease in an inverse square relationship with its distance to the object. It is quite straightforward to comprehend because the light from the flash has to travel **<u>twice the distance</u>** to get back to the camera.
+
+As a result, if you want to keep the explosure of the object the same, via controlling the flash such that the object perceives the same amount of lighting, then you will need to crank the power of flash "sqaured" amount up to  counter the "inverse squared" amount of power loss.
 
 
 
