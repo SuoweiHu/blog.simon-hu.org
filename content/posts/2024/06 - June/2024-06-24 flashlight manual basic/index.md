@@ -1,5 +1,5 @@
 ---
-title: "Flashlight - Manual Mode"
+title: "Flashlight - Manual Mode: Basics"
 date: 2024-06-24
 categories: ["Photography"]
 ---
@@ -147,7 +147,7 @@ Secondly, say we have two different distances from camera to object: `D1` and `D
 = (1 / D1²)          : (1 / D2²)
 = D2²                : D1²
 ```
-- Similarly, ratio of flux introduced by flashlight `F(L)` at the distance `D(L)` , if the luminosity of the flash light is `L(L)`, 
+- Similarly, ratio of flux introduced by flashlight `F(L)` at the distance `D(L)` , if the luminosity of the flash light is `L(L)`,
 
 ```
   F(L)1                   : F(L)2
@@ -168,11 +168,11 @@ Secondly, say we have two different distances from camera to object: `D1` and `D
 = D2²                 : D1²
 
 (A1' is the area of the image of the object,
-in the sensor area of the camera, 
+in the sensor area of the camera,
 when the object of area A is D1 distant away from the camera+flash
 ```
 
-Thirdly, let's calculate the amount of light the flashlight "casts" to the object `L(Obj)` from its distance `D(L)`, assuming the object's area is a constant `A`. As well as the amount of extra flux introduced by that light in the perspective of the camera 
+Thirdly, let's calculate the amount of light the flashlight "casts" to the object `L(Obj)` from its distance `D(L)`, assuming the object's area is a constant `A`. As well as the amount of extra flux introduced by that light in the perspective of the camera
 ```
      L(Obj)1     : L(Obj)2
 =    F(L)1 / A   : F(L)2 / A
@@ -186,13 +186,13 @@ from the flashlight when the flashlight of power L(L) is on distance D1
 =  L(Obj)1 / A1' : L(Obj)1 / A2'
 =  D2² * D2²     : D1² * D1²
 
-(F1'' is the amount of light per unit area, 
+(F1'' is the amount of light per unit area,
 caused by the flashlight's photon reflecting off object,
 and on the perspective of the camera,
 when the camera+flash is at the distance D1 away from object
 ```
 
-Lastly we can calculate the luminosity of the object on the perspective of the camera with the addition of the flash: 
+Lastly we can calculate the luminosity of the object on the perspective of the camera with the addition of the flash:
 
 ```
             L(Obj)'1     : L(Obj)'2
@@ -206,7 +206,7 @@ Hence, we can conclude that the light from the flash perceived by the camera (af
 
 As a result, if you want to keep the explosure of the object the same, via controlling the flash such that the object perceives the same amount of lighting, then you will need to crank the power of flash "sqaured" amount up to  counter the "inverse squared" amount of power loss.
 
-
+![2024-07-01T193731](2024-07-01T193731.jpg)
 
 
 
