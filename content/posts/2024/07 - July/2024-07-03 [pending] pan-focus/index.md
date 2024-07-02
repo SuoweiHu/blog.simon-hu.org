@@ -1,6 +1,6 @@
 ---
 title: "[PENDING] What is Pan-Focus ?"
-date: 2024-06-28
+date: 2024-07-03
 categories: ["Photography"]
 ---
 
@@ -14,7 +14,7 @@ categories: ["Photography"]
 
 ## Why using Pan-Focus
 
-Use as intro: 
+Use as intro:
 
 >   说到这里我就举例说了一个比较特别的例子，叫做“不能对焦的泛焦机”，它也是不能手动对焦的，但只不过它并不是“不能自动对焦”而是“不能对焦”。那不能对焦的相机到底怎么拍照呢？其实泛焦机它指的就是景深特别大的那些相机，景深已经大到了“超焦距”，已经不用再对焦的那些相机。
 >
