@@ -1,5 +1,5 @@
 ---
-title: "Flashlight - Manual Mode: Basic Explosure"
+title: "Flashlight - Manual Mode (Basic Explosure)"
 date: 2024-06-24
 categories: ["Photography"]
 ---

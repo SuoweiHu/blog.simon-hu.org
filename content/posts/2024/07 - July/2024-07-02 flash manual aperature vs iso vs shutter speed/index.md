@@ -73,5 +73,5 @@ Balance via the following steps:
 
 Using these steps, you can control the exposure to create a well-balanced photograph where both the background and the subject are properly illuminated.
 
-
+![2024-07-02T120653](2024-07-02T120653.jpg)
 
