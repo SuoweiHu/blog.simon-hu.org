@@ -8,9 +8,24 @@ This tutorial provides step-by-step instructions to address the strange problem 
 
 ## 	Solution 1: Rebooting your web development environment
 
-Sometimes it will be a easy fix like rebooting your development environment / software, for my instance I am using MAMP, and by stopping the server and opening it again, solved 99% of my issues
+Sometimes it will be a easy fix like **rebooting** your development environment / software, for my instance I am using MAMP, and by stopping the server and opening it again, solved 99% of my issues
 
-## Solution 2: Move MIME type "application/x-httpd-php" to highest priority
+
+
+## Solution 2: Get a fresh instance of the .htaccess file
+
+Sometimes this issue is caused by the `.htacecss` file. To resolve this, you can download a fresh instance of the drupal from its [official website](https://www.drupal.org/download), and use its `.htaccess`  file to override the existing one. 
+
+After you do that you might want to: 
+
+1.   restart your MAMP server 
+2.   change your website's name (such that their URL differs from the previous one) to prevent caching issue
+3.   check your website in different browsers (for instance chrome + firefox + arc + brave + safari)
+
+
+
+
+## Solution 3: Move MIME type "application/x-httpd-php" to highest priority
 
 In file `MimeTypes.php`, move the `application/x-httpd-php` to the very bottom of the page, this will ensure your php handler is put on the highest priority.
 
