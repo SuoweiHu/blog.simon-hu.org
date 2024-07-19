@@ -1,11 +1,12 @@
 ---
-title: "GovCMS - Production Website does not change Upon Successful Deployment"
+title: "GovCMS - theme changes are not updating on live site"
 date: "2024-07-19"
 categories: ["GovCMS"]
 ---
 
 
 
+(Production Website does not change Upon Successful Deployment)
 
 
 ## Incident Happened ?
@@ -55,14 +56,14 @@ I tried "clearning cache" via adding task in GovCMS panel, refreshing using "Com
 
 ## Solution Proposed by my Genius Colleague
 
-Simply edit the `xxxx.libraries.yml` file, for my instance `themes/custom/govcms8_uikit_starter/govcms8_uikit_starter.libraries.yml`: 
+Simply edit the `xxxx.libraries.yml` file, for my instance `themes/custom/govcms8_uikit_starter/govcms8_uikit_starter.libraries.yml`:
 
 1.   change version from `1.x` to `-1`
-2.   add `preprocess: false` to the relevant CSS or JavaScript file. 
+2.   add `preprocess: false` to the relevant CSS or JavaScript file.
 
 
 
-For instance the following: 
+For instance the following:
 
 ```diff
  global-styling:
@@ -84,7 +85,7 @@ For instance the following:
    dependencies:
      - core/jquery
      - core/once
-     
+
 ...
 ```
 
