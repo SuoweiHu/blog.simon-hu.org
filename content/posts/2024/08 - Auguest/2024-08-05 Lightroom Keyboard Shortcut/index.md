@@ -106,6 +106,7 @@ categories: ["Lightroom"]
 - Geometry: `⌘ 7`
 
 ### Crop Geometry
+- Toggle Composition Guideline: `o` (e.g. rule-of-third to golden-rectangle)
 - Rotate Left (Clockwise): `⌘ [`
 - Rotate Right (Anti-clockwise): `⌘ ]`
 - Flip Horizontal: `⇧ ⌘ [`
