@@ -111,6 +111,7 @@ categories: ["Lightroom"]
 - Rotate Right (Anti-clockwise): `⌘ ]`
 - Flip Horizontal: `⇧ ⌘ [`
 - Flip Vertical: `⇧ ⌘ ]`
+- Toggle Composition Guide `o` (e.g. rule of third to diagonal)
 
 ### Healing
 - Toggle Healing Panel: `h`
