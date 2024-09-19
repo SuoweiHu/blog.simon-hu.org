@@ -1,5 +1,5 @@
 ---
-title: "快门选择之快门原理 - 机械快门"
+title: "快门科普 - 机械快门"
 date: 2024-09-18
 categories: ["Photography"]
 ---
