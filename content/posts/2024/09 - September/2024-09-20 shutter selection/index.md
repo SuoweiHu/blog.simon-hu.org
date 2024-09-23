@@ -23,22 +23,9 @@ categories: ["Photography"]
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Reference
 
 - [ZYZ_Lab - 【相机知识科普】电子前帘揭秘——快门的种类、原理与优劣](https://www.bilibili.com/read/cv21750774/)
 - [【詹姆斯】 詹姆斯摄影教程第⑯期：机械快门、镜间快门、电子快门和电子前帘快门的区别和用途](https://www.youtube.com/watch?v=ewzWTqs93Hw)
 - [Wikipedia - 快门](https://zh.wikipedia.org/wiki/%E5%BF%AB%E9%96%80)
+- [What is Electronic Front Curtain Shutter? and side effects. [EN/CN-DUAL-SUB]](https://www.youtube.com/watch?v=825NBTZhezY)
