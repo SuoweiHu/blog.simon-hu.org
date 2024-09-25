@@ -1,5 +1,5 @@
 ---
-title: "快门选择 - 总结"
+title: "快门科普 - 总结"
 date: 2024-09-20
 categories: ["Photography"]
 ---

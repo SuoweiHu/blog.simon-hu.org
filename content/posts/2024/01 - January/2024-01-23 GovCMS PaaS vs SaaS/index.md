@@ -5,13 +5,13 @@ categories: ["Drupal", "GovCMS"]
 ---
 
 ## What is PaaS and SaaS ?
--   **PaaS** stands for **Platform as a Service**. 
-    -   It is a cloud computing model where: a service provider <u>offers a platform for developing, running, and managing applications</u>. PaaS provides a pre-configured environment with resources such as operating systems, development tools, and databases. 
+-   **PaaS** stands for **Platform as a Service**.
+    -   It is a cloud computing model where: a service provider <u>offers a platform for developing, running, and managing applications</u>. PaaS provides a pre-configured environment with resources such as operating systems, development tools, and databases.
     -   Usually more configurable, but more time-consuming to setup.
 
--   **SaaS** stands for **Software as a Service**. 
-    -   It is a cloud computing model where: a service provider <u>hosts software applications and makes them available to users over the internet</u>. Users can access and use these applications through web browsers without the need for installation or maintenance on their local devices. 
-    -   Usually less configurable, but much easier to setup. 
+-   **SaaS** stands for **Software as a Service**.
+    -   It is a cloud computing model where: a service provider <u>hosts software applications and makes them available to users over the internet</u>. Users can access and use these applications through web browsers without the need for installation or maintenance on their local devices.
+    -   Usually less configurable, but much easier to setup.
 
 
 
@@ -32,8 +32,30 @@ categories: ["Drupal", "GovCMS"]
 
 
 
+## GovCMS - PaaS hosting
+
+GovCMS Platform as a Service (PaaS) hosting is a by government, for government website hosting solution.
+
+The PaaS hosting solution includes security and management of the platform. While being more flexible with greater allowable Drupal modules, customers with PaaS hosting are responsible for regular security patching, software updates and Drupal application maintenance. Application and infrastructure maintenance is provided, but more limited than SaaS. Regular backups of your site are also included.
+
+Web Protection Services can be included as part of the SaaS pricing a Web Application Firewall, Content Delivery Network, Distributed Denial of Service protection and Bot Manager. PaaS customers can choose their own solutions rather than the GovCMS Web Protection Services listed above where desired.
+
+GovCMS also provides training courses, training material and [videos online](https://www.govcms.gov.au/training). GovCMS has an [active community](https://www.govcms.gov.au/support/govcms-community) for connecting with other agencies working on GovCMS and developers working around the GovCMS ecosystem.
+
+There are more than 350 government websites hosted on the GovCMS platform, you can find many of the sites through the [GovCMS Gallery](https://www.govcms.gov.au/gallery). For PaaS pricing it is customised to your needs, contact GovCMS.
+
+Those considering GovCMS can use the [Am I eligible to use GovCMS?](https://www.govcms.gov.au/support/am-i-eligible-use-govcms) tool to confirm their eligibility.
+
+More information can be found on the [GovCMS website](https://www.govcms.gov.au/).
+
+Alternatively, [contact GovCMS](https://www.govcms.gov.au/contact-us) via their contact form.
 
 
-## Reference 
+
+
+
+
+## Reference
 
 -   [What you need to know about security and GovCMS](https://www.govcms.gov.au/support/security#:~:text=GovCMS%20Platform%20as%20a%20Service,as%20installation%20of%20module%20updates.)
+-   [Australian Government Architecture - GovCMS - PaaS hosting](https://architecture.digital.gov.au/govcms-paas-hosting)
