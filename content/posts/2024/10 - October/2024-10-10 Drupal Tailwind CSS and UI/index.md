@@ -281,11 +281,54 @@ At the end you will get something like the following:
 
 ## Step-3: Building Re-usable Component (with Tailwind UI + Paragraph Module)
 
-Please try it first....
+Let's demostrate by creating the "bento grid" component (free Tailwind UI component), and make the title a field in paragraph type (for quick demostration purpose): 
+
+![image-20241010145438719](image-20241010145438719.png)
+
+### 3A. Create Pragraph Type 
+
+I won't go into the details of this step, create the paragraph type, configure its fields and make it available on the content type: 
+
+![image-20241010145645824](image-20241010145645824.png)
+
+### 3B. Generate Dummy Content 
+
+Make the paragraph type available in one of your content, and create one of those contetn with this (paragraph) component 
+
+![2024-10-10T151446](2024-10-10T151446.png)
+
+### 3C. Create Twig Template
+
+First goto the Tailwind UI offcial page and find the HTML snippets there: https://tailwindui.com/components/marketing/sections/bento-grids
+
+![2024-10-10T145754](2024-10-10T145754.png)
+
+Then create the twig template corresponding to the paragraph type that was created (`template/paragraph--tailwind-ui-bento-grids.html.twig` in our case)
+
+![2024-10-10T151550](2024-10-10T151550.png)
+
+And use the html we just copied to create fill in the template: 
+
+```twig
+<div class="bg-gray-50 py-24 sm:py-32">
+  <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+    <h2 class="text-center text-base/7 font-semibold text-indigo-600">Deploy faster</h2>
+    <p class="mx-auto mt-2 max-w-lg text-pretty text-center text-4xl font-medium tracking-tight text-gray-950 sm:text-5xl">
+      {{ content.field_bento_title.0["#context"].value }}
+... 
+```
 
 
 
+### 3D. See The Changes Live !
 
+Perform `tailwind css build` and `drush cr` , and voilà, you get the Bento Grid component with the title from the paragraph, and by copying it from the Tailwind UI store, we almost spend no effort creating this stunning component.
+
+![2024-10-10T152124](2024-10-10T152124.png)
+
+And usually these components are built to be mobile responsive as well ! 
+
+![2024-10-10T152155](2024-10-10T152155.png)
 
 
 
