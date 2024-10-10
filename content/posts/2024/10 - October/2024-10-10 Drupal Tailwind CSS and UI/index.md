@@ -108,9 +108,172 @@ Once properly installed you should see your theme's style taking effect. (I woul
 
 
 
+
+
+
+
 ## Step-2: Installation of Tailwind CSS
 
-Tailwind CSS along with its dependencies are managed by node package manager 
+Tailwind CSS along with its dependencies are managed by node package manager, we can install it following the guide provide on the official website: 
+
+### 2A. Install Tailwind CSS
+
+Install tailwindcss via npm, and create your `tailwind.config.js` file.
+
+```
+> npm install -D tailwindcss
+> npx tailwindcss init
+```
+
+You should be getting a  `tailwind.config.js` file like the following to begin with: 
+
+```
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
+### 2B. Configure your template paths
+
+The template paths in `content` attribute tell Tailwind which files to scan for class names. This is essential because Tailwind uses a process called "purging" to remove unused styles from the final CSS output, which helps keep the file size small (in another word, if you don't configure your template path correctly, the after the `npx build` process, all but the default the styling will be removed). For our later usage, we will be using the Tailwind UI component via paragraph's twig template, hence let's change the `content`  to include the `.twig` files living in `\template` folder. 
+
+Moreover, we will be using the tailwind `colors`, sans `font` family, and plugins: `@tailwindcss/forms`,  `@tailwindcss/aspect-ratio`, add them in the configuration file. At the end you'll get something like 
+
+```js
+/** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors');
+
+module.exports = {
+  content: ['./templates/**/*.{html,js,twig,html.twig}'],
+  theme: {
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      black: colors.black,
+      white: colors.white,
+      gray: colors.gray,
+      emerald: colors.emerald,
+      indigo: colors.indigo,
+      yellow: colors.yellow,
+      blue: colors.blue,
+      red: colors.red,
+      green: colors.green,
+    },
+    extend: {
+      fontFamily: {
+        sans: ['InterVariable', ...defaultTheme.fontFamily.sans],
+      },
+    },
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
+  ],
+};
+
+```
+
+### 2C. Add the Tailwind directives to your CSS
+
+Use  `@tailwind` to include different layers of Tailwind's pre-designed styles into your CSS
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+You can either :
+
+-   add the above to your main `style.css` file for the sub-theme, and change your sub-theme to use the css file after built
+-   (OR) create a new css file `tailwind/input.css`, and after using the `npx tailwind` command to build the css file into `tailwind/output.css`, import it to your main `style.css` file via `@import url(../tailwind/output.css)`.
+
+We will take the second approach. 
+
+### 2D. Start the Tailwind CLI build process
+
+Run the CLI tool to scan your template files for classes and build your CSS and clear drupal cache
+
+```
+> npx tailwindcss -i ./tailwind/input.css -o ./tailwind/output.css             # Compile Once
+> npx tailwindcss -i ./tailwind/input.css -o ./tailwind/output.css --watch     # Watch Change
+> ../../../vendor/bin/drush cr                                                 # Clear Cache
+```
+
+For the convinience, you can add the following to your `package.json` file: 
+
+```json
+{
+    "scripts": {
+        "...":                   "...",
+        "build-tailwind":        "npx tailwindcss -i ./tailwind/input.css -o ./tailwind/output.css         && ../../../vendor/bin/drush cr",
+        "...":                   "...",
+    }
+}
+```
+
+Then you can build your tailwind css via simply running: `npm run build-tailwind`
+
+### 2E. Add Build Tailwind CSS File to Sub-theme
+
+Now let's add the `tailwind/output.css` to the sub-theme's library via `tailwind_civic.libraries.yml`
+
+```
+global:
+  css:
+    theme:
+        dist/civictheme.css: {}
+        tailwind/output.css: {}
+  js:
+    dist/civictheme.js: {}
+  dependencies:
+    - core/drupal
+    - core/once
+    - core/drupalSettings
+```
+
+### 2F. Dry-run Your Tailwind CSS 
+
+Lately let's try  superpower of tailwind css, by adding some extra style via `class` to the base template `html.html.twig`:
+
+```
+...
+    <!DOCTYPE html>
+    <html{{ html_attributes }} class="bg-blue-100 p-10">
+        ...
+        ...
+    </html>
+...
+```
+
+Remeber to recompile the tailwind css file and clear the cache: 
+
+```
+> npm run build-tailwind
+
+     npx tailwindcss -i ./tailwind/input.css -o ./tailwind/output.css && ../../../vendor/bin/drush cr
+     Rebuilding...
+     Done in 148ms.
+     [success] Cache rebuild complete.
+```
+
+At the end you will get something like the following: 
+
+![2024-10-10T143309.png](2024-10-10T143309.png)
+
+
+
+
+
+
+
+
 
 
 
