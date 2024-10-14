@@ -20,6 +20,7 @@ Resources referenced in this post includes:
 -   Tailwind CSS - Official Installation Guide: https://tailwindcss.com/docs/installation
 -   Tailwind UI - Official Installation Guide: https://tailwindui.com/documentation
 -   Theme Drupal - Adding assets: [https://www.drupal.org/.../asset](https://www.drupal.org/docs/develop/theming-drupal/adding-assets-css-js-to-a-drupal-theme-via-librariesyml)
+-   Web Developer Jones - Install Tailwind CSS in Drupal 10: [https://www.youtube.com/watch?v=kzmjUmTBVnI](https://www.youtube.com/watch?v=kzmjUmTBVnI)
 
 
 
