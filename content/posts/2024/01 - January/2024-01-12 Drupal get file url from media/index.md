@@ -1,5 +1,5 @@
 ---
-date: "2024-01-12T093818"
+date: "2024-01-12"
 title: "Drupal get URL from media entity in twig"
 categories: ["Twig"]
 ---
