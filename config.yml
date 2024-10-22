@@ -1,4 +1,4 @@
-baseURL: "https://blog.simon-hu.org/"
+baseURL: "https://blog.simon-hu.com/"
 title: Simon's Blog
 pagination.pagerSize: 10
 theme: PaperMod
