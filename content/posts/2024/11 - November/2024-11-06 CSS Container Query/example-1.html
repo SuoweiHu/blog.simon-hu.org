@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <section class="parent">
+        <p class="child">
+            HELLO WORLD !!!! HELLO WORLD !!!! HELLO WORLD !!!!
+        </p>
+    </section>
+    <style>
+        .parent{
+            /* Both container/parent's  [height]  &  [width]
+               will auto adjust based on its inner/child component
+              (remember to set both value to "fit-content" for the auto fitting to work) */
+            container-type:  normal;
+            height:          fit-content;
+            width:           fit-content;
+
+            /* Some Generic Styles */
+            margin-top:     20px;
+            margin-left:    20px;
+            border:         2px solid;
+            background:     #ffcf00;
+        }
+        .parent > .child{
+            font-size:    2rem;
+            line-height:  2rem;
+            margin-block: 0px;
+            background:  #8cf94d6d;
+            display:      block;
+            width:        300px;
+        }
+
+    </style>
+</body>
+</html>

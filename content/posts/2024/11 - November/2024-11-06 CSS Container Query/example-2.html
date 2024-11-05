@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <section class="parent">
+        <p class="child">
+            HELLO WORLD !!!! HELLO WORLD !!!! HELLO WORLD !!!!
+        </p>
+    </section>
+    <style>
+        .parent{
+            /* The container/parent's  [width]
+               does not depend on its inner/child component
+               The container/parent's  [height]
+               however will auto adjust based on its inner/child component
+              (remember to set width value, by default "auto"
+               and height value has to be "fit-content" for the auto fitting to work) */
+            container-type:  inline-size;
+            height:          fit-content;
+            width:           200px;
+
+            /* Some Generic Styles */
+            margin-top:     20px;
+            margin-left:    20px;
+            border:         2px solid;
+            background:     #ffcf00;
+        }
+        .parent > .child{
+            font-size:    2rem;
+            line-height:  2rem;
+            margin-block: 0px;
+            background:  #8cf94d6d;
+            display:      block;
+            width:        300px;
+        }
+
+    </style>
+</body>
+</html>
