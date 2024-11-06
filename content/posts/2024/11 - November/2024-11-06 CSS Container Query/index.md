@@ -29,9 +29,9 @@ The above example showcase the example, when the screen reaches `500px` upper ec
 
 ![2024-11-06T094712](2024-11-06T094712.gif)
 
-This is when we need container query, with it we can have a "componenrized styling" for the container depending on its own width and height property: **PENDING EXAMPLE HERE**
+Container queries are essential in this context, as they enable components to manage their styles independently based on their own properties, such as width and height, rather than relying on potentially irrelevant global properties. This approach also enhances the "containerized" or "componentized" styling of containers.
 
-
+![2024-11-06T111319](2024-11-06T111319.gif)
 
 
 
