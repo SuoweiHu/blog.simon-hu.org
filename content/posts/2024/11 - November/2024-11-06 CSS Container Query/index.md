@@ -8,9 +8,9 @@ categories: ["CSS"]
 
 
 
+## Why we need container query ?
 
-
-## Intuition (What does it differs to Media Query (`@media`))
+### Intuition - What does it differs to Media Query (`@media`)
 
 You might be very familiar with controlling the style of the component depending on the device width via the `@media` query, for instance I've been using the following code snippets to style full-width component for all device endpoints in Drupal:
 
@@ -33,11 +33,122 @@ Container queries are essential in this context, as they enable components to ma
 
 ![2024-11-06T111319](2024-11-06T111319.gif)
 
+### Why care about CSS Container Queries?
+
+Below are some of the reasons proposed by Geoff Graham at CSS-Trick ([reference](https://css-tricks.com/css-container-queries/)), for why we need to use container queries: 
+
+1.   When using a container query, we give elements the ability to change based on their **container’s size**, not the viewport.
+2.   They allow us to define all of the styles for a particular element in a more **predictable** way.
+3.   They are more **reusable** than media queries in that they behave the same no matter where they are used. So, if you were to create a component that includes a container query, you could easily drop it into another project and it will still behave in the same predictable fashion.
+4.   They introduce **new types of CSS length units** that can be used to size elements by their container’s size.
+
 
 
 ## Container Query (`@container`)
 
-**PENDING EXAPLINATION HERE**
+Container queries are come to people's attention recently, unlike traditional responsive design techniques that focus primarily on the device’s viewport size, container query enables a whole world of possibilities of styling the website's component based on it's container's width. Below is an example of the container query: 
+
+![2024-11-11T131236](2024-11-11T131236.gif)
+
+```
+/* [STEP-1]: Reigister Parent/Wrapper as Container */
+.parent {
+    container-name:  card-container;         /* or Shorthand: */
+    container-type:  inline-size;            /* [ container: card-container / inline-size; ]*/
+}
+
+/* [STEP-2]: Querying a Container */
+@container card-container (width > 60ch) {   /* When the container is greater than 60 characters... */
+    .child {flex-direction: row;}            /* Change the flex direction of the .child element. */
+}
+```
+
+### Step-1: Register Parent/Wrapper as Container 
+
+To begin with, as aforementioned in the intuition, you will need to claim a container via `container-type` (since if you do not, the container's size will have a reverse dependency towards its inner child): 
+
+-   if you claim `container-type`to be `normal`, then none of the contianer query will work(because the containers width & height are all dependent on the child, in order for the query to work, a container cannot be sized by what's in it !)
+-   if you claim `container-type` to be `inline-size`, then you can later use container query on its width, but not the height
+-   if you claim `container-type` to be `size`, then you can use container query on both the width and height
+
+(\*Optionally, you can also define a `container-name`, an unnamed container will match any containter that full-fills its wrapping selector. Below are an examples for the two: 
+
+-   Container-name : [gif example](2024-11-11T131236.gif)
+
+    ```
+    #html
+    <div class="parent">
+       <div class="child">
+         <div class="sub-child">
+       
+    #css 
+    .parent{
+    	container-type: size;
+    	container-name: example-container;
+    }
+    @container example-container (width > 200px) and (height > 200px){ 
+    	.child{ ... }
+    }
+    ```
+
+-   Using Selector: [gif example](2024-11-11T132819.gif)
+
+    ```
+    #html
+    <div class="parent">
+       <div class="child">
+         <div class="sub-child">
+       
+    #css 
+    .parent{
+    	container-type: size;
+    }
+    
+    .parent{
+    	@container example-container (width > 200px) and (height > 200px){ 
+    		.child{ ... }
+    	}
+    }
+    ```
+
+### Step-2: Querying a Container (and Styling Element within Container)
+
+After declaring the container in the first step, you can then control the style of its inner element based on the container's width (and/or height) property. The `.child` and `.child > .sub-child`  element in the below example, represents an item in the container, whether it’s a direct child of the container or a further ancestor. Either way, the element must be in the container and it will get styles applied to it when the queried condition is matched.
+
+```
+#html
+<div class="parent">
+   <div class="child">
+     <div class="sub-child">
+   
+#css 
+.parent{
+	container-type: size;
+	container-name: example-container;
+}
+@container example-container (width > 200px) and (height > 200px){ 
+	.child              { ... }
+	.child > .sub-child { ... }
+}
+```
+
+(\*You can also query based on the container's style, and device's orientations, for instance: 
+
+```
+@container (orientation: landscape) {
+  /* styles applied to descendants of this size container */
+}
+
+@container style(color: green) and style(background-color: transparent),
+    not style(background-color: red),
+    style(--themeBackground),
+    style(--themeColor: blue) or style(--themeColor: purple),
+    (max-width: 100vw) and style(max-width: 600px) {
+  /* <stylesheet> */
+}
+```
+
+
 
 
 
@@ -89,4 +200,6 @@ Let's showcase them one by one:
 
 - [Josh Comeau - A Friendly Introduction to Container Queries](https://www.joshwcomeau.com/css/container-queries-introduction/?from=newsletter)
 
--   [mdn web docs - container-type](https://developer.mozilla.org/en-US/docs/Web/CSS/container-type)
+- [mdn web docs - container-type](https://developer.mozilla.org/en-US/docs/Web/CSS/container-type)
+
+-   [CSS-Trick - CSS Container Queries](https://css-tricks.com/css-container-queries/)
