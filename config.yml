@@ -89,10 +89,10 @@ params:
     hiddenInList: true # hide on list pages and home
     hiddenInSingle: true # hide on single page
 
-  editPost:
-    URL: "https://github.com/SuoweiHu/SuoweiHu.github.io/content"
-    Text: "Edit" # edit text
-    appendFilePath: true # to append file path to Edit link
+  # editPost:
+  #   URL: "https://github.com/SuoweiHu/SuoweiHu.github.io/content"
+  #   Text: "Edit" # edit text
+  #   appendFilePath: true # to append file path to Edit link
 
   # for search
   # https://fusejs.io/api/options.html
@@ -109,6 +109,10 @@ menu:
     # - identifier: read
     #   name: "📙"
     #   url: /read/
+    #   weight: 1
+    # - identifier: DiffTool
+    #   name: DiffTool
+    #   url: /tools/diff-checker/
     #   weight: 1
     - identifier: archives
       name: Timeline
