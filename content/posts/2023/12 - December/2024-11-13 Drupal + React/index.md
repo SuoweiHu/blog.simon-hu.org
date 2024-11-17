@@ -1,26 +1,26 @@
 ---
-title: "Drupal + React Framework (thourgh Theme)"
+title: "React/Vue Framework Component in Drupal"
 date: 2024-11-13
 categories: ["Drupal"]
 ---
 
 
 
-## Intuition 
+## Intuition
 
 The notion has repeatedly occurred to me since I first entered the Drupal industry, where I have observed numerous online tutorials and blog posts asserting the necessity of frameworks such as Vue and React. These resources often emphasize that beginners, like I was at the time, should familiarize themselves with these technologies. Amidst the enthusiasm for these new frameworks, there exists a tendency to disparage traditional content management systems (CMS) such as WordPress, which are frequently characterized in bleak terms as an "old, dying whale." This rhetoric raises significant concerns about my future in the field. Which has lead to today's topic, are we allowed to integrate framework like react into drupal, enabling me to fulfill the commitments made by my agency to our clients while simultaneously exploring and learning React (and other front-end frameworks) in the process.
 
 
 
-## Setup Process Breakdown 
+## Setup Process Breakdown
 
 ### Overview
 
-In order to have drupal render a react component, there're three steps we will need to undertake: 
+In order to have drupal render a react component, there're three steps we will need to undertake:
 
 -   **Step-1**: have Drupal outputting a html DOM element that contains data (that will be later used by the React component to render the styled component), and this is achievable via parargraph module + a custom theme's `twig` template.
--   **Step-2**: create the corresponding `js`/`jsx`/`ts` file that rendered the DOM element with data into a styled component, and use the appropriate bundler (for instance web-pack) to render these files into vanilla javasctipt that can be ran on browser. 
--   **Step-3**: add the rendered single javasctipt file into the custom theme's library, and attach it to the relevant `twig` template 
+-   **Step-2**: create the corresponding `js`/`jsx`/`ts` file that rendered the DOM element with data into a styled component, and use the appropriate bundler (for instance web-pack) to render these files into vanilla javasctipt that can be ran on browser.
+-   **Step-3**: add the rendered single javasctipt file into the custom theme's library, and attach it to the relevant `twig` template
 
 ### Step-1: output DOM element
 
@@ -48,14 +48,14 @@ In order to have drupal render a react component, there're three steps we will n
 {% endblock paragraph %}
 ```
 
-### Step-2: Framework Related Code & Bundler 
+### Step-2: Framework Related Code & Bundler
 
 ```js
 // =====================================
 // FILE TILE/index.jsx (REACT COMPONENT)
 // =====================================
 
-// importing reuqired libraryies 
+// importing reuqired libraryies
 import React        from 'react';
 import ReactDOM     from 'react-dom/client';
 import Card         from '@mui/material/Card';
@@ -128,7 +128,7 @@ console.log("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
 
 ```javascript
 // =======================================
-// FILE webpack.config.json FOR JS BUNDLER 
+// FILE webpack.config.json FOR JS BUNDLER
 // =======================================
 
 const path = require('path');
@@ -187,7 +187,7 @@ module.exports = {
 
 ```yaml
 # =============================================================
-# FILE theme_name.libraries.yaml TO MAKE JS VIABLE AS A LIBRARY 
+# FILE theme_name.libraries.yaml TO MAKE JS VIABLE AS A LIBRARY
 # =============================================================
 
 lib_paragraph_tile:
@@ -223,12 +223,12 @@ lib_paragraph_tile:
 
 ```
 
-### Final Outcome & Example Code 
+### Final Outcome & Example Code
 
-The final outcome and the example code can be found as the following: 
+The final outcome and the example code can be found as the following:
 
 -   [example - outcome screenshot ](2024-11-17T200123.png)
--   [example - custom theme](example_custom_theme.zip) 
+-   [example - custom theme](example_custom_theme.zip)
 
 
 
@@ -236,3 +236,6 @@ The final outcome and the example code can be found as the following:
 
 -   [React for Drupal](https://reactfordrupal.com/)
 -   [Drupalize Me - Connect React to a Drupal Theme or Module](https://drupalize.me/tutorial/connect-react-drupal-theme-or-module)
+-   [Data Binding in React](https://www.joshwcomeau.com/react/data-binding/)
+-   [Add React to an Existing Project](https://react.dev/learn/add-react-to-an-existing-project)
+-   [Adding assets (CSS, JS) to a Drupal module via *.libraries.yml](https://www.drupal.org/docs/develop/creating-modules/adding-assets-css-js-to-a-drupal-module-via-librariesyml#s-attaching-a-library-to-pages)
