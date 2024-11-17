@@ -5,6 +5,11 @@ categories: ["Drupal"]
 ---
 
 
+
+
+
+## Step Progress Breakdown
+
 ### Level-1: Component using Paragraph Twig Tempalte
 
 To begin with, let's start by building a simple component using drupal paragraph module:
@@ -145,4 +150,14 @@ theme
 To show case this new change, now we have a `Mr` before my name ~
 
 ![2024-11-15T005628](2024-11-15T005628.png)
+
+
+
+
+
+
+
+## Reference
+- [Creating a single-directory component](https://www.drupal.org/docs/develop/theming-drupal/using-single-directory-components/creating-a-single-directory-component)
+- [Single Directoy Component | Quickstart](https://www.drupal.org/docs/develop/theming-drupal/using-single-directory-components/quickstart#:~:text=Drupal's%20Single%2DDirectory%20Components%20consist,they%20are%20important%20for%20Drupal.)
 
