@@ -1,7 +1,7 @@
 ---
 title: "Drupal Debug Trick: debug_backtrace / debug_print_backtrace - [PENDING]"
 date: "2023-11-16"
-categories: ["Drupal"]
+tags: ["Drupal"]
 ---
 
 ## PENDING ...

@@ -1,7 +1,7 @@
 ---
 title: "Flashlight - TTL Mode"
 date: 2024-07-03
-categories: ["Photography"]
+tags: ["Photography"]
 ---
 
 

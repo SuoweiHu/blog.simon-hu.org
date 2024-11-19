@@ -1,7 +1,7 @@
 ---
 title: "Browser CORS policy"
 date: 2023-11-08
-categories: ["Network"]
+tags: ["Network"]
 tags: ["CORS Policy", "Cross Origin"]
 ---
 

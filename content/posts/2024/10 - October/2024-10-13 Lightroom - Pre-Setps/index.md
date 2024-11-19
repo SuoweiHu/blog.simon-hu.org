@@ -1,7 +1,7 @@
 ---
 title: "Lightroom - 后期必做动作"
 date: "2024-10-13"
-categories: ["Lightroom"]
+tags: ["Lightroom"]
 ---
 
 

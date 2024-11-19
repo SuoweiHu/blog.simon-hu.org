@@ -1,7 +1,7 @@
 ---
 title: "快门科普 - 总结"
 date: 2024-09-20
-categories: ["Photography"]
+tags: ["Photography"]
 ---
 
 

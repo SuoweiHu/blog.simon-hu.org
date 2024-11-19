@@ -1,7 +1,7 @@
 ---
 title: "快门科普 - 机械快门"
 date: 2024-09-18
-categories: ["Photography"]
+tags: ["Photography"]
 ---
 
 

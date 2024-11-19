@@ -1,7 +1,7 @@
 ---
 title: "[GovCMS SaaS] Configure Pathauto Pattern: [node:menu-link:parents:join-path]/[node:title]"
 date: "2024-06-14"
-categories: ["GovCMS"]
+tags: ["GovCMS"]
 ---
 
 
@@ -10,7 +10,7 @@ categories: ["GovCMS"]
 ---
 ## Issue Reproduced
 
-I was going to make a **<u>node's url</u>** match with **<u>its menu configuration</u>**, this causes me having to go to the configuration page:  **<u>"Admin > Config > Url-Alias > Pattern"</u>** (/admin/config/search/path/patterns), and add a pattern "[node:menu-link:parents:join-path]/[node:title]". 
+I was going to make a **<u>node's url</u>** match with **<u>its menu configuration</u>**, this causes me having to go to the configuration page:  **<u>"Admin > Config > Url-Alias > Pattern"</u>** (/admin/config/search/path/patterns), and add a pattern "[node:menu-link:parents:join-path]/[node:title]".
 
 As I try to add the new pattern as described above, I've got the error: "**<u>*Path pattern* is using the following invalid tokens: [node:menu-link:parent:join-path].</u>**"
 
@@ -25,7 +25,7 @@ After some investigation, I findout this issue **<u>only happens</u>** on GovCMS
 
 Anyhow you can resolve this simply by config synchronizaiont:
 
-1.   Create a placeholder pattern with "path-pattern" being "[node:title]" 
+1.   Create a placeholder pattern with "path-pattern" being "[node:title]"
 2.   Export configuration via `drush cex`
 3.   Change line in corresponding `pathauto.pattern.XXXXX.yml` file
      -   Drop line `pattern: [node:title]` (example file before: [link](./pathauto.pattern.example_pattern_before.yml))

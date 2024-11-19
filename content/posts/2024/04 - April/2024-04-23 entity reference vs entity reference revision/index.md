@@ -1,7 +1,7 @@
 ---
 title: "Drupal \"Entity Reference\" field vs \"Entity Reference Revision\" field vs \"Dynamic Entity Reference\""
 date: "2024-04-23"
-categories: ["Drupal"]
+tags: ["Drupal"]
 draft: false
 publishDate: "2024-04-22"
 ---
@@ -16,7 +16,7 @@ publishDate: "2024-04-22"
 
     >   **Entity Reference Revisions** adds an **Entity Reference** field type with **revision support**, allowing specific entity revisions to be references. This is useful for modules like Paragraphs and Inline Entity Form
 
--   According to the project page for [Dynamic Entity Reference](https://www.drupal.org/project/dynamic_entity_reference) module: 
+-   According to the project page for [Dynamic Entity Reference](https://www.drupal.org/project/dynamic_entity_reference) module:
 
     >   Dynamic Entity Reference provides a field type/widget/formatter combination for Drupal 8 that allows an entity-reference field to reference more than one entity type.
 

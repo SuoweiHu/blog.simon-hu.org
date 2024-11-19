@@ -1,7 +1,7 @@
 ---
 title: "快门科普 - 电子快门"
 date: 2024-09-19
-categories: ["Photography"]
+tags: ["Photography"]
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Address Input Auto-Complete (via Google Place API)"
 date: "2024-05-17"
-categories: ["Google Map"]
+tags: ["Google Map"]
 ---
 
 

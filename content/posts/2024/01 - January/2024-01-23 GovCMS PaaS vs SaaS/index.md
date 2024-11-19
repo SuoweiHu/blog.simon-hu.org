@@ -1,7 +1,7 @@
 ---
 title: "GovCMS PaaS vs SaaS"
 date: "2024-01-23"
-categories: ["Drupal", "GovCMS"]
+tags: ["Drupal", "GovCMS"]
 ---
 
 ## What is PaaS and SaaS ?

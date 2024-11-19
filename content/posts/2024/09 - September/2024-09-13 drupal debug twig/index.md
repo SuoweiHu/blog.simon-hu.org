@@ -1,7 +1,7 @@
 ---
 title: "Drupal Debug Twig"
 date: "2024-09-12"
-categories: ["Drupal"]
+tags: ["Drupal"]
 ---
 
 

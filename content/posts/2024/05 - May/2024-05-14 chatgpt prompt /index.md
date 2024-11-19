@@ -1,7 +1,7 @@
 ---
 title: "LLM - Useful Prompt & Prompt Generation"
 date: "2024-05-14"
-categories: ["LLM", "ChatGPT"]
+tags: ["LLM", "ChatGPT"]
 ---
 
 

@@ -3,7 +3,7 @@ title: "Drupal Error: attempt to create field when field storage does not exist"
 date: "2024-04-23"
 description: "Resolution for error\"Attempted to create an instance of field with name field_name_xxyyzz
      on entity type node when the field storage does not exist.\""
-categories: ["Drupal", "Error"]
+tags: ["Drupal", "Error"]
 ---
 
 

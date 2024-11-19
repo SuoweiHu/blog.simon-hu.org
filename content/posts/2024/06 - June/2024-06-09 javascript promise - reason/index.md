@@ -1,26 +1,26 @@
 ---
 title: "JavaScript Promise 101 - Reasoning"
 date: "2024-06-09"
-categories: ["JavaScript"]
+tags: ["JavaScript"]
 ---
 
 
 
 ## Why Promise ?
 
-To begin with, let's understand what is ? 
+To begin with, let's understand what is ?
 
 >   A Promise is **an object representing the eventual completion or failure of an asynchronous operation**. Since most people are consumers of already-created promises, this guide will explain consumption of returned promises before explaining how to create them.
 >
 >   [-- MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
 
-and why we will need the concept of `Promise` ? 
+and why we will need the concept of `Promise` ?
 
->   1.   Promise provide you a way to **reducing call-back hell** 
+>   1.   Promise provide you a way to **reducing call-back hell**
 >   2.   Promises give us the ability to **write cleaner code**
 >   3.   Promise allow you to **handle error together** (or optionally by each promise)
 >
->   [-- ColorCode - JavaScript Promises](https://www.youtube.com/watch?v=TnhCX0KkPqs) 
+>   [-- ColorCode - JavaScript Promises](https://www.youtube.com/watch?v=TnhCX0KkPqs)
 
 
 
@@ -30,9 +30,9 @@ and why we will need the concept of `Promise` ?
 
 ## **World without Promise ?**
 
-#### Broken Async 
+#### Broken Async
 
-First, we begin with a simple asynchronous function `getWeather_1` using `setTimeout` that is **broken** (and we will be using this method to simulate the asynchrnouse function a lot in the upcoming examples). 
+First, we begin with a simple asynchronous function `getWeather_1` using `setTimeout` that is **broken** (and we will be using this method to simulate the asynchrnouse function a lot in the upcoming examples).
 
 ```javascript
 // [ASYNC code (primitive with bug)]
@@ -53,7 +53,7 @@ document.body.innerText(weather_1);
 
 #### Primitive Async
 
-Second, let's try **fixing bug** in the previous asynchronouse code example: 
+Second, let's try **fixing bug** in the previous asynchronouse code example:
 
 ```javascript
 // [ASYNC code (primitive)]
@@ -107,7 +107,7 @@ getWeather_3();
 // - the two function looks modular, but are in nature still tightly coupled
 ```
 
-#### Async with callback 
+#### Async with callback
 
 Despite the side-effect, we can also **resolve the modularity (strong couple/dependency)** via **callback function**
 
@@ -140,7 +140,7 @@ getWeather ((data)=>{alert(data)})       // [Example Alternative Callback - 2]
 
 #### Async with callback hell
 
-using callback is benificial, but can result in **callback hell **(or **Pyramid of doom**, **Heavy nesting**, **Deeply nested callbacks**): 
+using callback is benificial, but can result in **callback hell **(or **Pyramid of doom**, **Heavy nesting**, **Deeply nested callbacks**):
 
 ```javascript
 // [Async with callback hell]
@@ -185,9 +185,9 @@ requestDataA();
 // - moreover, each time there's an error you will have to write a handle statement
 ```
 
-#### Async with Promise 
+#### Async with Promise
 
-From the following example you can see all the issue mentioned aboved getting **resolved by promise**: 
+From the following example you can see all the issue mentioned aboved getting **resolved by promise**:
 
 ```javascript
 // [ASYNC with Promise]
@@ -237,7 +237,7 @@ requestDataA()
 -   avoid the **callback hell** (or pyramid of doom)
 -   **readability** of code (modifying is easier)
 -   no callback **passed into the function** (the only thing passing in is the relevant argument that need to be used for the promise, say URL), hence making our function signiture a lot simplier
--   all **error handled together** (or optionally seprately see, see the ↓↓ example below ↓↓) 
+-   all **error handled together** (or optionally seprately see, see the ↓↓ example below ↓↓)
 
 
 
@@ -344,7 +344,7 @@ getDate.then(
 
 
 
-## Reference 
+## Reference
 
 -   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise#:~:text=A%20Promise%20is%20a%20proxy,success%20value%20or%20failure%20reason.
 -   https://www.youtube.com/watch?v=TnhCX0KkPqs

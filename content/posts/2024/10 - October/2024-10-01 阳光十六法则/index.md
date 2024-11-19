@@ -2,7 +2,7 @@
 title: "阳光十六法则 (Sunny 16 rule)"
 date: 2024-10-01
 draft: false
-categories: ["Photography"]
+tags: ["Photography"]
 ---
 
 

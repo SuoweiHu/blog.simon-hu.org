@@ -1,7 +1,7 @@
 ---
 title: "Deprecation of \"jquery.once\" api"
 summary: "Fixing custom modules' code that are dependent of jquery.once which is changing its api in newest drupal 10, hence making it compatible for the upgrade. "
-categories: ["Drupal"]
+tags: ["Drupal"]
 tags: ["D9 - D10 Upgrade"]
 date: 2023-10-24T11:30:03+11:00
 ---

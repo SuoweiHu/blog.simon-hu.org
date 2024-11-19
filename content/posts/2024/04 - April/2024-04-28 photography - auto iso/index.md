@@ -1,7 +1,7 @@
 ---
 title: "How does Auto-ISO work?"
 date: "2024-04-28"
-categories: ["Photohraphy"]
+tags: ["Photohraphy"]
 ---
 
 

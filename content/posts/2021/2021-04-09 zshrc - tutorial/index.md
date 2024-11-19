@@ -1,7 +1,7 @@
 ---
 title: "ZSH - Tutorial notes (in Chinese)"
 date: 2021-04-10
-categories: ["zsh"]
+tags: ["zsh"]
 ---
 
 

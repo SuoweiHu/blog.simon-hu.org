@@ -1,7 +1,7 @@
 ---
 title: "Drupal Error: Module ... has an entry in the system.schema key/value storage"
 date: "2024-04-08"
-categories: ["Drupal"]
+tags: ["Drupal"]
 ---
 
 ### Error Found

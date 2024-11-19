@@ -2,7 +2,7 @@
 title: "Lazygit Command Reference"
 descritpion: "Cheatsheet for lazygit commonly used commands."
 date: "2024-04-26"
-categories: ["CLI", "Git"]
+tags: ["CLI", "Git"]
 ---
 
 ![2024-04-26T133818](2024-04-26T133818.jpg)

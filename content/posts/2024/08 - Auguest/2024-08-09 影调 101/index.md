@@ -1,7 +1,7 @@
 ---
 title: "影调 - 明度基调 101"
 date: 2024-08-09
-categories: ["Photography"]
+tags: ["Photography"]
 ---
 
 

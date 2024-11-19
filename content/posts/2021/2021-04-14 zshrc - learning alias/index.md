@@ -1,7 +1,7 @@
 ---
 title: "ZSH - Trojan Proxy & Shell Prompt (PS1)"
 date: 2021-04-14
-categories: ["zsh"]
+tags: ["zsh"]
 ---
 
 ```

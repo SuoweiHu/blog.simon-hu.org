@@ -1,7 +1,7 @@
 ---
 title: "DDEV - failed to connect to /var/run/com.docker.vmnetd.sock: is vmnetd running?"
 date: "2024-07-26"
-categories: ["DDEV"]
+tags: ["DDEV"]
 ---
 
 
@@ -36,13 +36,13 @@ Error response from daemon: Ports are not available: exposing port TCP 127.0.0.1
 
 ## Solution
 
-Start by `vmnetd` running: 
+Start by `vmnetd` running:
 
 ```
 /Applications/Docker.app/Contents/MacOS/install remove-vmnetd
 ```
 
-followed by 
+followed by
 
 ```
 sudo /Applications/Docker.app/Contents/MacOS/install vmnetd
@@ -58,7 +58,7 @@ sudo /Applications/Docker.app/Contents/MacOS/install vmnetd
 
 
 
-## Reference 
+## Reference
 
 ![2024-07-26T134201](2024-07-26T134201.jpg)
 

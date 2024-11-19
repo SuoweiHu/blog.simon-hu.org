@@ -1,7 +1,7 @@
 ---
 title: "✅ Dart Sass ❌ LibSass ❌ Ruby-Sass "
 date: "2024-05-02"
-categories: ["SCSS"]
+tags: ["SCSS"]
 ---
 
 

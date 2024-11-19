@@ -1,12 +1,12 @@
 ---
 title: "Resolve error: 'anti-virus scanner could not check the file'"
 date: "2024-02-28"
-categories: ["Drupal"]
+tags: ["Drupal"]
 ---
 
 
 
-## Issue Found 
+## Issue Found
 ```
 Drupal Core: 8.7.8
 Lightning: 4.0.5

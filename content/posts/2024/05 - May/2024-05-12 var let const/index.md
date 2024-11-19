@@ -1,7 +1,7 @@
 ---
 title: "Difference of var, let, const in JavaScript"
 date: "2024-05-12"
-categories: ["JavaScript"]
+tags: ["JavaScript"]
 ---
 
 
@@ -25,14 +25,14 @@ categories: ["JavaScript"]
 ## TLDR Comparison
 
 - `var`
-    - Declares a variable with <u>**function-scope**</u> or **<u>globally</u>** if declared outside of a function. 
+    - Declares a variable with <u>**function-scope**</u> or **<u>globally</u>** if declared outside of a function.
     - It **<u>can be re-declared</u>** and **<u>can be updated</u>**.
 - `let`
     - Declares a variable with **<u>block scope</u>** (i.e., confined to the block, statement, or expression where it is used)
     - It **<u>cannot be re-declared</u>** within the same scope, but <u>**can be updated**</u>.
 - `const`
     - Similar to ﻿let in terms of **<u>block scope</u>**
-    - The variables declared with ﻿const must be **<u>initialized at declaration</u>**, 
+    - The variables declared with ﻿const must be **<u>initialized at declaration</u>**,
     - Const varaibels **cannot be updated**, and <u>**cannot be re-declared**</u>.
 
 (If you are really into knowing the fine difference between each keyword, there's plenty materials you can find online, I've put some of the MDN official documents in the reference section for reference purpose.)
@@ -44,8 +44,8 @@ categories: ["JavaScript"]
 For the following code you might be anticipating the output to be strings of every  `wizard`  in `wizards` appearing twice, but actually it is only doing output for the `wizards` interleaved with last item of `items`.
 
 ```
-var wizards =  ['Merlin',    'Gandalf', ..., "Ursula"  ]; 
-var items   =  ['Spellbook', 'Staff',   ..., "Urchins" ]; 
+var wizards =  ['Merlin',    'Gandalf', ..., "Ursula"  ];
+var items   =  ['Spellbook', 'Staff',   ..., "Urchins" ];
 
 for (var item of wizards) {
 	console. log(1, item);
@@ -57,7 +57,7 @@ for (var item of wizards) {
 ```
 
 ```
-# Expected Output: 
+# Expected Output:
 	1 Merlin
 	2 Merlin
 	1 Gandalf
@@ -67,7 +67,7 @@ for (var item of wizards) {
 	1 Ursula
 	2 Ursula
 
-# Actual Output: 
+# Actual Output:
     1 Merlin
 	2 Urchins
 	1 Gandalf

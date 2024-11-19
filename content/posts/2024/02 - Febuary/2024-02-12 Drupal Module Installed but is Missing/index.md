@@ -1,7 +1,7 @@
 ---
 title: "Drupal Module Installed but Missing"
 date: "2024-02-11"
-categories: ["Drupal"]
+tags: ["Drupal"]
 ---
 
 ## Error Encountered

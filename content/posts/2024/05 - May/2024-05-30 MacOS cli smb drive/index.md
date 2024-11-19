@@ -2,7 +2,7 @@
 title: "List/Mount/Unmount SMB Drive on CLI"
 description: "List/Mount/Unmount network drive via cli"
 date: "2024-05-30"
-categories: ["NAS"]
+tags: ["NAS"]
 ---
 
 
@@ -28,7 +28,7 @@ You can reveal the drive available via `smbutil view -A //$usr@$ip` (or with pas
 > STDOUT:
     Please Enter password for suowei.h: *********************
     Authenticate successfully with //suowei.h@XXX.XXX.XXX.XXX
-> 
+>
 > smbutil view -A //suowei.h@XXX.XXX.XXX.XXX
 > STDOUT
     Share Type  Comments
@@ -49,9 +49,9 @@ You can reveal the drive available via `smbutil view -A //$usr@$ip` (or with pas
 ### SMBCLIENT
 
 #### Preliminary Requirement
-**Samba** is a free software re-implementation of the **SMB networking protocol**, and provides file and print services across multiple operating systems including Linux, Unix, and Windows. **Smbclient** is a command-line tool included in the Samba suite. It functions somewhat like an FTP client and allows users to connect to an SMB/CIFS (Common Internet File System) server. 
+**Samba** is a free software re-implementation of the **SMB networking protocol**, and provides file and print services across multiple operating systems including Linux, Unix, and Windows. **Smbclient** is a command-line tool included in the Samba suite. It functions somewhat like an FTP client and allows users to connect to an SMB/CIFS (Common Internet File System) server.
 
-Consequently we'll install Samba first: 
+Consequently we'll install Samba first:
 
 - For MacOS device: `brew install samba`
 
@@ -89,23 +89,23 @@ p.s. if you run into issue with the `smbclient` installed via `brew` on MacOS; Y
 
 ## Mount/Unmount Network Drive (MacOS)
 
-The following section only apply to mounting/unmounting SMB volumes in MacOS system (if you are using Windows system, you can use `net use` command, if you are using Linux system you can use `cifs-utils`) 
+The following section only apply to mounting/unmounting SMB volumes in MacOS system (if you are using Windows system, you can use `net use` command, if you are using Linux system you can use `cifs-utils`)
 
-To mount network drive: 
+To mount network drive:
 
 ```
 osascript -e 'mount volume "smb://$ip/$volume"'
 osascript -e 'mount volume "smb://XXX.XXX.XXX.XXX/home"'
 ```
 
-To unmount network drive: 
+To unmount network drive:
 
 ```
 diskutil unmount "/Volumes/${props.vol}"
 diskutil unmount "/Volumes/home"
 ```
 
-or 
+or
 
 ```
 /usr/sbin/diskutil unmount "/Volumes/${props.vol}"

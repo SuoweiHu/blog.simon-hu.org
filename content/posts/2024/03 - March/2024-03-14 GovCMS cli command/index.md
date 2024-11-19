@@ -1,7 +1,7 @@
 ---
 title: "GovCMS Drupal CLI Command (Drush Command) - Backup"
 date: "2024-03-14"
-categories: ["Drupal", "GovCMS"]
+tags: ["Drupal", "GovCMS"]
 ---
 
 

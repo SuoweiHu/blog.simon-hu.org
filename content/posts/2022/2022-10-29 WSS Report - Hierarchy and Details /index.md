@@ -1,7 +1,7 @@
 ---
 title: "WSS Report - Hierarchy and Details "
 date: "2022-10-29"
-categories: ["Web Audit"]
+tags: ["Web Audit"]
 ---
 
 # ⓪ - structure

@@ -1,7 +1,7 @@
 ---
 title: "Drupal X-Debug Twig Template 2: Setup of PhpStorm"
 date: "2023-11-23"
-categories: ["twig"]
+tags: ["twig"]
 ---
 
 > Note:
@@ -33,11 +33,11 @@ and specify the local server it will later listen from:
 
 ![2023.11.23 - 170736](2023.11.23%20-%20170736.jpg)
 
-In case your project is hosted along with a bunch of other projects (for instance you have `site-1`, `site-2`, ..., `site-3`, `drupal 10` all hosted under the `localhost`), you will also need to set the web path: 
+In case your project is hosted along with a bunch of other projects (for instance you have `site-1`, `site-2`, ..., `site-3`, `drupal 10` all hosted under the `localhost`), you will also need to set the web path:
 
 ![2023.11.23 - 171209](2023.11.23%20-%20171209.jpg)
 
-Once done you should see the PhpStorm editor, something like this: 
+Once done you should see the PhpStorm editor, something like this:
 
 ![2023.11.23 - 171320](2023.11.23%20-%20171320.jpg)
 
@@ -47,7 +47,7 @@ Once done you should see the PhpStorm editor, something like this:
 
 Now we will setp the PhpStorm to listen on the server, and set breakpoints to debug a php file.
 
-To start debugging, toggle on "Listening for PHP Debug Connections", you can do that either via the PhpStorm's menu: "Run > Start Listening for PHP Debug Connections" or via the little "bug icon" located on the top right of the panel: 
+To start debugging, toggle on "Listening for PHP Debug Connections", you can do that either via the PhpStorm's menu: "Run > Start Listening for PHP Debug Connections" or via the little "bug icon" located on the top right of the panel:
 
 ![2023.11.23 - 171742](2023.11.23%20-%20171742.jpg)
 

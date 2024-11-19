@@ -1,7 +1,7 @@
 ---
 title: "ZSH - First attempt for alias in zshrc"
 date: 2021-04-10
-categories: ["zsh"]
+tags: ["zsh"]
 ---
 
 ```

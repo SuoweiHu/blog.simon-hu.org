@@ -1,7 +1,7 @@
 ---
 title: "Twig - Twig Filters/Modifier (Universal & Drupal Specific) "
 date: "2023-11-22"
-categories: ["twig"]
+tags: ["twig"]
 ---
 
 

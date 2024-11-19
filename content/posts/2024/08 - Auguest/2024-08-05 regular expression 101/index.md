@@ -1,7 +1,7 @@
 ---
 title: "Regular Expression 101"
 date: 2024-08-05
-categories: ["Regular Expression"]
+tags: ["Regular Expression"]
 ---
 
 
@@ -31,7 +31,7 @@ categories: ["Regular Expression"]
 
 #### Square Brackets (`[]`)
 
-The name might sound scary, but it is nothing but the symbol: []. Some people also refer to square brackets as character class – a regular expression jargon word that means that it will match any character inside the bracket. 
+The name might sound scary, but it is nothing but the symbol: []. Some people also refer to square brackets as character class – a regular expression jargon word that means that it will match any character inside the bracket.
 
 For instance:
 

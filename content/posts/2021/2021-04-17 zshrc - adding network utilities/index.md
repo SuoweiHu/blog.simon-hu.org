@@ -1,7 +1,7 @@
 ---
 title: "ZSH - Network Utilities and Plugin in zshrc"
 date: 2021-04-17
-categories: ["zsh"]
+tags: ["zsh"]
 ---
 
 

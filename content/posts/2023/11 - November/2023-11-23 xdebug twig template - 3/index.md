@@ -1,7 +1,7 @@
 ---
 title: "Drupal X-Debug Twig Template 3: Using Debugger for Twig Template"
 date: "2023-11-23"
-categories: ["twig"]
+tags: ["twig"]
 ---
 
 > Note:
@@ -15,9 +15,9 @@ To beign with, we will understand that debugging twig template is not debugging 
 
 
 
-## Drupal: Development Settings 
+## Drupal: Development Settings
 
-To begin with you might want to turn on "twig development mode", this will show the twig tempalte you are using, and enabling the ability to use dump command (twig debug mode), as well as turning off the twig cache, so on every refresh/reload you will get a fresh twig-php file from the twig-template file (Disable Twig cache), these settings can be found at: "[https://your-website-domain/admin/config/development/settings](https://your-website-domain/admin/config/development/settings)". 
+To begin with you might want to turn on "twig development mode", this will show the twig tempalte you are using, and enabling the ability to use dump command (twig debug mode), as well as turning off the twig cache, so on every refresh/reload you will get a fresh twig-php file from the twig-template file (Disable Twig cache), these settings can be found at: "[https://your-website-domain/admin/config/development/settings](https://your-website-domain/admin/config/development/settings)".
 
 ![2023.11.23 - 174025](2023.11.23%20-%20174025.jpg)
 
@@ -27,11 +27,11 @@ To begin with you might want to turn on "twig development mode", this will show 
 
 ## Old Method: `dump()`
 
-Originally before we have the PhpStorm debugging, we can use the feature provided the the twig debug: `dump()`, for instance we have the file `paragraph--accordion-single.html.twig` (located at `theme/custom/xxx/templates/paragraph`), a twig template for a paragraph type named "accordion single": 
+Originally before we have the PhpStorm debugging, we can use the feature provided the the twig debug: `dump()`, for instance we have the file `paragraph--accordion-single.html.twig` (located at `theme/custom/xxx/templates/paragraph`), a twig template for a paragraph type named "accordion single":
 
 ![2023.11.23 - 200435](2023.11.23%20-%20200435.jpg)
 
-And we add the following `dump()` command in its twig file, to print out the values for ite field of machine name `field_accordion_item`, shown as the follows: 
+And we add the following `dump()` command in its twig file, to print out the values for ite field of machine name `field_accordion_item`, shown as the follows:
 
 ![image-20231123200553742](image-20231123200553742.png)
 
@@ -39,7 +39,7 @@ We fill get the printout from `dump()` when we refreshes the page:
 
 ![2023.11.23 - 200738](2023.11.23%20-%20200738.jpg)
 
-Well.... this seem to be convinient, you get the values inside the twig context/context via dump ! But what if, you do not know the variable's name, then you would have to manually get into the dump by clicking the little ▶ icon; Then you will realize you can get as deep as 5 levels (max_nesting_level = 5). Even worse, some of the properties that seems to be key-value pairs are in fact "private" (for instance "`#value`"), you cannot access it with straight `parent["key"]` (for instance to access "`parent[#value]child`", do "`parent.child.value`" and there's lots of odd things like this throughout my experience, such as you will need to get to the node's parent to access its value ....). 
+Well.... this seem to be convinient, you get the values inside the twig context/context via dump ! But what if, you do not know the variable's name, then you would have to manually get into the dump by clicking the little ▶ icon; Then you will realize you can get as deep as 5 levels (max_nesting_level = 5). Even worse, some of the properties that seems to be key-value pairs are in fact "private" (for instance "`#value`"), you cannot access it with straight `parent["key"]` (for instance to access "`parent[#value]child`", do "`parent.child.value`" and there's lots of odd things like this throughout my experience, such as you will need to get to the node's parent to access its value ....).
 
 
 

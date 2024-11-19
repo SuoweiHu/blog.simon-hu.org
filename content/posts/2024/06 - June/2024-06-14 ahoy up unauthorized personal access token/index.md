@@ -1,7 +1,7 @@
 ---
 title: "[GovCMS PaaS] ahoy error: you must use a personal access token instead of a password"
 date: "2024-06-14"
-categories: ["GovCMS"]
+tags: ["GovCMS"]
 ---
 
 

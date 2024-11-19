@@ -1,7 +1,7 @@
 ---
 title: "子弹笔记-初心者学习笔记 (Bullet Note-101)"
 date: "2024-05-21"
-categories: ["Productivity"]
+tags: ["Productivity"]
 ---
 
 

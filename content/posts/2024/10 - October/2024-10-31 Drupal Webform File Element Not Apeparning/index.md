@@ -1,7 +1,7 @@
 ---
 title: "Drupal Webform \"File Upload Element\" Not Apeparning"
 date: "2024-10-31"
-categories: ["Drupal", "Bug"]
+tags: ["Drupal", "Bug"]
 ---
 
 ## Issue Repeated
@@ -22,7 +22,7 @@ Simply add the following line in `settings.php`, and clear cache via `drush cr`:
 $settings['file_private_path'] = 'sites/default/files/webform';
 #P.S. You can replace the path with any directory of your choice
 ```
-Then you should be able to see the following "file upload element" options in your webforms: 
+Then you should be able to see the following "file upload element" options in your webforms:
 
 ![2024-10-31T105934](2024-10-31T105934.png)
 

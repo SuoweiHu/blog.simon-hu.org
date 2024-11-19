@@ -1,7 +1,7 @@
 ---
 title: "Web-Safe Font Family"
 date: "2024-02-20"
-categories: ["CSS"]
+tags: ["CSS"]
 ---
 
 

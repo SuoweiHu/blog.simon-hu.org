@@ -1,7 +1,7 @@
 ---
 title: "Migrating from Swift-mailer to Symfony-mailer"
 date: "2023-09-26"
-categories: ["Drupal"]
+tags: ["Drupal"]
 ---
 
 ## Useful Links

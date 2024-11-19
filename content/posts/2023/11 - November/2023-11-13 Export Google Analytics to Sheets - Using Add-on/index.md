@@ -2,7 +2,7 @@
 title: Export Google Analytics to Google Sheets (using Add-on)
 date: 2023-11-13
 tags: ["Google Analytics", "Google Analytics Export"]
-categories: ["Google Analytics"]
+tags: ["Google Analytics"]
 ---
 
 

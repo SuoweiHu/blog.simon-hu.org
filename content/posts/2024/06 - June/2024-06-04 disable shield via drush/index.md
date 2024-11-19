@@ -1,7 +1,7 @@
 ---
 title: "Disable Shield via Drush"
 date: "2024-06-04"
-categories: ["Drupal"]
+tags: ["Drupal"]
 ---
 
 

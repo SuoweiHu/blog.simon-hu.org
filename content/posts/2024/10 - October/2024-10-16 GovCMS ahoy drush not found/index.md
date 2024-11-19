@@ -1,20 +1,20 @@
 ---
 title: "Reoslution for [\"/usr/local/bin/drush\": not found\"]"
 date: "2024-10-16"
-categories: ["Ahoy", "GovCMS"]
+tags: ["Ahoy", "GovCMS"]
 ---
 
 
 
 ## Error Repeated
 
-For some of the GovCMS client, I ran into this problem while trying to install the client website on my local computer: after running `pygmy up`  to crank up the amazie container, `composer install` to install the package, I got the following error while running `ahoy build` (same for `ahoy up`): 
+For some of the GovCMS client, I ran into this problem while trying to install the client website on my local computer: after running `pygmy up`  to crank up the amazie container, `composer install` to install the package, I got the following error while running `ahoy build` (same for `ahoy up`):
 
 ```
-> ahoy build 
+> ahoy build
 [+] Building 1.0s (29/37)                                                                                                     docker:desktop-linux
  => [php internal] load build definition from Dockerfile.php                                                                                  0.0s
- => => transferring dockerfile: 244B  
+ => => transferring dockerfile: 244B
  ...
  ...
  ...
@@ -43,9 +43,9 @@ See screenshot of this at: [this link](2024-10-16T103750.png).
 
 
 
-## Error Resolved 
+## Error Resolved
 
-Thanks to my intelligent teammate (saved me 3 days of head scratching literally), this happens because some lines are commented in the docker related file, namely the `Dockerfile.cli` file: 
+Thanks to my intelligent teammate (saved me 3 days of head scratching literally), this happens because some lines are commented in the docker related file, namely the `Dockerfile.cli` file:
 
 ```
 ...
@@ -59,7 +59,7 @@ Thanks to my intelligent teammate (saved me 3 days of head scratching literally)
 ...
 ```
 
-Simply uncomment those (line 38 - line 40): 
+Simply uncomment those (line 38 - line 40):
 
 ```
 ...
@@ -69,11 +69,11 @@ Simply uncomment those (line 38 - line 40):
 RUN wget -O /usr/local/bin/drush "https://github.com/drush-ops/drush-launcher/releases/download/0.6.0/drush.phar" \
   && chmod +x /usr/local/bin/drush \
   && rm -Rf /home/.composer/vendor/bin
-  
+
 ...
 ```
 
-Let's use ChatGPT to explain line by line what these are doing: 
+Let's use ChatGPT to explain line by line what these are doing:
 
 *   The purpose of this snippet is to install the Drush Launcher in a Docker container environment. The Drush Launcher allows you to run Drush commands without having Drush installed globally. Instead, it looks for a site-local Drush in your project directory, making it easier to manage different Drush versions across different projects. By placing the Drush Launcher in `/usr/local/bin`, it ensures that the drush command is available in the system's PATH, making it accessible from any location within the container.
     1.   Install Drush Launcher: `RUN wget -O /usr/local/bin/drush "https://git...6.0/drush.phar"`

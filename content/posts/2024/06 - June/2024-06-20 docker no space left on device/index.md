@@ -1,43 +1,43 @@
 ---
 title: "GovCMS Docker - No space left on device"
 date: 2024-06-20
-categories: ["GovCMS", "Bug/Fix"]
+tags: ["GovCMS", "Bug/Fix"]
 ---
 
 
 
 
 
-## Error Reproduced 
+## Error Reproduced
 
-I come across this error when trying to do `ahoy up` on one of the GovCMS client project, whilst the command successes without throwing any error: 
+I come across this error when trying to do `ahoy up` on one of the GovCMS client project, whilst the command successes without throwing any error:
 
 ```
 > ahoy up
 
-WARN[0000] /Users/suowei_hu/Documents/é GitHub/example/docker-compose.yml: `version` is obsolete 
+WARN[0000] /Users/suowei_hu/Documents/é GitHub/example/docker-compose.yml: `version` is obsolete
 [+] Running 8/0
- ✔ Container example-av-1       Running                                                                                                                   0.0s 
- ✔ Container example-mariadb-1  Running                                                                                                                   0.0s 
- ✔ Container example-cli-1      Running                                                                                                                   0.0s 
- ✔ Container example-solr-1     Running                                                                                                                   0.0s 
- ✔ Container example-test-1     Running                                                                                                                   0.0s 
- ✔ Container example-php-1      Running                                                                                                                   0.0s 
- ✔ Container example-nginx-1    Running                                                                                                                   0.0s 
- ✔ Container example-chrome-1   Running                                                                                                                   0.0s 
+ ✔ Container example-av-1       Running                                                                                                                   0.0s
+ ✔ Container example-mariadb-1  Running                                                                                                                   0.0s
+ ✔ Container example-cli-1      Running                                                                                                                   0.0s
+ ✔ Container example-solr-1     Running                                                                                                                   0.0s
+ ✔ Container example-test-1     Running                                                                                                                   0.0s
+ ✔ Container example-php-1      Running                                                                                                                   0.0s
+ ✔ Container example-nginx-1    Running                                                                                                                   0.0s
+ ✔ Container example-chrome-1   Running                                                                                                                   0.0s
 2024/06/19 22:36:30 Waiting for: tcp://mariadb:3306
 2024/06/19 22:36:30 Connected to tcp://mariadb:3306
 Project                  :  example
 Site local URL           :  http://example.docker.amazee.io
-WARN[0000] /Users/suowei_hu/Documents/é GitHub/example/docker-compose.yml: `version` is obsolete 
+WARN[0000] /Users/suowei_hu/Documents/é GitHub/example/docker-compose.yml: `version` is obsolete
 DB port on host          :  50658
 ```
 
-when I visit the given url I see the following 
+when I visit the given url I see the following
 
 ![2024-06-20T083732](2024-06-20T083732.jpg)
 
-so I tried doing `ahoy down` followed by`ahoy build`, I see the following error in the compile stdout stream: 
+so I tried doing `ahoy down` followed by`ahoy build`, I see the following error in the compile stdout stream:
 
 ```
 => => sha256:c166c2711a27f6dca7384848396227f6926abc2313dca75bd40aeeac469614c1 1.65MB / 1.65MB                           3.5s
@@ -73,9 +73,9 @@ I've also tried pulling a fresh instance of the filebase and do `ahoy build` the
 
 
 
-## Issue Resolved 
+## Issue Resolved
 
-So I did some quick research, it turns out this error is due to **<u>docker running out of virtual disk space</u>** , so after running `docker system prune` to clear the unused volume/image/volume (just to be safe, in case it is something else running out of space) 
+So I did some quick research, it turns out this error is due to **<u>docker running out of virtual disk space</u>** , so after running `docker system prune` to clear the unused volume/image/volume (just to be safe, in case it is something else running out of space)
 
 ```
 > docker system df
@@ -86,7 +86,7 @@ Containers      14        14        1.002GB   0B (0%)
 Local Volumes   9         5         6.624MB   3.008MB (45%)
 Build Cache     837       0         19.12GB   19.12GB (100%)
 
-> docker systen prune 
+> docker systen prune
 
 TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE
 Images          100       14        XX.XXGB   0B (0%)
@@ -95,5 +95,5 @@ Local Volumes   9         5         X.XXXMB   0B (0%)
 Build Cache     837       0         0.000kB   0B (0%)
 ```
 
-Then running `ahoy build` command will execute without error, the error get resolved easily ! 
+Then running `ahoy build` command will execute without error, the error get resolved easily !
 

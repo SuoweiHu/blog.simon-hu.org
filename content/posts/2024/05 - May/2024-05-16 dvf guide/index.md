@@ -1,7 +1,7 @@
 ---
 title: "DVF (Data Visualization Framework) Quick Guidance"
 date: "2024-05-16"
-categories: ["Drupal"]
+tags: ["Drupal"]
 ---
 
 ## **Introduction**
@@ -82,7 +82,7 @@ Peach, Africa, 55, 41, 105, 95, 81, 73, 82, 63, 51, 43
 Blueberry, Australia, 153, 41, 62, 73, 88, 93, 112, 115, 110, 140
 ```
 
-### Chart Types 
+### Chart Types
 
 The available chart types in DVF are Table, Pie chart, Scatter plot chart, Gauge chart, Bubble chart, Line chart, Bar chart, Spline chart, Donut chart, Radar chart. (You can choose them in the "Visualisation Style")
 
@@ -106,7 +106,7 @@ You can change the tick value and group x-axis by value or key, in the following
 
 ![2024-05-16T140217](2024-05-16T140217.jpg)
 
-#### Column/Group override 
+#### Column/Group override
 
 We can combine different types of chats via the Column/Group Override option. For instance if we have a spline chart for fruit harvesting of different year grouped by different type of fruit, and we want all fruit but "apple" to be displayed in trendline (spline chart),  "apple" to be displayed in bars **(aka Mix Chart Type)** :
 

@@ -2,7 +2,7 @@
 title: "Leaflet vs Mapbox (mapbox-tile, mapbox-js, mapbox-gl-js)"
 date: "2024-04-22"
 draft: false
-categories: ["map"]
+tags: ["map"]
 ---
 
 
@@ -45,7 +45,7 @@ categories: ["map"]
 
 > **[Leaflet](https://leafletjs.com/)** is the leading open-source JavaScript library for mobile-friendly interactive maps. Weighing just about 42 KB of JS, it has all the mapping features most developers ever need.
 
-Leaflet is known for its ease of **customization** and **extensibility**, making it a preferred choice for developers looking to implement mapping functionality in their web projects. 
+Leaflet is known for its ease of **customization** and **extensibility**, making it a preferred choice for developers looking to implement mapping functionality in their web projects.
 
 ![2024-04-22T115217](2024-04-22T115217.jpg)
 
@@ -71,7 +71,7 @@ Features of Mapbox Tiling Service include: Efficiently generates map tiles for w
 
 ![2024-04-22T115507](2024-04-22T115507.gif)
 
->   **[Mapbox.js](https://github.com/mapbox/mapbox.js)** is a leaflet plugin, , a lightweight JavaScript library for traditional raster maps. It has seized development as the company have moved towards using Mapbox GL JS which uses WebGL and have the ability to use vector maps tile. 
+>   **[Mapbox.js](https://github.com/mapbox/mapbox.js)** is a leaflet plugin, , a lightweight JavaScript library for traditional raster maps. It has seized development as the company have moved towards using Mapbox GL JS which uses WebGL and have the ability to use vector maps tile.
 
 Mapbox.js is a intermediate step towards Mapbox GL JS, it tries to solve some of the pain of using mapbox tiling service in leaflet, it is no longer in active development (deprecated), and should be avoided in new projects.
 
@@ -103,7 +103,7 @@ We can do a quick comparison over the popularity of these packages via their **a
 
 ![2024-04-22T110521](2024-04-22T110521.jpg)
 
-However if we would to compare their **stars on GitHub**, `leaflet` sits on roughly 4 times the starts of  `mapbox-gl-js`, and almost 20 times compared to `mapbox.js`, 
+However if we would to compare their **stars on GitHub**, `leaflet` sits on roughly 4 times the starts of  `mapbox-gl-js`, and almost 20 times compared to `mapbox.js`,
 
 ![2024-04-22T110846](2024-04-22T110846.jpg)
 

@@ -1,7 +1,7 @@
 ---
 title: "Drupal Custom Module: Logging Message using PHP (PHP Debug Message)"
 date: "2024-03-15"
-categories: ["Drupal"]
+tags: ["Drupal"]
 ---
 
 
@@ -22,7 +22,7 @@ Fast way to use helper function.
 
 `$messenger = \Drupal::messenger();`
 
-Also in the form object or controller we don't have include it using dependency injection. We can us directly 
+Also in the form object or controller we don't have include it using dependency injection. We can us directly
 
 `$messenger = $this->messenger();`
 
@@ -34,7 +34,7 @@ Also in the form object or controller we don't have include it using dependency 
 
 
 
-Add message. Allows to send a message of any type, the second parameter accepts the type: `$meesenger->addMessage(t('Your message.'), MessengerInterface::TYPE_WARNING);`; But in most of the cases it is better to use directly specific method: 
+Add message. Allows to send a message of any type, the second parameter accepts the type: `$meesenger->addMessage(t('Your message.'), MessengerInterface::TYPE_WARNING);`; But in most of the cases it is better to use directly specific method:
 
 -   Add Status Message: `$messenger->addStatus(t('Your message'));`
 -   Add Warning/Debug: `$messenger->addWarning(t('Your message'));`

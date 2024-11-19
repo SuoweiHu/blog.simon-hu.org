@@ -1,7 +1,7 @@
 ---
 title: "Drupal Database Logging [PENDING]"
 date: "2024-05-29"
-categories: ["Drupal"]
+tags: ["Drupal"]
 ---
 
 

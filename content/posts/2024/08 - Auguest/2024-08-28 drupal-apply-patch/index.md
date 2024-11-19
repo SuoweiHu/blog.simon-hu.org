@@ -1,7 +1,7 @@
 ---
 title: "[PENDING] Drupal Apply Patch"
 date: 2024-08-28
-categories: ["Drupal"]
+tags: ["Drupal"]
 ---
 
 - https://www.drupal.org/docs/develop/git/using-git-to-contribute-to-drupal/working-with-patches/applying-a-patch-in-a-feature-branch

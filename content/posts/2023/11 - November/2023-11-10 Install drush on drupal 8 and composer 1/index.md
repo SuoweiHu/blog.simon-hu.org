@@ -2,7 +2,7 @@
 title: "Install drush on drupal 8 site (using downgraded composer ver.1)"
 date: 2023-11-10
 tags: [Drupal 8, Drush, Composer 1]
-categories: ["Drupal"]
+tags: ["Drupal"]
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: "JavaScript Debugger [PENDING]"
 date: 2024-06-16
-categories: ["JavaScript"]
+tags: ["JavaScript"]
 ---
 
 The Most Important Skill You Never Learned

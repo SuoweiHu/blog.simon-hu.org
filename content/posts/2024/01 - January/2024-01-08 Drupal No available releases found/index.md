@@ -1,7 +1,7 @@
 ---
 title: "Drupal Error: Update No available releases found"
 date: "2024-01-07"
-categories: ["Drupal"]
+tags: ["Drupal"]
 ---
 
 

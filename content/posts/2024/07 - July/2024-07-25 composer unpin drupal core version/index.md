@@ -1,7 +1,7 @@
 ---
 title: "[Bug Fix] Composer Unpin Drupal Core From Certain Version"
 date: "2024-07-24"
-categories: ["composer"]
+tags: ["composer"]
 ---
 
 

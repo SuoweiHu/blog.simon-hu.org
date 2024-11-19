@@ -1,7 +1,7 @@
 ---
 title: "How does Mail works with DNS MX records"
 date: 2023-11-01
-categories: ["Network"]
+tags: ["Network"]
 tags: ["DNS", "MX Record", "Mail Server"]
 ---
 

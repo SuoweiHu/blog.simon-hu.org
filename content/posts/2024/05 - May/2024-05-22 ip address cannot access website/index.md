@@ -1,7 +1,7 @@
 ---
 title: "IP Address Cannot Access Website (How does DNS server work behind the theme to protect your website)"
 date: "2024-05-22"
-categories: ["DNS"]
+tags: ["DNS"]
 ---
 
 
@@ -48,7 +48,7 @@ Connection:      keep-alive
 Cookie:          userID=12345; sessionToken=abcde;
 ```
 
-Notice that the http request send by the browser accessing the website via ip adress has `Host: 100.100.100.100`, which is different to the `Host: www.example.com`. The majority of the HTTP servers (Nginx, Apache, etc) have a concept/feature called "**Virtual Server**", which will take advantage of the differnt `Host` in the HTTP header, and behave differently based on this value. 
+Notice that the http request send by the browser accessing the website via ip adress has `Host: 100.100.100.100`, which is different to the `Host: www.example.com`. The majority of the HTTP servers (Nginx, Apache, etc) have a concept/feature called "**Virtual Server**", which will take advantage of the differnt `Host` in the HTTP header, and behave differently based on this value.
 
 ![How to Create Nginx Virtual Host (Server Block)](nginx-virtual-host-how-does-it-works.png)
 

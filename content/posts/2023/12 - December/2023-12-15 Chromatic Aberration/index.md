@@ -1,7 +1,7 @@
 ---
 title: "Photography - Chromatic Aberration"
 date: "2023-12-15"
-categories: ["Photography"]
+tags: ["Photography"]
 ---
 
 ## What is Chromatic Aberration

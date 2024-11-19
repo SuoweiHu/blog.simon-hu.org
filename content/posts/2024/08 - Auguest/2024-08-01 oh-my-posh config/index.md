@@ -1,7 +1,7 @@
 ---
 title: "Oh-my-posh Configuration File"
 date: "2024-08-01"
-categories: ["cli"]
+tags: ["cli"]
 ---
 
 ```json

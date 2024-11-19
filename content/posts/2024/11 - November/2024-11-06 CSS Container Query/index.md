@@ -1,7 +1,7 @@
 ---
 title: "CSS Container Query"
 date: 2024-11-06
-categories: ["CSS"]
+tags: ["CSS"]
 ---
 
 
@@ -21,7 +21,7 @@ You might be very familiar with controlling the style of the component depending
 @media (max-width:  767px)                          { _PASTESELECTOR_HERE_ {padding-inline:30px; width:  100%;} }
 ```
 
-Media Query is very handy for most cases, with a slight draw back that one will have to cater for every single relevant components' style along with the styling for component of interest. Let me explain - say for instance you have two container both in a flex layout, you  only care about the style for the first component, you want it to hide the long description text whenever its width is too narrow. 
+Media Query is very handy for most cases, with a slight draw back that one will have to cater for every single relevant components' style along with the styling for component of interest. Let me explain - say for instance you have two container both in a flex layout, you  only care about the style for the first component, you want it to hide the long description text whenever its width is too narrow.
 
 ![2024-11-06T093621](2024-11-06T093621.gif)
 
@@ -35,7 +35,7 @@ Container queries are essential in this context, as they enable components to ma
 
 ### Why care about CSS Container Queries?
 
-Below are some of the reasons proposed by Geoff Graham at CSS-Trick ([reference](https://css-tricks.com/css-container-queries/)), for why we need to use container queries: 
+Below are some of the reasons proposed by Geoff Graham at CSS-Trick ([reference](https://css-tricks.com/css-container-queries/)), for why we need to use container queries:
 
 1.   When using a container query, we give elements the ability to change based on their **container’s size**, not the viewport.
 2.   They allow us to define all of the styles for a particular element in a more **predictable** way.
@@ -46,7 +46,7 @@ Below are some of the reasons proposed by Geoff Graham at CSS-Trick ([reference]
 
 ## Container Query (`@container`)
 
-Container queries are come to people's attention recently, unlike traditional responsive design techniques that focus primarily on the device’s viewport size, container query enables a whole world of possibilities of styling the website's component based on it's container's width. Below is an example of the container query: 
+Container queries are come to people's attention recently, unlike traditional responsive design techniques that focus primarily on the device’s viewport size, container query enables a whole world of possibilities of styling the website's component based on it's container's width. Below is an example of the container query:
 
 ![2024-11-11T131236](2024-11-11T131236.gif)
 
@@ -63,15 +63,15 @@ Container queries are come to people's attention recently, unlike traditional re
 }
 ```
 
-### Step-1: Register Parent/Wrapper as Container 
+### Step-1: Register Parent/Wrapper as Container
 
-To begin with, as aforementioned in the intuition, you will need to claim a container via `container-type` (since if you do not, the container's size will have a reverse dependency towards its inner child): 
+To begin with, as aforementioned in the intuition, you will need to claim a container via `container-type` (since if you do not, the container's size will have a reverse dependency towards its inner child):
 
 -   if you claim `container-type`to be `normal`, then none of the contianer query will work(because the containers width & height are all dependent on the child, in order for the query to work, a container cannot be sized by what's in it !)
 -   if you claim `container-type` to be `inline-size`, then you can later use container query on its width, but not the height
 -   if you claim `container-type` to be `size`, then you can use container query on both the width and height
 
-(\*Optionally, you can also define a `container-name`, an unnamed container will match any containter that full-fills its wrapping selector. Below are an examples for the two: 
+(\*Optionally, you can also define a `container-name`, an unnamed container will match any containter that full-fills its wrapping selector. Below are an examples for the two:
 
 -   Container-name : [gif example](2024-11-11T131236.gif)
 
@@ -80,13 +80,13 @@ To begin with, as aforementioned in the intuition, you will need to claim a cont
     <div class="parent">
        <div class="child">
          <div class="sub-child">
-       
-    #css 
+
+    #css
     .parent{
     	container-type: size;
     	container-name: example-container;
     }
-    @container example-container (width > 200px) and (height > 200px){ 
+    @container example-container (width > 200px) and (height > 200px){
     	.child{ ... }
     }
     ```
@@ -98,14 +98,14 @@ To begin with, as aforementioned in the intuition, you will need to claim a cont
     <div class="parent">
        <div class="child">
          <div class="sub-child">
-       
-    #css 
+
+    #css
     .parent{
     	container-type: size;
     }
-    
+
     .parent{
-    	@container example-container (width > 200px) and (height > 200px){ 
+    	@container example-container (width > 200px) and (height > 200px){
     		.child{ ... }
     	}
     }
@@ -120,19 +120,19 @@ After declaring the container in the first step, you can then control the style 
 <div class="parent">
    <div class="child">
      <div class="sub-child">
-   
-#css 
+
+#css
 .parent{
 	container-type: size;
 	container-name: example-container;
 }
-@container example-container (width > 200px) and (height > 200px){ 
+@container example-container (width > 200px) and (height > 200px){
 	.child              { ... }
 	.child > .sub-child { ... }
 }
 ```
 
-(\*You can also query based on the container's style, and device's orientations, for instance: 
+(\*You can also query based on the container's style, and device's orientations, for instance:
 
 ```
 @container (orientation: landscape) {

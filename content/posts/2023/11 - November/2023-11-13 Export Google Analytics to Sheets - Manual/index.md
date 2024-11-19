@@ -2,7 +2,7 @@
 title: Export Google Analytics to Google Sheets (Manual)
 date: 2023-11-13
 tags: ["Google Analytics", "Google Analytics Export"]
-categories: ["Google Analytics"]
+tags: ["Google Analytics"]
 ---
 
 In this tutorial I will guide you through how to export google analytics data **manually** on the Google Analytics page

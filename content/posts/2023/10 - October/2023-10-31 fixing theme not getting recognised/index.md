@@ -1,7 +1,7 @@
 ---
 title: "Fixing bootstrap theme not getting recognized"
 summary: "Quick fix to the issue of theme not getting recognized after upgrading from drupal-9 to drupal-10"
-categories: ["Drupal"]
+tags: ["Drupal"]
 tags: ["Drupal Bug Fix", "D9 - D10 Upgrade"]
 date: 2023-10-31
 ---

@@ -1,7 +1,7 @@
 ---
 title: "[PENDING] What is Pan-Focus ?"
 date: 2024-07-03
-categories: ["Photography"]
+tags: ["Photography"]
 ---
 
 

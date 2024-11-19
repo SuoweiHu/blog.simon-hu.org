@@ -1,7 +1,7 @@
 ---
 title: "Git Another Git Process Seems to be Running"
 date: "2024-02-08"
-categories: ["Git"]
+tags: ["Git"]
 ---
 
 ## Error Happened

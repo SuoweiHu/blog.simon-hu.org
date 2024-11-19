@@ -2,7 +2,7 @@
 title: "VS Code Custom Color Theme"
 date: "2023-11-14"
 # tags: ["VS Code", "Color Theme"]
-# categories: ["VS Code"]
+# tags: ["VS Code"]
 ---
 
 ## Customizing Color Theme

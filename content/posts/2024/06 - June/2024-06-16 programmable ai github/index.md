@@ -1,7 +1,7 @@
 ---
 title: "GitHub Programmable AI ? [PENDING]"
 date: 2024-06-16
-categories: ["AI"]
+tags: ["AI"]
 ---
 
 

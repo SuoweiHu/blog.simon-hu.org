@@ -1,7 +1,7 @@
 ---
 title: "Student Visa (Subclass 500) - Policy 8105 (Working restriction)"
 date: "2023-11-23"
-categories: ["VISA"]
+tags: ["VISA"]
 ---
 
 ## Caution

@@ -1,7 +1,7 @@
 ---
 title: "Drush Login (on Local/CPanel)"
 date: "2024-03-11"
-categories: ["Drupal"]
+tags: ["Drupal"]
 ---
 
 ## Get One-Time Login

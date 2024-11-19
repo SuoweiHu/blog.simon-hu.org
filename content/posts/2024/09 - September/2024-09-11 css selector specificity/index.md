@@ -1,7 +1,7 @@
 ---
 title: "CSS Selector’s Specificity"
 date: "2024-09-11"
-categories: ["CSS"]
+tags: ["CSS"]
 ---
 
 

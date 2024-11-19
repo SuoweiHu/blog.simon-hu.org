@@ -1,7 +1,7 @@
 ---
 title: "Synology SSH Login as Root User"
 date: "2024-05-22"
-categories: ["NAS"]
+tags: ["NAS"]
 ---
 
 (This only works for my DSM 6.0, at the time where you read this post, it may be outdated)

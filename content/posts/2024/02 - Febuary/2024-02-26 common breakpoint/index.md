@@ -1,7 +1,7 @@
 ---
 title: "Common CSS Media Query Breakpoint"
 date: "2024-02-26"
-categories: ["CSS"]
+tags: ["CSS"]
 ---
 
 
@@ -85,7 +85,7 @@ Combined Version for ease of `Ctrl+C` and `Ctrl+V`:
 
 ---
 
-## Reference 
+## Reference
 
 -   [https://blog.logrocket.com/css-breakpoints-responsive-design/](https://blog.logrocket.com/css-breakpoints-responsive-design/)
 

@@ -2,7 +2,7 @@
 title: "My Vim Learning Diary 2"
 date: "2023-11-13"
 tags: ["Vim", "Vim Diary", "Vim Moiion", "Keybinding"]
-categories: ["Vim"]
+tags: ["Vim"]
 ---
 
 ## Vim Motion / Keybinding
@@ -29,20 +29,20 @@ Here I will keep some of the vim motion & keybinding. (meanwhile I will keep upd
 - `di"`: delete inside the quotation mark (similarly there's `di[`, `di{` etc)
   ```
   di"
-  # d: stands for delete 
-  # i: stands for inside 
+  # d: stands for delete
+  # i: stands for inside
   # ": is the identifier, here is the quotation mark "
   ```
 - `da"`: delete quotation mark and its inside cotnent (similarly there's `da[`, `da{` etc)
 
   ```
   da"
-  # d: stands for delete 
-  # a: stands for all 
+  # d: stands for delete
+  # a: stands for all
   ```
   di"
-  # d: stands for delete 
-  # i: stands for inside 
+  # d: stands for delete
+  # i: stands for inside
   # ": is the identifier, here is the quotation mark "
   ```
   # ": is the identifier, here is the quotation mark "

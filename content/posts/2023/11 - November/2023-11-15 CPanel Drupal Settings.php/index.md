@@ -1,7 +1,7 @@
 ---
 title: "Drupal CLI - reading database configuration (at CPanel)"
 date:  "2023-11-15"
-categories: ["Drupal"]
+tags: ["Drupal"]
 ---
 
 

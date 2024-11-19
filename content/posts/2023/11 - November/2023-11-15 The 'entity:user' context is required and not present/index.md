@@ -2,7 +2,7 @@
 title: "The 'entity:user' context is required and not present"
 date: "2023-11-15"
 tags: ["Drupal", "Drupal Error"]
-categories: ["Drupal"]
+tags: ["Drupal"]
 ---
 
 ## Error Message

@@ -1,7 +1,7 @@
 ---
 title: "Lightroom - Texture vs Clarity vs Dehaze"
 date: 2024-08-05
-categories: ["Photography"]
+tags: ["Photography"]
 ---
 
 

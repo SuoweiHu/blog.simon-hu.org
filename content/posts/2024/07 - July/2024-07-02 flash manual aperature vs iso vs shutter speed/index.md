@@ -1,7 +1,7 @@
 ---
 title: "Flashlight - Use S/A/I  to Balance Ambient and Flash-lit Object"
 date: 2024-07-02
-categories: ["Photography"]
+tags: ["Photography"]
 ---
 
 

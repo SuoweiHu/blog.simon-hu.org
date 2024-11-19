@@ -1,7 +1,7 @@
 ---
 title: "Mapbox 101"
 date: "2024-04-21"
-categories: ["Map"]
+tags: ["Map"]
 draft: false
 ---
 

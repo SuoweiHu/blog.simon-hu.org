@@ -1,7 +1,7 @@
 ---
 title: "Twig - Debug/Development Environment - Get Variable - [PENDING]"
 date: "2023-11-22"
-categories: ["twig"]
+tags: ["twig"]
 ---
 
 

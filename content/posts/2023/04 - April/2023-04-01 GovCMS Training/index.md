@@ -1,7 +1,7 @@
 ---
 title: "GocCMS Training Note"
 date: "2023-04-01"
-categories: ["Drupal"]
+tags: ["Drupal"]
 ---
 # CONTENT
 

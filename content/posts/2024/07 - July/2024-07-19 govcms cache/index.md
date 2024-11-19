@@ -1,7 +1,7 @@
 ---
 title: "GovCMS - theme changes are not updating on live site"
 date: "2024-07-19"
-categories: ["GovCMS"]
+tags: ["GovCMS"]
 ---
 
 

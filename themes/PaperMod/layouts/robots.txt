@@ -1,8 +1,8 @@
 User-agent: *
+Disallow: /public/
 Disallow: /categories/
-Disallow: /tags/
+Disallow: /series/
 Disallow: /search/
 Disallow: /search
-Disallow: /public/
 
 Sitemap: {{ "sitemap.xml" | absURL }}

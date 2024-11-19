@@ -1,7 +1,7 @@
 ---
 title: "Fields pending deletion stopping module unistall"
 date: "2024-05-07"
-categories: ["Drupal"]
+tags: ["Drupal"]
 ---
 
 
