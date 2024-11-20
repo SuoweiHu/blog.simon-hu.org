@@ -1,7 +1,7 @@
 ---
 title: "Single Directory Component with Drupal"
 date: "2024-11-14"
-tags: ["Drupal"]
+tags: ["Drupal", "Component", "Single-Directory-Component"]
 ---
 
 
