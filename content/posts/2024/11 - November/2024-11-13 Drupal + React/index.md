@@ -12,9 +12,9 @@ The notion has repeatedly occurred to me since I first entered the Drupal indust
 
 
 
-## Setup Process Breakdown
 
-### Overview
+
+## Overview
 
 In order to have drupal render a react component, there're three steps we will need to undertake:
 
@@ -22,12 +22,21 @@ In order to have drupal render a react component, there're three steps we will n
 -   **Step-2**: create the corresponding `js`/`jsx`/`ts` file that rendered the DOM element with data into a styled component, and use the appropriate bundler (for instance web-pack) to render these files into vanilla javasctipt that can be ran on browser.
 -   **Step-3**: add the rendered single javasctipt file into the custom theme's library, and attach it to the relevant `twig` template
 
+The final outcome and the example code can be found as the following:
+
+-   [example - outcome screenshot ](2024-11-17T200123.png)
+-   [example - custom theme showcase](example_custom_theme.zip)
+
+
+
+## Setup Process Breakdown
+
 ### Step-1: output DOM element
 
 ```twig
-{# ================================ #}
-{# EXAMPLE TWIG TEMPLATE FOR A TILE #}
-{# ================================ #}
+{# ========================= #}
+{# paragraph--tile.twig.html
+{# ========================= #}
 
 {% set unique_id        = random()                                                    %}
 {% set base_url         = url('<front>', {}, { 'absolute': true })                    %}
@@ -41,14 +50,69 @@ In order to have drupal render a react component, there're three steps we will n
                            ~ "\"description\":" ~ "\"" ~ data_description ~ "\","
                            ~ "\"link\":"        ~ "\"" ~ data_link        ~ "\","
                            ~ "\"img_src\":"     ~ "\"" ~ data_img_src     ~ "\"}" %}
+
 {% block paragraph %}
     <div style="background-color:lightgray;height:600px;width:100%;display:flex;justify-content:center;align-items:center;">
-        <react-tile-component id="{{unique_id}}" data-json="{{data}}"/>
+        <react-tile-component id="{{unique_id}}" data-json="{{data}}"/> {# HERE THE DATA IS ENTERED TO THE JSON DATA ATTRIBUTE READY TO BE REACT BY JS #}
     </div>
 {% endblock paragraph %}
 ```
 
 ### Step-2: Framework Related Code & Bundler
+
+```js
+// =================
+// webpack.config.js
+// =================
+
+const path = require("path");                       // This line imports Node.js's built-in path module, which provides utilities for working with file and directory paths. It's used later in the configuration to ensure that paths are resolved correctly, regardless of the operating system.
+module.exports = {
+  devtool:  "source-map",                           // The devtool option controls how source maps are generated. "source-map" creates a separate source map file, which helps in debugging by mapping the bundled code back to the original source code.
+  mode:     "development",                          // The mode option specifies the mode in which Webpack should run. "development" enables optimizations for faster build times and more readable output, which is useful during development. Alternatively, "production" would enable optimizations for smaller file sizes.
+  resolve:  {extensions:[".js",".jsx"]},            // The resolve option specifies the file extensions Webpack will resolve when importing modules. This means you can import files without specifying their extensions if they are .js, .jsx, or .ts.
+  entry:    {                                       // The entry property defines the entry points for your application.
+    tile:["./js/src/component_tile/index.jsx"],     // ⤷ Here, an entry point named tile  is defined, which includes the file ./js/src/component_tile/index.jsx.   Webpack will start building the dependency graph from this file.
+  },
+  output: {                                         // The output section specifies where the bundled files should be output
+    path:      path.resolve(__dirname, "js/dist"),  // ⤷ path: The output directory for the bundled files, resolved to an absolute path using path.resolve(). __dirname is a Node.js variable that gives the directory name of the current module, ensuring the path is correctly resolved.
+    filename: "[name].min.js",                      // ⤷ filename: The name of the output file. [name] is a placeholder that will be replaced by the name of the entry point (e.g., tile), resulting in tile.min.js as the output file.
+  },
+  module: {                                         // The module property contains rules that define how different types of modules should be treated.
+    rules: [                                        // ⤷ rules: An array of rules for module processing.
+      { test: /\.jsx?$/,                            //    ⤷ test:     A regular expression that matches file names. Here, it matches files with .js or .jsx extensions.
+        loader: "babel-loader",                     //    ⤷ loader:   Specifies the loader to use for the matched files. babel-loader is used here to transpile JavaScript files using Babel, which allows you to use modern JavaScript features.
+        exclude: /node_modules/,                    //    ⤷ exclude:  Excludes files in the node_modules directory from being processed by babel-loader, which is a common practice to improve build performance.
+        include: path.join(__dirname, "js/src") }   //    ⤷ include:  Specifies the directory to include for processing, ensuring only your source files are processed by Babel.
+    ]
+  }
+};
+
+// ========
+// .babelrc 
+// ========
+{
+    "presets": [            //  Babel is a JavaScript compiler. Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in ...
+      "@babel/preset-env",  // 	⤷ @babel/preset-env is a smart preset that allows you to use the latest JavaScript features without needing to micromanage which syntax transformations (and optionally, browser polyfills) are needed by your target environment(s). It automatically determines the Babel plugins and polyfills you need based on your target environments, which you can specify in a separate configuration or directly in the .babelrc.
+      "@babel/preset-react" //  ⤷ @babel/preset-react is a preset that includes plugins necessary for transforming React JSX syntax to JavaScript. JSX is a syntax extension used in React that allows you to write HTML-like syntax directly in JavaScript files, and this preset ensures that it is properly compiled to JavaScript that browsers can understand.
+    ]
+}
+```
+
+```json
+// ============
+// package.json
+// ============
+{
+    "name":            "olivero_npm",
+    "version":         "1.0.0",
+    "description":     "N/A",
+    "author":          "Simon Hu",
+    "license":         "ISC",
+    "dependencies":    { "@emotion/react": "^11.13.3","@emotion/styled": "^11.13.0","@fontsource/roboto": "^5.1.0","@mui/icons-material": "^6.1.6","@mui/material": "^6.1.6","@mui/styled-engine-sc": "^6.1.6","browser": "^0.2.6","prop-types": "^15.8.1","react": "^18.3.1","react-dom": "^18.3.1","styled-components": "^6.1.13"},
+    "devDependencies": { "@babel/core": "^7.26.0","@babel/preset-env": "^7.26.0","@babel/preset-react": "^7.25.9","babel-loader": "^9.2.1","ts-loader": "^9.5.1","typescript": "^5.6.3","webpack": "^5.96.1","webpack-cli": "^5.1.4","webpack-shell-plugin-next": "^2.3.2"},
+    "scripts":         { "build": "webpack --config webpack.config.js && ../../../vendor/bin/drush cr", "watch": "webpack --watch --config webpack.config.js"}
+  }
+```
 
 ```js
 // =====================================
@@ -83,9 +147,9 @@ class Tile {
                 </a>
             </div>
         );
-    }
+    };
     renderTile_ver2(){
-        return(
+        return (
             <Card sx={{ maxWidth: 345 }}>
                 <CardMedia
                 sx={{ height: 250 }}
@@ -118,6 +182,7 @@ document.querySelectorAll('react-tile-component').forEach((dom_component) => {
     const data_json        = JSON.parse(data_jsonString);
                              console.log(data_jsonString);
                              console.log(data_json);
+    
     // Initialize new tile object, and render component
     const tile = new Tile(data_json);
     ReactDOM.createRoot(dom_component).render(tile.render());
@@ -126,69 +191,26 @@ document.querySelectorAll('react-tile-component').forEach((dom_component) => {
 console.log("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
 ```
 
-```javascript
-// =======================================
-// FILE webpack.config.json FOR JS BUNDLER
-// =======================================
-
-const path = require('path');
-const isDevMode = process.env.NODE_ENV !== 'production';
-const WebpackShellPluginNext = require('webpack-shell-plugin-next');
-
-module.exports = {
-  entry: {
-    tile: ["./js/src/tile/index.jsx"]
-  },
-  devtool: (isDevMode) ? 'source-map' : false,
-  mode: (isDevMode) ? 'development' : 'production',
-  output: {
-    path: isDevMode ? path.resolve(__dirname, "js/dist_dev") : path.resolve(__dirname, "js/dist"),
-    filename: '[name].min.js'
-  },
-  resolve: {
-    extensions: ['.js', '.jsx', '.ts'],
-  },
-  module: {
-    rules: [
-      {
-        test: /\.jsx?$/,
-        loader: 'babel-loader',
-        exclude: /node_modules/,
-        include: path.join(__dirname, 'js/src'),
-      }
-    ],
-  },
-  plugins: [
-    new WebpackShellPluginNext({
-      onBuildEnd: {
-        scripts: ['cd ../../.. && vendor/bin/drush cr;'],
-        blocking: false,
-        parallel: true
-      }
-    })
-  ],
-};
 ```
+# ========
+# terminal
+# ========
 
-```
-# ==================================
-# INSTALL DEPENDENCIES AND RUN BUILD
-# ==================================
-
-> npm install --save-dev @babel/core @babel/preset-env @babel/preset-react babel-loader webpack webpack-cli
-> npm install --save react react-dom prop-types
-> npm install @mui/icons-material
+> npm install --save react react-dom prop-types                                            // React Libraries & Component Library MUI
+> npm install --save @mui/material @emotion/react @emotion/styled @mui/icons-material @mui/styled-engine-sc styled-components @fontsource/roboto 
+> npm install --save-dev @babel/core @babel/preset-env @babel/preset-react babel-loader    // JS Compilation - Babel
+> npm install --save-dev webpack webpack-cli                                               // Web Bundler    - WebPack
+                                                                                           // (or simply npm install if you already copied by "package.json"
+                                                                                           
 > npm run build
 ```
 
-
-
-### Step-3: Bundled JavaScript as Livrary
+### Step-3: Compiled JavaScript as Library
 
 ```yaml
-# =============================================================
-# FILE theme_name.libraries.yaml TO MAKE JS VIABLE AS A LIBRARY
-# =============================================================
+# ==========================
+# theme_name.libraries.yaml
+# ==========================
 
 lib_paragraph_tile:
   version: VERSION
@@ -197,9 +219,13 @@ lib_paragraph_tile:
 ```
 
 ```twig
-{# =================================== #}
-{# TWIG TEMPLATE WITH LIBRARY ATTACHED #}
-{# =================================== #}
+{# ========================= #}
+{# paragraph--tile.twig.html
+{# ========================= #}
+
+{# ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ #} 
+{{ attach_library("react_theme/lib_paragraph_tile") }} {# ◀ Add the compiled js via library #}
+{# ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ #}
 
 {% set unique_id        = random()                                                    %}
 {% set base_url         = url('<front>', {}, { 'absolute': true })                    %}
@@ -212,23 +238,14 @@ lib_paragraph_tile:
                            ~ "\"title\":"       ~ "\"" ~ data_title       ~ "\","
                            ~ "\"description\":" ~ "\"" ~ data_description ~ "\","
                            ~ "\"link\":"        ~ "\"" ~ data_link        ~ "\","
-                           ~ "\"img_src\":"     ~ "\"" ~ data_img_src     ~ "\"}" %}
+                           ~ "\"img_src\":"     ~ "\"" ~ data_img_src     ~ "\"}"     %}
 {% block paragraph %}
     <div style="background-color:lightgray;height:600px;width:100%;display:flex;justify-content:center;align-items:center;">
         <react-tile-component id="{{unique_id}}" data-json="{{data}}"/>
     </div>
 {% endblock paragraph %}
 
-{{ attach_library("react_theme/lib_paragraph_tile") }}
-
 ```
-
-### Final Outcome & Example Code
-
-The final outcome and the example code can be found as the following:
-
--   [example - outcome screenshot ](2024-11-17T200123.png)
--   [example - custom theme](example_custom_theme.zip)
 
 
 
