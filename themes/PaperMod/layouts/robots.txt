@@ -1,8 +1,7 @@
 User-agent: *
-Disallow: /public/
-Disallow: /categories/
-Disallow: /series/
-Disallow: /search/
-Disallow: /search
-
+{{- if hugo.IsProduction | or (eq site.Params.env "production") }}
+Disallow:
+{{- else }}
+Disallow: /
+{{- end }}
 Sitemap: {{ "sitemap.xml" | absURL }}
