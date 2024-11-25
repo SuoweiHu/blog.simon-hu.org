@@ -1,0 +1,21 @@
+
+@keyframes cursor-blink {
+	0% {
+		opacity: 0
+	}
+}
+
+.home-info header h1::after {
+	content: "";
+	margin-inline-start:1rem;margin-bottom: -.1rem;
+	width: .8rem;
+	height: 1.8rem;
+	background: var(--primary);
+	display: inline-block;
+	animation: cursor-blink 1.2s steps(2)infinite
+}
+
+.first-entry{
+    margin-top:    calc(var(--gap) / 4);
+    margin-bottom: calc(var(--gap) / 4);
+}
