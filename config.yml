@@ -58,8 +58,8 @@ params:
   # profile-mode
   profileMode:
     enabled: false # needs to be explicitly set
-    title: "Simon's Blog"
-    subtitle: "So, you found me. Welcome to my blog. I am a software engineer who works at OPC IT Pty Limited. I am responsible for the daily maintenance and development of Drupal websites at my workplace, and in this blog I write about programming, technology, and other things that I learn during my professional journey. You can find me via the following..."
+    title: "N/A (Disabled)"
+    subtitle: "N/A (Disabled)"
     imageUrl: "/android-chrome-512x512.png"
     imageWidth: 150
     imageHeight: 150
@@ -72,15 +72,15 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: "So, you found me. Welcome to my blog. I am a software engineer who works at OPC IT Pty Limited. I am responsible for the daily maintenance and development of Drupal websites at my workplace, and in this blog I write about programming, technology, and other things that I learn during my professional journey. You can find me via the following..."
+    Title: "Simon[~]$whoami"
+    Content: "So, you found me. Welcome to my blog. I am a full-time software engineer at OPC IT Pty Limited, where I work as a web developer. I also tutor at the Australian National University and volunteer at Medical Pantry. In this blog, I write about the lessons I learn during my professional journey and my interests, particularly in photography. You can also find me via the following..."
   socialIcons:
-    - name: github
-      url: "https://github.com/"
     - name: linkedin
       url: "https://www.linkedin.com/in/suowei-hu-0249b0181/"
-    # - name: email
-      # url: "mailto:suowei.h@gmail.com"
+    - name: github
+      url: "https://github.com/"
+    - name: email
+      url: "mailto:suowei.h@gmail.com"
     # - name: medium
       # url: "https://suowei-hu.medium.com/"
 
