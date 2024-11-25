@@ -1,7 +1,7 @@
 ---
 title: "GovCMS PaaS (Platform as a Service) Update"
 date: "2024-10-16"
-tags: ["GovCMS", "Drupal"]
+tags: ["GovCMS", "Drupal", "Drupal Planet"]
 ---
 
 As mentioned in a earlier post "GovCMS SaaS vs PaaS", in SaaS website, the client is responsible for all the patching including security updates (unlike SaaS environments which does it all automatically). This post will guide you through on how to perform these update yourself.

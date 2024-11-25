@@ -1,7 +1,7 @@
 ---
 title: "DVF (Data Visualization Framework) Quick Guidance"
 date: "2024-05-16"
-tags: ["Drupal"]
+tags: ["Drupal", "Drupal Planet"]
 ---
 
 ## **Introduction**
