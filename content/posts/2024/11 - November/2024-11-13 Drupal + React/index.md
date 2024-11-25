@@ -1,16 +1,16 @@
 ---
 title: "React/Vue Framework Component in Drupal"
 date: 2024-11-13
-tags: ["Drupal", "Component", "React"]
+tags: ["Drupal", "Component", "React", "Drupal Planet"]
 ---
 
 
 
 ## Intuition
 
-The notion has repeatedly occurred to me since I first entered the Drupal industry, where I have observed numerous online tutorials and blog posts asserting the necessity of frameworks such as Vue and React. These resources often emphasize that beginners, like I was at the time, should familiarize themselves with these technologies. Amidst the enthusiasm for these new frameworks, there exists a tendency to disparage traditional content management systems (CMS) such as WordPress, which are frequently characterized in bleak terms as an "old, dying whale." This rhetoric raises significant concerns about my future in the field. Which has lead to today's topic, are we allowed to integrate framework like react into drupal, enabling me to fulfill the commitments made by my agency to our clients while simultaneously exploring and learning React (and other front-end frameworks) in the process.
+The notion has repeatedly occurred to me since I first entered the Drupal industry, where I have observed numerous online tutorials and blog posts asserting the necessity of frameworks such as Vue and React. These resources often emphasize that beginners, like I was at the time, should familiarize themselves with these technologies. Amidst the enthusiasm for these new frameworks, there exists a tendency to disparage traditional content management systems (CMS) such as WordPress, which are frequently characterized in bleak terms as an <u>"old, dying whale.</u>" This idea raises significant concerns about my future in the field. 
 
-
+Which has lead to today's topic: Are we allowed to integrate framework like react into drupal, enabling me to fulfill the commitments made by my agency to our clients while simultaneously exploring and learning React (and other front-end frameworks) in the process.
 
 
 
@@ -19,19 +19,24 @@ The notion has repeatedly occurred to me since I first entered the Drupal indust
 In order to have drupal render a react component, there're three steps we will need to undertake:
 
 -   **Step-1**: have Drupal outputting a html DOM element that contains data (that will be later used by the React component to render the styled component), and this is achievable via parargraph module + a custom theme's `twig` template.
--   **Step-2**: create the corresponding `js`/`jsx`/`ts` file that rendered the DOM element with data into a styled component, and use the appropriate bundler (for instance web-pack) to render these files into vanilla javasctipt that can be ran on browser.
+-   **Step-2**: create the corresponding `js`/`jsx`/`ts` file that rendered the DOM element with data into a styled component, and use the appropriate module bundler to build and minify these files.
 -   **Step-3**: add the rendered single javasctipt file into the custom theme's library, and attach it to the relevant `twig` template
 
 The final outcome and the example code can be found as the following:
 
--   [example - outcome screenshot ](2024-11-17T200123.png)
--   [example - custom theme showcase](example_custom_theme.zip)
+![2024-11-26T102200](2024-11-26T102200-2576970.png)
+
+I have also attached a copy of the custom theme code I worked-on, in case you run into any problems during the process, you can take it as a reference: [download](example_custom_theme.zip). 
 
 
 
 ## Setup Process Breakdown
 
 ### Step-1: output DOM element
+
+I won't go into the details on how to configura paragraph modules, enable twig debug, have create twig file that will be used as the template rendering the certain paragraph type, you can find that on paragraph modules's [official documentation](https://www.drupal.org/docs/contributed-modules/paragraphs). In our case we will create a paragraph with machine name `tile` (and a content type to hold this paragraph type, and new content as a demo page for us to work on) then we will override the `tile` paragraph's template with the following  `paragraph--tile.twig.html` file. 
+
+Basically it is extracting all data in the paragraph component, and saving them inside the data-attribute of custom-named DOM element, as a well formatted json string.
 
 ```twig
 {# ========================= #}
@@ -58,7 +63,21 @@ The final outcome and the example code can be found as the following:
 {% endblock paragraph %}
 ```
 
+Once completed, clear the cache via `drush cr`, and you should get the following: 
+
+![2024-11-26T102428](2024-11-26T102428.png)
+
+![2024-11-26T095635](2024-11-26T095635.png)
+
+
+
 ### Step-2: Framework Related Code & Bundler
+
+In this step you can dis-regard the presense of Drupal, it will solely produce a JavaSctipt that replace an HTML component with a "Tile" looking component using react. Here we need to have the following: 
+
+-   **JavaScript Module Bundler**: The `webpack.config.js` file specifies configurations such as the development mode for faster builds, entry points for the application, output paths for bundled files, and module rules for processing JSX files. The `.babelrc` file configures Babel to use modern JavaScript features and transform JSX syntax. 
+-   **Package/Dependency Manager**: The `package.json` file lists project metadata, dependencies like React and Material-UI, and development dependencies including Babel and Webpack, along with scripts for building and watching changes. 
+-   **React Component**: The React component defined in `index.jsx` uses Material-UI components to render a tile UI element using the data found in the designated HTML component, and initializes these components within the HTML document. (in this example we use the MUI card component: https://mui.com/material-ui/react-card/)
 
 ```js
 // =================
@@ -191,21 +210,33 @@ document.querySelectorAll('react-tile-component').forEach((dom_component) => {
 console.log("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
 ```
 
+Once setup, we can run the following in terminal to install the dependencies and build the javascript:
+
 ```
 # ========
 # terminal
 # ========
 
+> npm install      // if you copied my "package.json", all the dependencies will be already there, otherwide you can also install via the following
+OR 
 > npm install --save react react-dom prop-types                                            // React Libraries & Component Library MUI
 > npm install --save @mui/material @emotion/react @emotion/styled @mui/icons-material @mui/styled-engine-sc styled-components @fontsource/roboto 
 > npm install --save-dev @babel/core @babel/preset-env @babel/preset-react babel-loader    // JS Compilation - Babel
 > npm install --save-dev webpack webpack-cli                                               // Web Bundler    - WebPack
-                                                                                           // (or simply npm install if you already copied by "package.json"
+                                                                                           
                                                                                            
 > npm run build
 ```
 
+And we will have the rendered `tile.min.js` and `tile.min.js.map` file: 
+
+![2024-11-26T102623](2024-11-26T102623.png)
+
+
+
 ### Step-3: Compiled JavaScript as Library
+
+Lastly, we need to connect the built/minified JavaScript wtih the paragraph type (tile component), to do that we add the JavaScript to an library via ``theme_name.libraries.yaml`, and attach it to the paragraph tyoe via `{{ attach_library("theme_name/library_name") }}` in the twig template. 
 
 ```yaml
 # ==========================
@@ -215,7 +246,7 @@ console.log("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
 lib_paragraph_tile:
   version: VERSION
   js:
-    js/dist_dev/tile.min.js: {minified: true}
+    js/dist/tile.min.js: {minified: true}
 ```
 
 ```twig
@@ -246,6 +277,12 @@ lib_paragraph_tile:
 {% endblock paragraph %}
 
 ```
+
+### Final Outcome 
+
+As a result we will see the following MUI component (and print-out in the console)
+
+![2024-11-26T102200](2024-11-26T102200.png)![2024-11-26T102304](2024-11-26T102304.png)
 
 
 
