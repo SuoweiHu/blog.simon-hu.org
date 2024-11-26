@@ -78,7 +78,7 @@ params:
     - name: linkedin
       url: "https://www.linkedin.com/in/suowei-hu-0249b0181/"
     - name: github
-      url: "https://github.com/"
+      url: "https://github.com/SuoweiHu"
     - name: email
       url: "mailto:suowei.h@gmail.com"
     # - name: medium
