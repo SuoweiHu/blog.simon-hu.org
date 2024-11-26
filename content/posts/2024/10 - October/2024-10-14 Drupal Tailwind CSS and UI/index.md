@@ -1,7 +1,7 @@
 ---
 title: "Drupal Tailwind CSS / Tailwind UI"
 date: "2024-10-14"
-tags: ["Drupal", "Tailwind"]
+tags: ["Drupal", "Tailwind", "Drupal Planet"]
 ---
 
 
