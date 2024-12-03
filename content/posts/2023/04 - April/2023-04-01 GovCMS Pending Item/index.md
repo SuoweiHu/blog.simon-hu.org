@@ -1,5 +1,5 @@
 ---
-title: "GocCMS Training Todo - [PENDING]"
+title: "GocCMS Training Todo - Scribble Note"
 date: "2023-04-01"
 tags: ["Drupal"]
 ---

@@ -1,5 +1,5 @@
 ---
-title: "GocCMS Training Note"
+title: "GocCMS Training - Quick Note"
 date: "2023-04-01"
 tags: ["Drupal"]
 ---
