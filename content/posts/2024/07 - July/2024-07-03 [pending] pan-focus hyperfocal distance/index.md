@@ -1,5 +1,5 @@
 ---
-title: "[PENDING] What is Pan-Focus ?"
+title: "What is Pan-Focus ? - Scribble Note"
 date: 2024-07-03
 tags: ["Photography"]
 ---
