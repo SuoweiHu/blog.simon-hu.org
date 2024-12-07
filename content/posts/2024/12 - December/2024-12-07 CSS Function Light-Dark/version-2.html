@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="theme-light">
+    <h1>Version2: CSS Media Query - prefers-color-scheme</h1>
+    <div class="card-group">
+        <div class="card-container">
+            <div class="section-image">       <img src="https://picsum.photos/seed/picsum/1200/900" alt="Image"></div>
+            <div class="section-title">       <h2>Hello World</h2></div>
+            <div class="section-description"> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem donec massa sapien faucibus et molestie ac feugiat.</p></div>
+        </div>
+        <div class="card-container">
+            <div class="section-image">       <img src="https://picsum.photos/seed/asdsa/1200/900" alt="Image"></div>
+            <div class="section-title">       <h2>Hello World</h2></div>
+            <div class="section-description"> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem donec massa sapien faucibus et molestie ac feugiat.</p></div>
+        </div>
+        <div class="card-container">
+            <div class="section-image">       <img src="https://picsum.photos/seed/asdsa/1200/900" alt="Image"></div>
+            <div class="section-title">       <h2>Hello World</h2></div>
+            <div class="section-description"> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem donec massa sapien faucibus et molestie ac feugiat.</p></div>
+        </div>
+        <div class="card-container">
+            <div class="section-image">       <img src="https://picsum.photos/seed/asdsa/1200/900" alt="Image"></div>
+            <div class="section-title">       <h2>Hello World</h2></div>
+            <div class="section-description"> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem donec massa sapien faucibus et molestie ac feugiat.</p></div>
+        </div>
+    </div>
+
+    <!-- SHARED STYLE (NON RELEVANT TO DARK/LIGHT THEME)  -->
+    <style>
+        h1{margin-left:20px}
+        button{border-radius:20px;padding-inline: 20px;padding-block:10px;right:30px;top:23px;position: fixed;z-index:999;font-weight:bold}
+        button:hover{background: #cdcdcd;cursor: pointer;text-decoration: underline}
+        .card-group{display: flex;justify-content: space-between;flex-wrap: wrap;padding-inline: 20px;}
+        .card-group > .card-container{border-radius: 20px;width: 48%;overflow:hidden;margin-top:30px;}
+        .card-group > .card-container > .section-image{height: 200px;overflow: hidden}.card-group > .card-container > .section-image > img{width:100%;}
+        .card-group > .card-container > .section-title{padding-inline: 20px}.card-group > .card-container > .section-description{padding-inline: 20px;padding-bottom: 10px}
+    </style>
+
+
+    <!-- THEME SPECIFIC STYLE (LIGHT/DARK MODE WILL DIFF) -->
+    <style>
+        @media (prefers-color-scheme: light){
+            body                  { background: white; }
+            body h1               { color:      black; }
+            body  .card-container { color:      black;
+                                    background: #ececec;
+                                    box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;}
+        }
+        @media (prefers-color-scheme: dark){
+            body                  { background: black; }
+            body  h1              { color:      white; }
+            body  .card-container { color:      white;
+                                    background: rgb(29, 29, 29);
+                                    box-shadow: rgba(215, 215, 239, 0.4) 0px 7px 29px 0px;}
+        }
+    </style>
+</body>
+</html>

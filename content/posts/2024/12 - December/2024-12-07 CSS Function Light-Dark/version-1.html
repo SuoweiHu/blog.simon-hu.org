@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="theme-light">
+    <h1>Version1: JavaSctipt & Toggler</h1>
+    <button onclick="toggleTheme()">Toggle Dark/Light</button>
+    <div class="card-group">
+        <div class="card-container">
+            <div class="section-image">       <img src="https://picsum.photos/seed/picsum/400/300" alt="Image"></div>
+            <div class="section-title">       <h2>Hello World</h2></div>
+            <div class="section-description"> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem donec massa sapien faucibus et molestie ac feugiat.</p></div>
+        </div>
+        <div class="card-container">
+            <div class="section-image">       <img src="https://picsum.photos/seed/asdsa/400/300" alt="Image"></div>
+            <div class="section-title">       <h2>Hello World</h2></div>
+            <div class="section-description"> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem donec massa sapien faucibus et molestie ac feugiat.</p></div>
+        </div>
+        <div class="card-container">
+            <div class="section-image">       <img src="https://picsum.photos/seed/asdsa/400/300" alt="Image"></div>
+            <div class="section-title">       <h2>Hello World</h2></div>
+            <div class="section-description"> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem donec massa sapien faucibus et molestie ac feugiat.</p></div>
+        </div>
+        <div class="card-container">
+            <div class="section-image">       <img src="https://picsum.photos/seed/asdsa/400/300" alt="Image"></div>
+            <div class="section-title">       <h2>Hello World</h2></div>
+            <div class="section-description"> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem donec massa sapien faucibus et molestie ac feugiat.</p></div>
+        </div>
+    </div>
+
+
+    <!-- SHARED STYLE (NON RELEVANT TO DARK/LIGHT THEME)  -->
+    <style>
+        h1{margin-left:20px}
+        button{border-radius:20px;padding-inline: 20px;padding-block:10px;right:30px;top:23px;position: fixed;z-index:999;font-weight:bold}
+        button:hover{background: #cdcdcd;cursor: pointer;text-decoration: underline}
+        .card-group{display: flex;justify-content: space-between;flex-wrap: wrap;padding-inline: 20px;}
+        .card-group > .card-container{border-radius: 20px;width: 48%;overflow:hidden;margin-top:30px;background:#ececec;box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px}
+        .card-group > .card-container > .section-image{height: 200px;overflow: hidden}
+        .card-group > .card-container > .section-title{padding-inline: 20px}.card-group > .card-container > .section-description{padding-inline: 20px;padding-bottom: 10px}
+    </style>
+
+
+    <!-- THEME SPECIFIC STYLE (LIGHT/DARK MODE WILL DIFF) -->
+    <style>
+        body.theme-light                 { background: white; }
+        body.theme-dark                  { background: black; }
+        body.theme-light h1              { color:black;       }
+        body.theme-dark  h1              { color:white;       }
+        body.theme-dark  .card-container {
+                                           color:white;
+                                           background: rgb(29, 29, 29);
+                                           box-shadow: rgba(215, 215, 239, 0.4) 0px 7px 29px 0px;
+                                         }
+    </style>
+
+
+    <!-- SCRIPT TO TOGGLE THEME CLASS NAME -->
+    <script>
+        toggleTheme = () => {
+            if(document.querySelector("body").classList.contains("theme-light")){
+                document.querySelector("body").classList.remove("theme-light");
+                document.querySelector("body").classList.add   ("theme-dark");
+            } else {
+                document.querySelector("body").classList.remove("theme-dark");
+                document.querySelector("body").classList.add   ("theme-light");
+            }
+        }
+    </script>
+</body>
+</html>
