@@ -6,7 +6,7 @@ categories: ["Accessibility"]
 
 
 
-### Introduction to Concept
+## Introduction to Concept
 
 According to [MDN-tabindex](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex), `tabindex` is a global DOM element attribute used to indicate if the element is **keyboard focusable (via tab)** or not:
 
@@ -18,7 +18,7 @@ According to [MDN-tabindex](https://developer.mozilla.org/en-US/docs/Web/HTML/Gl
 ![tab-tab-key](tab-tab-key.gif)
 
 
-### HTML Component Focusable by Default
+## HTML Component Focusable by Default
 
 Some of the HTML element by default have a `tabindex=0` , these elements are:
 
@@ -30,7 +30,7 @@ Some of the HTML element by default have a `tabindex=0` , these elements are:
 
 
 
-### Transform Any Component to Focusable
+## Transform Any Component to Focusable
 
 You may add `tabindex=0` as an attribute to any HTML component to make then focusable, for instance the below example uses jQuery to transform a `<div>` into focusable component that:
 
@@ -109,3 +109,10 @@ You can find a full list of such ARIA roles and ARIA properties/attributes via: 
 
 -   [MDN - ARIA Roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles)
 -   [MDN - ARIA Properties](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes)
+-
+
+## Reference
+- [https://content.industries/2020/12/22/what-do-developers-need-to-know-about-tab-focus/#:~:text=Most of the commonly used,” elements%2C and text areas](https://content.industries/2020/12/22/what-do-developers-need-to-know-about-tab-focus/#:~:text=Most%20of%20the%20commonly%20used,%E2%80%9D%20elements%2C%20and%20text%20areas).
+- [https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex)
+- [https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)
+- [https://tenor.com/view/tab-tab-key-key-keyboard-wide-gif-23888112](https://tenor.com/view/tab-tab-key-key-keyboard-wide-gif-23888112)
