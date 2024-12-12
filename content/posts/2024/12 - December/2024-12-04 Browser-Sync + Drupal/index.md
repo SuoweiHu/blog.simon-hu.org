@@ -36,7 +36,7 @@ $ npm install browser-sync --save-dev    # Local  Install
 After installation, open a new terminal, and navigate to the folder where the drupal files are located (for instance `my_website/public_html`); At here, you will need to initialize a configuration file, of which will be used by the `Browser-Sync` command-line later :
 
 ```
-$ npm install -g browser-sync
+$ browser-sync init
 $ ls -al
     total 216
     drwxr-xr-x   30 suowei_hu  staff    960 Dec  4 14:17 .
