@@ -17,6 +17,7 @@ categories: ["Photography", "Film"]
 
     -   Drag the **lower left** anchor point (representing shadows) all the way up to the top of the curve.
     -   Drag the **upper right** anchor point (representing highlights) all the way down to the bottom of the curve.
+    -   (Note: you may also drag these anchor **up and down**, but please make sure you understand it before proceeding, you can find more information in the "tone curve tool explaination" blog post)
 
     See: [demo operation - screenshot](2024-12-18T103713-4479360.png)
 
@@ -30,6 +31,9 @@ categories: ["Photography", "Film"]
 
 6.   **Post-Inversion Adjustments**: After inverting, you may notice that colors look unnatural or cold. Use other sliders like Exposure, Contrast, and Temperature to adjust and correct colors as needed. Some slider may act unexpected due to the nature of the original inverted image, in that case you may want to export the image with the identical format as the original image (JPEG, PNG, TIFF, BMP), then start doing the post editing adjustment from that image.
 
+
+
 ## Reference
+
 - [Learn Lightroom 6  CC Episode 18 Convert a Scanned Color Negative - YouTube](https://www.youtube.com/watch?v=zy7c2ikUhcM)
 - [Manual Inversion of Color Negative Film - Alexburkephoto.com](https://www.alexburkephoto.com/blog/2019/10/16/manual-inversion-of-color-negative-film)
