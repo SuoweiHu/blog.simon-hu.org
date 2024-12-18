@@ -37,3 +37,4 @@ categories: ["Photography", "Film"]
 
 - [Learn Lightroom 6  CC Episode 18 Convert a Scanned Color Negative - YouTube](https://www.youtube.com/watch?v=zy7c2ikUhcM)
 - [Manual Inversion of Color Negative Film - Alexburkephoto.com](https://www.alexburkephoto.com/blog/2019/10/16/manual-inversion-of-color-negative-film)
+- [Can I BEAT Negative Lab Pro? how to convert negative film scans manually](https://www.youtube.com/watch?v=rSYgAlf0ZQY)
