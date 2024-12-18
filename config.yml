@@ -110,10 +110,10 @@ menu:
     #   name: "📙"
     #   url: /read/
     #   weight: 1
-    - identifier: DiffTool
-      name: DiffTool
-      url: /tools/diff-checker/
-      weight: 1
+    # - identifier: DiffTool
+    #   name: DiffTool
+    #   url: /tools/diff-checker/
+    #   weight: 1
     - identifier: archives
       name: Timeline
       url: /archives/
