@@ -8,7 +8,7 @@ categories: ["Photography"]
 
 ## RGB Tone Curve 
 
-#### Movement for Bottom-left Anchor 
+### Movement for Bottom-left Anchor  
 
 -   **RIGHT**
 
@@ -79,7 +79,9 @@ categories: ["Photography"]
 
 ---
 
-### Green Tone Curve
+## Green Tone Curve
+
+### Movement for Bottom-left Anchor 
 
 -   **RIGHT**
     -   When you move the bottom-left anchor of the Green/Purple tone curve right  
@@ -110,9 +112,11 @@ categories: ["Photography"]
 
 ---
 
-#### Blue Tone Curve
+## Blue Tone Curve
 
--   **RIGHT**
+### Movement for Bottom-left Anchor 
+
+-  **RIGHT**
     -   When you move the bottom-left anchor of the Blue tone curve right  
         -   **adding yellow** (to the whole image, aka: black+midtone+highlight)
         -   **removing blue**  (same)
