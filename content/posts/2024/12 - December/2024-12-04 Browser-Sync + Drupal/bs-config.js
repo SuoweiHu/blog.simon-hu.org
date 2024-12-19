@@ -14,7 +14,7 @@
  */
 module.exports = {
     "ui": {
-        "port": 9998
+        "port": 9999
     },
     "files": false,
     "watchEvents": [
@@ -28,7 +28,11 @@ module.exports = {
     },
     "server": false,
     "proxy": {"target":"http://XXYYZZ.docker.amazee.io","ws": true},
-    "port": 9999,
+
+    // =========================================================================================================
+    "port": 9998, // Default port is 443for HTTPS (sometime this is prohibited, and you may want to use something else)
+    // =========================================================================================================
+    
     "middleware": false,
     "serveStatic": [],
     "ghostMode": {

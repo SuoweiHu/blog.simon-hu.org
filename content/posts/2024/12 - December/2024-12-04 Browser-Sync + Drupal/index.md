@@ -65,11 +65,11 @@ $ browser-sync start --config bs-config.js
     [Browsersync Drupal] Proxying: http://xxyyzz.docker.amazee.io
     [Browsersync Drupal] Access URLs:
      ----------------------------------------
-           Local: http://localhost:9999
-        External: http://192.168.1.1:9999
+           Local: http://localhost:9998
+        External: http://192.168.1.1:9998
      ----------------------------------------
-              UI: http://localhost:9998
-     UI External: http://192.168.1.1:9998
+              UI: http://localhost:9999
+     UI External: http://192.168.1.1:9999
      ----------------------------------------
 ```
 
@@ -162,4 +162,12 @@ Lastly, let us open the `external` url previously prompted on the command-line o
 *(\*Please make sure all the devices you want to access the website from are connected under the same network, and there's no firewall blocking the port)*
 
 *(\*Sometimes FireFox and Safari would block the browser-sync javascript, if you are not seeing the syncing, please check in console if you are seeing [anything like this](2024-12-04T151955.png))*
+
+
+
+### Step-6: (Option) Open on Device of Different Network
+
+If you are using VPN like tailscale, then you can change the port to `443` (default port of http), and open you website just by the IP address (of the device running browser-sync on) on any device within the private network, if you are using tailscale you can even using the magic-dns: `https://your-magic-dns-with-device-name`. 
+
+![2024-12-19T145129](2024-12-19T145129.png)
 

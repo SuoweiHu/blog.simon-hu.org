@@ -9,7 +9,12 @@ categories: ["Photography", "Film"]
 
 
 ## Steps-Breakdown
-1. **Import the Scanned Negatives:** Start by importing your scanned negatives into Lightroom. Ensure that the scans are free of dust, scratches and interference of ambient light (ideally the film should be the only thing shining in the image, all other area in the lightbox should be tapped/covered) for better results.
+1. **Import the Scanned Negatives:** Start by importing your scanned negatives into Lightroom. Ensure that the scans are free of dust, scratches and interference of ambient light for better results.
+
+    - Ideally the film should be the only thing shining in the image, all other area in the lightbox should be tapped/covered
+    - If you are using a macro lens (or filter), please use smaller aperture such as f11 or smaller to ensure the largest depth-of-field.
+    - If you don't have a macro lens (or filter) and is only using the center of the image, then you may use larger aperture such as f5.6 ~ f4.0
+    - Try capture using exposure bracket setting such that you have more choice the the lightroom (and you can stack them into HDR if you want)
 
 2. **Switch to Tone/Point Curve**: In the right sidebar, click on the "Light" panel to expand, and scroll down to the "tone curve" or "point" curve section, and select any of the "Red", "Green", "Blue" color (we will repeat the same steps 3-4 for each of the R/G/B-curve; But if you are aiming for quick preview, you can also do step 3-4 only on the RGB-curve only)
 
@@ -38,3 +43,5 @@ categories: ["Photography", "Film"]
 - [Learn Lightroom 6  CC Episode 18 Convert a Scanned Color Negative - YouTube](https://www.youtube.com/watch?v=zy7c2ikUhcM)
 - [Manual Inversion of Color Negative Film - Alexburkephoto.com](https://www.alexburkephoto.com/blog/2019/10/16/manual-inversion-of-color-negative-film)
 - [Can I BEAT Negative Lab Pro? how to convert negative film scans manually](https://www.youtube.com/watch?v=rSYgAlf0ZQY)
+- [【毛面包】胶片去色罩指南](https://www.bilibili.com/video/BV19nztY6EES)
+- [【弃财党】简单极致作大死，无敌底片翻拍术](https://www.bilibili.com/BV1nM411F7MH)
