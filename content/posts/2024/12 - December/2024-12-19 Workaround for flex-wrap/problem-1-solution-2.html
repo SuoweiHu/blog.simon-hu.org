@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="padding:50px;">
+    <h2 style="font-family: sans-serif;">Solution-2</h2>
+
+    <!-- Main section where parent/children lives -->
+    <p class="parent-legend">PARENT</p>
+    <div class="parent" style="padding:2px;">
+        <div class="child"><p class="child-legend">CHILD-01</p></div>
+        <div class="child"><p class="child-legend">CHILD-02</p></div>
+        <div class="child"><p class="child-legend">CHILD-03</p></div>
+        <div class="child"><p class="child-legend">CHILD-04</p></div>
+        <div class="child"><p class="child-legend">CHILD-05</p></div>
+        <div class="child"><p class="child-legend">CHILD-06</p></div>
+        <div class="child"><p class="child-legend">CHILD-07</p></div>
+        <div class="child"><p class="child-legend">CHILD-08</p></div>
+        <div class="child"><p class="child-legend">CHILD-09</p></div>
+        <div class="child"><p class="child-legend">CHILD-10</p></div>
+        <div class="child"><p class="child-legend">CHILD-11</p></div>
+        <div class="child"><p class="child-legend">CHILD-12</p></div>
+        <div class="child"><p class="child-legend">CHILD-13</p></div>
+        <div class="child"><p class="child-legend">CHILD-14</p></div>
+    </div> 
+    
+    <!-- Irrelevant css styling -->
+    <style>div.parent{border: 5px solid #F28520;background: #eae2da}div.child{border: 3px solid #8dc026;background: #e5edd4;height: 100px;display:flex}p.parent-legend{font-family:sans-serif;font-weight:bold;color:#F28520}p.child-legend{width:100%;text-align: center;line-height:65px;font-family:sans-serif;font-weight:bold;color:#8dc026}</style>
+    
+    <!-- Styles that are relevant -->
+    <style>
+        div.parent{
+            display:         flex;
+            flex-direction:  row ;
+            flex-wrap:       wrap;
+            gap:             10px;
+            justify-content: flex-start;
+        }
+        div.parent > div.child{
+            flex-basis:      30%;
+        }
+        div.parent > div.child:nth-of-type(3n  ){ margin-left: auto; }
+        div.parent > div.child:nth-of-type(3n+2){ margin-left: auto; }
+        div.parent > div.child:last-of-type     { margin-left: calc((100% - 30% * 3 - 20px * 2) / 2); }
+    </style>
+</body>
+</html>
