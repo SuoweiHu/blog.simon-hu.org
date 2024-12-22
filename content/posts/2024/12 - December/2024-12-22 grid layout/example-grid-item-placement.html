@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">item-1</div>
+        <div class="item item-2">item-2</div>
+        <div class="item item-3">item-3</div>
+        <div class="item item-4">item-4</div>
+        <div class="item item-5">item-5</div>
+    </div>
+</body>
+<style>
+    div.container{
+        display:    grid;
+        box-sizing: border-box;
+        border:     2px solid #F93B03;
+        margin-inline: 100px;
+        margin-block:  100px;
+    }
+    div.item{
+        box-sizing: border-box;
+        border:     2px solid #F7D40C;
+        background: #FFF0BE;
+        color:      #a18900;
+    }
+</style>
+<style>
+    div.container{
+        grid-template-rows:    100px 100px 100px 100px 100px 100px; 
+        grid-auto-rows:        100px;
+        grid-template-columns: 100px 100px 100px 100px 100px 100px;
+        grid-auto-columns:     100px;
+    }
+    div.item-1{ 
+        grid-row-start:    1;   /* Place item within    row-grid-line-start */ /* Row = Y-Axis */
+        grid-row-end:      3;   /*               and    row-grid-line-end   */
+        grid-column-end:   5;   /*               and column-grid-line-end   */ 
+        grid-column-start: 1;   /* Place item within column-grid-line-start */ /* Column = X-Axis */
+    }
+    div.item-2{
+        grid-row:      span 1;  /* Auto Populate Cells (using span keyword)   */
+        grid-column:   span 3;  /* Fit the grid within the available space    */
+                                /* shorthand: grid-area:     span 1 / span 3; */
+    }
+    div.item-3{ 
+        grid-row:      4 / 6;   /* Short-hand Version for: row-start/row-end */
+        grid-column:   3 / 6;   /* Short-hand Version for: col-start/col-end */
+    }
+    div.item-4{ 
+        grid-area:    6/2/7/4;  /* Short-hand Version: row-start/col-start/row-end/col-end */
+    }
+    div.item-5{ 
+        grid-row-start:    -3;  /* Example using negatie grid-line number */
+        grid-row-end:      -5;  
+        grid-column-end:   -2;   
+        grid-column-start: -1;   
+    }
+    
+</style>
+</html>

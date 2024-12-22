@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1 header">item-1</div>
+        <div class="item item-2 aside"> item-2</div>
+        <div class="item item-3 main">  item-3</div>
+        <div class="item item-4 footer">item-4</div>
+    </div>
+</body>
+<style>
+    div.container{
+        display:    grid;
+        box-sizing: border-box;
+        border:     2px solid #F93B03;
+        margin-inline: 100px;
+        margin-block:  100px;
+    }
+    div.item{
+        box-sizing: border-box;
+        border:     2px solid #F7D40C;
+        background: #FFF0BE;
+        color:      #a18900;
+    }
+</style>
+<style>
+    div.container{
+        grid-template-rows:    100px 300px 100px; 
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas:   'header header'
+                               'main aside'
+                               'footer footer';
+
+    }
+    div.item-1 { grid-area: header; }
+    div.item-2 { grid-area: main;   }
+    div.item-3 { grid-area: aside;  }
+    div.item-4 { grid-area: footer; }
+    
+</style>
+</html>

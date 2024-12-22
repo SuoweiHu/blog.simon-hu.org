@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid-container">
+
+        <!-- BOX EXAMPLE ITEM 1 -->
+        <div class="grid-item box">
+            <div class="box-title"><h2>Hello World !</h2></div>
+            <div class="box-feature"><ul class="feature-wrapper"><li>Feature-1</li><li>Feature-2</li></ul></div>
+            <div class="box-description"><p>Ullamco commodo elit do dolor. XXXXXXXXXXXXXXXXXXX</p></div>
+            <div class="box-image"><img src="https://fastly.picsum.photos/id/955/400/300.jpg?hmac=n9sqF5R_cwhzCv_sSG_iPHshnq5cKnJI65uMU-EMc24"/>
+            </div>
+        </div>
+        <!-- BOX EXAMPLE ITEM 2 -->
+        <div class="grid-item box">
+            <div class="box-title"><h2>Hello World !</h2></div>
+            <div class="box-feature"><ul class="feature-wrapper"><li>Feature-1</li><li>Feature-2</li><li>Feature-3</li><li>Feature-4</li><li>Feature-5</li></ul></div>
+            <div class="box-description"><p>Ullamco commodo elit do dolor. </p></div>
+            <div class="box-image"><img src="https://fastly.picsum.photos/id/716/400/300.jpg?hmac=0hSLXA6AjmF4lFIkds8ei7lK_EJoDU8QNPFFM1V9P9A"/>
+            </div>
+        </div>
+        <!-- BOX EXAMPLE ITEM 3 -->
+        <div class="grid-item box">
+            <div class="box-title"><h2>Hello World !</h2></div>
+            <div class="box-feature"><ul class="feature-wrapper"><li>Feature-A</li></ul></div>
+            <div class="box-description"><p>Ullamco commodo elit do dolor. Adipisicing ipsum fugiat amet dolore officia elit ullamco voluptate mollit. Ipsum laborum est ad dolor commodo minim duis. Ea laborum velit ex ea. Pariatur aute non id duis ad dolore. Ea nostrud amet labore irure aliquip eiusmod mollit sint ullamco ex esse ea occaecat elit labore. Proident id sint exercitation reprehenderit non Lorem consequat. Ut id quis Lorem magna in proident excepteur.</p></div>
+            <div class="box-image"><img src="https://fastly.picsum.photos/id/211/400/300.jpg?hmac=4kaHOtHM0JumOrJn7AGr02EGEVpzyGH-4c07td-ztEU"/>
+            </div>
+        </div>
+        <!-- BOX EXAMPLE ITEM 4 -->
+        <div class="grid-item box">
+            <div class="box-title"><h2>Voluptate pariatur tempor Lorem incididunt laboris elit tempor mollit ipsum.</h2></div>
+            <div class="box-feature"><ul class="feature-wrapper"><li>Feature-A</li><li>Feature-B</li><li>Feature-C</li></ul></div>
+            <div class="box-description"><p>Ullamco commodo elit do dolor.  Ut id quis Lorem magna in proident excepteur. Sunt dolor qui qui ad dolore veniam culpa pariatur amet labore consectetur.</p></div>
+            <div class="box-image"><img src="https://fastly.picsum.photos/id/211/400/300.jpg?hmac=4kaHOtHM0JumOrJn7AGr02EGEVpzyGH-4c07td-ztEU"/>
+            </div>
+        </div>
+        <!-- ==================== -->
+    </div>
+    <style>
+
+        /* DEBUG PUROPSE */
+        .grid-container{
+            border: 3px solid red !important;                                      
+            margin-top: 50px;
+            margin-inline: 50px;
+            position: relative;
+        }
+        .grid-container::before{
+            content: ".grid-container";
+            width: 100%;
+            position: absolute;
+            color: red;
+            top: -25px;
+        }
+        .box{
+            border: 3px solid #ffcf00 !important; 
+            background: #ffd0004e; 
+            position: relative;
+            padding-block: 10px;
+            overflow: hidden;
+        }
+        .box::before{
+            display: block;
+            content: ".grid-item";
+            width: 100%;
+            color: #ffa200;
+            opacity: 1.0;
+            position: absolute;
+            top: 0px;
+        }
+
+        /* GLOBAL STYLING - IRRELEVANT */
+        img{ 
+            width: 100%;  /* To prevent the image to force bloating  */
+            height: auto; /*    the content width (prevent overflow) */
+            border-radius: 10px;
+        }
+        ul.feature-wrapper{
+            width: fit-content;
+            list-style: none;
+            padding-left: 0px;
+            display: flex;
+            gap: 10px;
+        }
+        ul.feature-wrapper > li{
+            background: gray;
+            color: white;
+            padding-inline: 6px;
+            padding-block:  3px;
+            border-radius:  5px;
+        }
+
+        /* ================================================================================================================= */
+        /* ================================================================================================================= */
+        /* GRID STYLING - PARENT */
+        .grid-container{
+            border: 3px solid red !important; 
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            display: grid;          /* Nominate displays an element as a block-level grid container */
+            grid-column-gap: 10px;  /* (Between-Cell) Gap in the horizontal(↔) direction */
+            grid-row-gap:    10px;  /* (Between-Cell) Gap in the vertical  (↕) direction */
+        }
+        /* ================================================================================================================= */
+        /* ================================================================================================================= */
+    </style>
+</body>
