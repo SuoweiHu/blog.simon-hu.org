@@ -1,6 +1,6 @@
 ---
-title: "CSS Grid Layout"
-date: "2024-12-22"
+title: "CSS Grid (and Sub-Grid) Layout"
+date: "2024-12-23"
 categories: ["CSS"]
 ---
 
@@ -177,18 +177,54 @@ You may define the grid area template in the grid container, and place grid item
 .container{   align-content: start | end | center | stretch | space-around | space-between | space-evenly;  
 ```
 
+---
+
+## Sub-Grid Layout 
+
+In flexbox layouts, developers frequently encounter scenarios where multiple elements (such as cards) are arranged horizontally within a single flex container. To maintain vertical alignment between corresponding content sections across these elements, this is typically achieved by setting either the `height` (or `min-height`) property.
+
+![2024-12-23T162916](2024-12-23T162916.png)
+
+However, with this setup you will need to roughly know the height of each item's section; If the actual height goes beyound the set value, for instance due to the narrow screen on mobile, it faces the potential of overflow. Although you may be able to mitigate it with text clamping (see below), setting a fixed height disregard of the content can be hard to achieve in the flex layout.  
+
+```
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 3; /* for Webkit-based browsers like Chrome and Safari */
+-webkit-box-orient: vertical;
+```
+
+With the introduction of the subgrid feature, we can achieve equivalent alignment control in CSS Grid layouts, basically you are using **grid of the container** as the **grid for item's sub-grid**, and using `auto` mitigate problem where the height issue mentioned earlier, it will automatically expand/collapse to fit the content height (this is very well explain on slaying the dragon's video: https://youtu.be/Yl8hg2FG20Q?t=576)
+
+![2024-12-23T162853](2024-12-23T162853.png)
+
+(you can find the comparison files at: 
+
+-   [align-item-section-flex.html](align-item-section-flex.html)
+-   [align-item-section-subgrid.html](align-item-section-subgrid.html)
+
+
+
+
+
 
 
 ---
 
 ## Reference
-CSS Grid Basics 
+**CSS Grid Basics** 
+
 - [CSS-TRICKS - CSS Grid Layout Guide](https://css-tricks.com/snippets/css/complete-guide-grid/#aa-properties-for-the-childrengrid-items)
 - [CSS-TRICKS - CSS Grid Layout PDF CheatSheet](https://css-tricks.com/wp-content/uploads/2022/02/css-grid-poster.png)
 - [Mdn web docs - Basic concepts of grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout)
 - [Slaying The Dragon - Learn CSS Grid - A 13 Minute Deep Dive](https://www.youtube.com/watch?v=EiNiSFIPIQE)
 
-CSS Grid Extended Knowledge 
+**Extended Knowledge** 
 
 - [Codedamn - CSS Grid vs Flex](https://codedamn.com/news/frontend/difference-between-flexbox-and-css-grid)
 - [Intrinsically Responsive CSS Grid with minmax() and min()](https://css-tricks.com/intrinsically-responsive-css-grid-with-minmax-and-min/) (maybe deprecated and may no longer apply)
+
+-   [Learn CSS Subgrid in 14 minutes - Slaying The Dragon](https://www.youtube.com/watch?v=Yl8hg2FG20Q) 
+
+-   [Easy and more consistent layouts using subgrid- Kevin Powell](https://www.youtube.com/watch?v=IIQa9f0REtM&t=164s)

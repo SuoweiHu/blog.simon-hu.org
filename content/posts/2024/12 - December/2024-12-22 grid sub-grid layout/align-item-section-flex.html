@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container flex-container">
+        <div class="item flex-item">
+            <div class="flex-item-section flex-item-section-title">   Velit incididunt enim non voluptate est et do.</div>
+            <div class="flex-item-section flex-item-section-body">    Lorem consequat amet esse non amet id excepteur sunt amet Lorem eiusmod sint laboris occaecat non. Quis amet esse amet officia nostrud nostrud nulla esse. Esse sint laboris velit cillum nisi nostrud aliqua aliqua exercitation laboris consectetur aliqua sint consectetur. Nostrud magna quis sint id pariatur laborum magna labore sint consequat ad velit amet. Amet sunt irure reprehenderit sit velit reprehenderit. Mollit laborum nulla ut irure ea occaecat culpa duis.</div>
+            <div class="flex-item-section flex-item-section-img">     <img src="https://picsum.photos/300/200?random=0" loading="eager"></div>
+        </div>
+        <div class="item flex-item">
+            <div class="flex-item-section flex-item-section-title">   Sunt non fugiat ad amet ipsum deserunt.</div>
+            <div class="flex-item-section flex-item-section-body">    Veniam sit ex magna ad incididunt commodo duis commodo eiusmod ad ullamco aliqua laboris aliqua voluptate. Reprehenderit aute veniam incididunt pariatur est id sit cupidatat do minim ut proident.</div>
+            <div class="flex-item-section flex-item-section-img">     <img src="https://picsum.photos/300/200?random=1" loading="eager"></div>
+        </div>
+        <div class="item flex-item">
+            <div class="flex-item-section flex-item-section-title">   Aliqua anim culpa ea ea duis.</div>
+            <div class="flex-item-section flex-item-section-body">    Elit veniam non veniam fugiat officia magna pariatur deserunt ut magna. Do duis amet occaecat commodo dolor incididunt laborum in aute est enim labore. Cupidatat et ipsum amet veniam cupidatat. Amet ad eiusmod tempor proident officia deserunt id incididunt culpa nulla Lorem elit ad. Occaecat do ex eu quis ipsum Lorem. Culpa reprehenderit magna excepteur commodo dolore do reprehenderit velit eu magnaoris voluptate laborum et dolore est.</div>
+            <div class="flex-item-section flex-item-section-img">     <img src="https://picsum.photos/300/200?random=2" loading="eager"></div>
+        </div>
+    </div>
+</body>
+<style>
+    div.container{
+        /* border: 3px solid black; */
+    }
+    div.item{
+        border-radius: 10px;
+        border: 3px solid #D8732C;
+        background: #00294F;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-inline: 20px;
+        padding-block:  10px;
+    }
+    div.flex-item-section-img{
+        margin-bottom: 10px;;
+    }
+    div.flex-item-section-title{
+        font-size: 20px;
+        display: block;
+        margin-bottom: 10px;;
+    }
+    div.flex-item-section-body{
+        display: block;
+        margin-bottom: 10px;
+    }
+    img{
+        border-radius: 10px;;
+    }
+    
+</style>
+<style>
+    div.container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    div.container > div.item{
+        flex-basis: 23%;
+        flex-grow: 1;
+    }
+    div.container > div.item > .flex-item-section-title{
+        height: 50px;
+    }
+    div.container > div.item > .flex-item-section-body{
+        height: 230px;
+    }
+</style>
+</html>
