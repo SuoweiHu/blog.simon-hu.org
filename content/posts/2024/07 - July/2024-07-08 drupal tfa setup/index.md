@@ -37,7 +37,7 @@ When everything has been installed, and you click on the configure option in the
 
 ## Step-2: Key → Encryption Profile → TFA
 
-First, setup the **key** on `/admin/config/system/keys`:
+First, setup the **key** on `/admin/config/system/keys` (you can generate the key value via some online base64 string generator, such as [this one](https://generate.plus/en/base64)):
 
 ![2024-07-08T104439](2024-07-08T104439.jpg)
 
