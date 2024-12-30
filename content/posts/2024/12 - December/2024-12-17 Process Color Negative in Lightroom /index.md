@@ -45,3 +45,4 @@ categories: ["Photography", "Film"]
 - [Can I BEAT Negative Lab Pro? how to convert negative film scans manually](https://www.youtube.com/watch?v=rSYgAlf0ZQY)
 - [【毛面包】胶片去色罩指南](https://www.bilibili.com/video/BV19nztY6EES)
 - [【弃财党】简单极致作大死，无敌底片翻拍术](https://www.bilibili.com/BV1nM411F7MH)
+- [DSLR Film Scanning: The Secret to Perfect Color Negatives](http://natephotographic.com/dslr-film-scanning-perfect-color-negatives/)
