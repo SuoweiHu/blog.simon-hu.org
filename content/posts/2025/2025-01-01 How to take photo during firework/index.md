@@ -8,6 +8,9 @@ categories: ["Photography"]
 > 新年快乐 ！ 
 > Happy New Year ！
 
+
+## 出发前的笔记
+
 **器材选择**
 
 -   三脚架  + 蓝牙快门 （万一要用B门）
@@ -36,4 +39,20 @@ categories: ["Photography"]
     -   Red Hill Nature Reserve 要通过common wealth ave 和parks way，可能会堵车
     -   Mount Taylor Nature Reserve 也要通过common wealth ave 和parks way，可能会堵车
 
+
+## 结果展示
+
+最终还是太懒没去到最好的拍摄点哈哈，也是玩小姐牌出发太晚了计划赶不上变化就在公寓的楼顶拍了，但器材参数什么还是根据上面记录的做到了，下面就是我拍到的烟花啦：
+
+![3E68DD11-5F79-49AF-9F71-04D37C4CA680 (Optimized)](3E68DD11-5F79-49AF-9F71-04D37C4CA680%20(Optimized).jpeg)
+
+![82695864-FE47-4E1C-A802-A2E6E65322CF (Optimized)](82695864-FE47-4E1C-A802-A2E6E65322CF%20(Optimized).jpeg)
+
+![C5C1F88A-4840-4CA9-AE32-D4CC231DE3E0 (Optimized)](C5C1F88A-4840-4CA9-AE32-D4CC231DE3E0%20(Optimized).jpeg)
+
+![DD640A81-E26E-4BBB-8762-10BB1B2F793E (Optimized)](DD640A81-E26E-4BBB-8762-10BB1B2F793E%20(Optimized).jpeg)
+
+(👆这里是压缩过的版本)
+
+还有视频！ [1783ef61291b1a05cf1b4cc0cb43fb86_WC-EditVideo_1.mp4](1783ef61291b1a05cf1b4cc0cb43fb86_WC-EditVideo_1.mp4)
 
