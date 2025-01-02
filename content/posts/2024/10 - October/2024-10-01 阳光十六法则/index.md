@@ -1,5 +1,5 @@
 ---
-title: "阳光十六法则 (Sunny 16 rule)"
+title: "[Note] 阳光十六法则 (Sunny 16 rule)"
 date: 2024-10-01
 draft: false
 tags: ["Photography"]
