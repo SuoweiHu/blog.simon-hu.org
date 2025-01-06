@@ -1,8 +1,7 @@
 ---
-title: "Fixing module not getting recognized"
+title: "Fixing module not getting recognized (after D9-10 upgrade)"
 summary: "Quick fix to the issue of module not getting recognized after upgrading from drupal-9 to drupal-10"
-tags: ["Drupal"]
-tags: ["Drupal Bug Fix", "D9 - D10 Upgrade"]
+tags: ["Drupal", "Patch"]
 date: 2023-11-01
 ---
 

@@ -1,8 +1,7 @@
 ---
-title: "Deprecation of \"path/filename\" api"
+title: "Deprecation of \"path/filename\" api (after D9-10 upgrade)"
 summary: "Fixing custom modules' code that are dependent of function drupal_get_path() and drupal_get_filename() which is deprecating in newest drupal 10, hence making it compatible for the upgrade (only for temporal purpose). "
-tags: ["Drupal"]
-tags: ["D9 - D10 Upgrade"]
+tags: ["Drupal", "Patch"]
 date: 2023-10-31
 ---
 

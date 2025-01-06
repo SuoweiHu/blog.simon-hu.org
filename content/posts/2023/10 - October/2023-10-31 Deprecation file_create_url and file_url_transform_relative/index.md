@@ -1,8 +1,7 @@
 ---
-title: "Deprecation of \"url\" api"
+title: "Deprecation of \"url\" api (after D9-10 upgrade)"
 summary: "Fixing custom modules' code that are dependent of function file_create_url() and file_url_transform_relative() which is deprecating in newest drupal 10, hence making it compatible for the upgrade (only for temporal purpose). "
-tags: ["Drupal"]
-tags: ["D9 - D10 Upgrade"]
+tags: ["Drupal", "Patch"]
 date: 2023-10-31
 ---
 
