@@ -118,10 +118,10 @@ menu:
       name: Timeline
       url: /archives/
       weight: 10
-    - identifier: categories
-      name: Categories
-      url: /categories/
-      weight: 20
+    # - identifier: categories
+    #   name: Categories
+    #   url: /categories/
+    #   weight: 20
     # - identifier: series
     #   name: Series
     #   url: /series/
@@ -130,10 +130,10 @@ menu:
     #   name: Time
     #   url: /times/
     #   weight: 10
-    # - identifier: tags
-    #   name: Tags
-    #   url: /tags/
-    #   weight: 30
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 30
     # - identifier: example
     #   name: example.org
     #   url: https://example.org
