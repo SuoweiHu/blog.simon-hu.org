@@ -17,7 +17,6 @@ You may use a combination of the `print_r()`, `var_dump()`, `var_export()`, and 
 
 For instance you can have the following code to debug print in `custom_theme_name.theme` file:
 ```php
-//
 function custom_theme_name_preprocess_html(&$variables) {
     // Get the current path and node id
     $current_path = \Drupal::service('path.current')->getPath();
@@ -39,9 +38,45 @@ function custom_theme_name_preprocess_html(&$variables) {
 }
 ```
 
-## Method-2: Drupal (via watchdog module / logger service)
+## Method-2: Drupal (via notification / logger service)
 
-Please refer to reference, not recommended as the debug log will eventually be a part of database of website.
+```php
+// Notification pop-out window when visiting the page
+\Drupal::messenger()->addMessage("HELLO WORLD from messenger addMessage");
+\Drupal::messenger()->addWarning("HELLO WORLD from messenger addWarning");
+\Drupal::messenger()->addStatus("HELLO WORLD from messenger addStatus");
+\Drupal::messenger()->addError("HELLO WORLD from messenger addError");
+```
+
+```php
+// Logging message visible at "/admin/reports/dblog" after logging in as admin  
+\Drupal::logger('logger')->notice("Hello WORLD from logger notice (check log at /admin/reports/dblog) ");
+\Drupal::logger('error')->error("Hello WORLD from logger error (check log at /admin/reports/dblog) "); 
+```
+
+For instance you can have the following code to debug print in `custom_theme_name.theme` file:
+
+```php
+// [custom_theme_name.theme] file 
+function custom_theme_name_preprocess_html(&$variables) {
+    // Get the current path and node id
+    $current_path = \Drupal::service('path.current')->getPath();
+    $internal_path = \Drupal::service('path_alias.manager')->getAliasByPath($current_path);
+    $website_base_url= \Drupal::request()->getSchemeAndHttpHost();
+    $node = \Drupal::routeMatch()->getParameter('node');
+    if ($node instanceof \Drupal\node\NodeInterface) {$nid = $node->id();}
+    
+     // Debug printing the variables retrived above
+	\Drupal::messenger()->addMessage("hello from node: " . $nid); // Notification  
+    \Drupal::logger('logger')->notice("hello from node: " . $nid); // Logging message 
+    
+    // ===================
+    // YOUR CODE CONTINUED
+    // ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼
+}
+```
+
+For more instruction (e.g. how to use watch dog module to debug), please refer to reference, not recommended as the debug log will eventually be a part of database of website.
 
 
 ## Method-3: XDebug (Debug using IDE)
