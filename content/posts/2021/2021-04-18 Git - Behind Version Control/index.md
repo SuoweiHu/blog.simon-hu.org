@@ -1,7 +1,7 @@
 ---
 title: "Git - Behind Version Control"
 date: "2021-04-18"
-tags: ["Git"]
+tags: ["git", "github"]
 ---
 
 # Git - Behind Version Control

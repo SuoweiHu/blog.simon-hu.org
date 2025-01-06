@@ -118,10 +118,10 @@ menu:
       name: Timeline
       url: /archives/
       weight: 10
-    # - identifier: categories
-    #   name: Categories
-    #   url: /categories/
-    #   weight: 20
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 20
     # - identifier: series
     #   name: Series
     #   url: /series/

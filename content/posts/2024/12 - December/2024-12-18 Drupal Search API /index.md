@@ -1,7 +1,7 @@
 ---
 title: "Drupal Search Page (using Search API Module)"
 date: "2024-12-18"
-categories: ["Drupal"]
+tags: ["Drupal"]
 ---
 
 *\*Note: This is just a quick note for myself in order to get my head around the topic, maybe I'll formulate this into a more structured post one day ... but for now if you are looking for something formal Search API's documentation is your goto.*

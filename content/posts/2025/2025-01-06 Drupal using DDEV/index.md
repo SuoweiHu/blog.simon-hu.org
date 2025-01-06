@@ -1,7 +1,7 @@
 ---
 title: "Drupal Local Server using DDEV"
 date: "2025-01-06"
-categories: ["Drupal"]
+tags: ["Drupal"]
 ---
 
 

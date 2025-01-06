@@ -1,7 +1,7 @@
 ---
 title: "Problems and Workarounds for Flex-Wrap"
 date: "2024-12-19"
-categories: ["CSS"]
+tags: ["CSS"]
 ---
 
 [TOC]

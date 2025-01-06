@@ -1,7 +1,7 @@
 ---
 title: "[Note] 如何看待重复/堆砌构图"
 date: "2024-12-31"
-categories: ["photography"]
+tags: ["photography"]
 ---
 
 ## 作为一个摄影初学者，我应该如何看待重复/堆砌构图的行为 ?

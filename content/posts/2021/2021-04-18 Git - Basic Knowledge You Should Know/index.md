@@ -1,7 +1,7 @@
 ---
 title: "Git - Basic Knowledge You Should Know"
 date: "2021-04-18"
-tags: ["Git"]
+tags: ["git", "github"]
 ---
 
 # Git - Basic Knowledge You should Know

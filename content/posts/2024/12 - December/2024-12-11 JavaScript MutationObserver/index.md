@@ -1,7 +1,7 @@
 ---
 title: "JavaScript MutationObserver [PENDING]"
 date: "2024-12-11"
-categories: ["JavaScript"]
+tags: ["JavaScript"]
 ---
 
 MutationObserver

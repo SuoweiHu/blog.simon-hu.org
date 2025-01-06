@@ -1,7 +1,7 @@
 ---
 title: "[Note] 烟花怎么拍 - 出发前的笔记"
 date: "2025-01-02"
-categories: ["Photography"]
+tags: ["Photography"]
 ---
 
 

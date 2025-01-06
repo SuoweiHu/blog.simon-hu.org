@@ -1,7 +1,7 @@
 ---
 title: "Process Color Negative in Lightroom "
 date: "2024-12-17"
-categories: ["Photography", "Film"]
+tags: ["Photography", "Film"]
 ---
 
 ## Illustration for TLDR

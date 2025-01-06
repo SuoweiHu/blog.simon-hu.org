@@ -1,7 +1,7 @@
 ---
 title: "CSS Grid (and Sub-Grid) Layout"
 date: "2024-12-23"
-categories: ["CSS"]
+tags: ["CSS"]
 ---
 
 >   **Disclaimer**: This post is primarily written as a personal reference note and is not intended as professional or formal content. Much of the material has been directly copied from various sources for my own learning purposes. The language used is casual and unpolished. This is essentially my digital notebook - use at your own discretion. All credit goes to the original sources referenced below.

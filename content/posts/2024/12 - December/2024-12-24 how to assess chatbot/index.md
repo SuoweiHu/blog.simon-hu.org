@@ -1,7 +1,7 @@
 ---
 title: "[Note] Parameters to assess ChatBot products ?"
 date: "2024-12-24"
-categories: ["ChatBot"]
+tags: ["ChatBot"]
 ---
 
 

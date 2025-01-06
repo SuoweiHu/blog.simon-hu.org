@@ -1,7 +1,7 @@
 ---
 title: "[Note] 摄影备忘录 (Photo Ideas)"
 date: "2025-01-06"
-categories: ["Photography"]
+tags: ["Photography"]
 ---
 
 

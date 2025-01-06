@@ -1,7 +1,7 @@
 ---
 title: "[Note] 日落怎么拍 - 彩蜂摄影"
 date: "2025-01-02"
-categories: ["Photography", "Sunset"]
+tags: ["Photography", "Sunset"]
 ---
 
 

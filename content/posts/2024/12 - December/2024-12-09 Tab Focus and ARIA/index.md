@@ -1,7 +1,7 @@
 ---
 title: "Keyboard Tab Focus for Accessibility (tabindex)"
 date: "2024-12-09"
-categories: ["Accessibility"]
+tags: ["Accessibility"]
 ---
 
 

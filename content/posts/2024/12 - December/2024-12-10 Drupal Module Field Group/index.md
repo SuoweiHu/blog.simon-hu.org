@@ -1,7 +1,7 @@
 ---
 title: " Quick Look at the Drupal Module: Field Group"
 date: "2024-12-10"
-categories: ["Drupal Module"]
+tags: ["Drupal Module"]
 ---
 
 

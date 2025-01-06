@@ -1,7 +1,7 @@
 ---
 title: "Explaining Tone Curve Tool (via bottom-left anchor)"
 date: "2024-12-17"
-categories: ["Photography"]
+tags: ["Photography"]
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: "CSS Function Light-Dark"
 date: "2024-12-07"
-categories: ["CSS"]
+tags: ["CSS"]
 ---
 
 
