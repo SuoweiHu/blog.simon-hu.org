@@ -1,7 +1,7 @@
 ---
 title: "Lightroom - Keyboard Shortcut"
 date: 2024-08-05
-tags: ["Lightroom"]
+tags: ["Photography"]
 ---
 
 

@@ -1,7 +1,6 @@
 ---
 title: "Find filename and file content via GREP"
 date: "2024-02-14"
-tags: ["CLI", "grep"]
 ---
 
 

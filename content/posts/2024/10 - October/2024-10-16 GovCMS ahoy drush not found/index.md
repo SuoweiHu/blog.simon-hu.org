@@ -1,7 +1,7 @@
 ---
 title: "Reoslution for [\"/usr/local/bin/drush\": not found\"]"
 date: "2024-10-16"
-tags: ["Ahoy", "GovCMS", "Drupal Planet"]
+tags: ["Drupal", "Drupal Planet"]
 ---
 
 

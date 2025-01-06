@@ -1,7 +1,7 @@
 ---
 title: "Twig - Generate Unique ID for Component"
 date: "2023-11-22"
-tags: ["twig"]
+tags: ["Drupal"]
 ---
 
 ## Intuition

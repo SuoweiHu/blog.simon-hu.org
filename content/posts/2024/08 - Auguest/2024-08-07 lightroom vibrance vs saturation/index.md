@@ -1,7 +1,7 @@
 ---
 title: "Lightroom - Saturation vs Vibrance"
 date: 2024-08-07
-tags: ["Lightroom"]
+tags: ["Photography"]
 ---
 
 

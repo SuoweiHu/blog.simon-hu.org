@@ -1,7 +1,7 @@
 ---
 title: "DDEV - failed to connect to /var/run/com.docker.vmnetd.sock: is vmnetd running?"
 date: "2024-07-26"
-tags: ["DDEV"]
+tags: ["Drupal"]
 ---
 
 

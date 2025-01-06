@@ -1,8 +1,7 @@
 ---
 title: "Shield for Apache Server using htaccess/htpasswd"
 date: 2023-11-13
-tags: ["Server", "htaccess"]
-tags: ["Server"]
+tags: ["#Other"]
 ---
 
 

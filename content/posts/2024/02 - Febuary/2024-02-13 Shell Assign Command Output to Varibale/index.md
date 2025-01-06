@@ -1,7 +1,7 @@
 ---
 title: "Shell Assign Command Output to Varibale"
 date: "2024-02-13"
-tags: ["Shell"]
+tags: ["Terminal"]
 ---
 
 ## Usage

@@ -1,7 +1,7 @@
 ---
 title: "Drupal Webform \"File Upload Element\" Not Apeparning"
 date: "2024-10-31"
-tags: ["Drupal", "Bug"]
+tags: ["Drupal", "Patch"]
 ---
 
 ## Issue Repeated

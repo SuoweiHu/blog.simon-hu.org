@@ -2,7 +2,7 @@
 title: "Browser CORS policy"
 date: 2023-11-08
 tags: ["Network"]
-tags: ["CORS Policy", "Cross Origin"]
+tags: ["#Other"]
 ---
 
 ## Intuition

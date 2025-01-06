@@ -1,7 +1,7 @@
 ---
 title: "Websites downloads the PHP-File instead of opening the website"
 date: 2023-10-31
-tags: ["Drupal Bug Fix"]
+tags: ["Drupal", "Patch"]
 ---
 
 This tutorial provides step-by-step instructions to address the strange problem where, upon accessing a website, the index.php file begins to **download** instead of **opening** as intended. Users may encounter a dialog box prompting them to download the file, unsure of how to proceed when faced with options to open, close, or cancel. This article aims to guide you in resolving this issue effectively.

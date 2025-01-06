@@ -1,7 +1,7 @@
 ---
 title: "Drupal Debug PHP File"
 date: "2024-08-28"
-tags: ["Drupal", "Debug"]
+tags: ["Drupal"]
 ---
 
 

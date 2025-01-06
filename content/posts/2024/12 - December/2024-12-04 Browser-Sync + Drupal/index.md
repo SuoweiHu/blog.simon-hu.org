@@ -1,7 +1,7 @@
 ---
 title: "Code on Multiple Device and Browser via Browser-Sync"
 date: "2024-12-04"
-tags: ["Drupal", "Drupal Planet", "Development"]
+tags: ["Drupal", "Drupal Planet"]
 ---
 
 

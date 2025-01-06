@@ -1,13 +1,12 @@
 ---
 title: Export Google Analytics to Google Sheets (using Add-on)
 date: 2023-11-13
-tags: ["Google Analytics", "Google Analytics Export"]
-tags: ["Google Analytics"]
+tags: ["#Other"]
 ---
 
 
 ## Step-1 : Google Account Logged-in
-To begin with, make sure you are **logged in** the proper google account, we will use the same account for all of the Google related product in the upcoming steps, including "Google Analytics" and "Google Sheets".
+To begin with, make sure you are **logged in** the proper google account, we will use the same account for all of the Google related product in the upcoming steps, including "Other" and "Google Sheets".
 
 ## Step-2: Install Add-on
 Secondly, with the same google account open "google sheet", then open "`extension > add-on > get add-on"` and install the google analytics add-on as denoted in the screenshot:

@@ -1,7 +1,6 @@
 ---
 title: "AppleScript - Insert Datetime (of format)"
 date: "2021-03-07"
-tags: ["AppleScript", "Utility"]
 ---
 
 

@@ -1,7 +1,6 @@
 ---
 title: "Prettier 101 - [PENDING]"
 date: "2024-05-07"
-tags: ["Prettier"]
 ---
 
 

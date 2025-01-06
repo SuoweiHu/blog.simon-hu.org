@@ -1,7 +1,7 @@
 ---
 title: "ZSH - Tutorial notes (in Chinese)"
 date: "2021-04-10"
-tags: ["zsh", "terminal"]
+tags: ["Terminal"]
 ---
 
 

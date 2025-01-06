@@ -1,7 +1,6 @@
 ---
 title: "Hugo PowerMod: Custom CSS"
 date: "2024-02-12"
-tags: ["Hugo"]
 ---
 
 

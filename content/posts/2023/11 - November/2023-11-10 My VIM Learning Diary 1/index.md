@@ -1,8 +1,7 @@
 ---
 title: "My Vim Learning Diary 1"
 date: "2023-11-08"
-tags: ["Vim", "Vim Diary", "Vim Tutorial", "Vim Configuration"]
-tags: ["Vim"]
+tags: ["Terminal"]
 ---
 
 ## Why do "I" want to use vim ?

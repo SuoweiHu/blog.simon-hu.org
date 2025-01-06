@@ -1,8 +1,7 @@
 ---
 title: "What/Why Google Tag Manager (GTM)"
 date: "2023-11-14"
-tags: ["Google Tag Manager", "GTM"]
-tags: ["Google Tag Manager (GTM)"]
+tags: ["#Other"]
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Drupal Settings.php Snippets for Debug"
 date: "2024-11-20"
-tags: ["Drupal", "Debug", "Drupal Planet"]
+tags: ["Drupal", "Drupal Planet"]
 ---
 
 

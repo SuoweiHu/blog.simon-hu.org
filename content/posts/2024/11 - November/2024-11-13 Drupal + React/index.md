@@ -1,7 +1,7 @@
 ---
 title: "React/Vue Framework Component in Drupal"
 date: 2024-11-13
-tags: ["Drupal", "Component", "React", "Drupal Planet"]
+tags: ["Drupal", "JavaScript", "Drupal Planet"]
 ---
 
 

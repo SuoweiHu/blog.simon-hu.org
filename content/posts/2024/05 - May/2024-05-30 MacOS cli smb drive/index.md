@@ -2,7 +2,6 @@
 title: "List/Mount/Unmount SMB Drive on CLI"
 description: "List/Mount/Unmount network drive via cli"
 date: "2024-05-30"
-tags: ["NAS"]
 ---
 
 

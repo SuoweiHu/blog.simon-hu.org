@@ -1,7 +1,7 @@
 ---
 title: "Regular Expression 101"
 date: 2024-08-05
-tags: ["Regular Expression"]
+tags: ["Terminal"]
 ---
 
 

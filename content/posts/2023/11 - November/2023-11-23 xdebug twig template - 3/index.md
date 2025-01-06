@@ -1,7 +1,7 @@
 ---
 title: "Drupal X-Debug Twig Template 3: Using Debugger for Twig Template"
 date: "2023-11-23"
-tags: ["twig"]
+tags: ["Drupal"]
 ---
 
 > Note:

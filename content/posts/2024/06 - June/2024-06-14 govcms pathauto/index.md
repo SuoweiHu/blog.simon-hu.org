@@ -1,7 +1,7 @@
 ---
 title: "[GovCMS SaaS] Configure Pathauto Pattern: [node:menu-link:parents:join-path]/[node:title]"
 date: "2024-06-14"
-tags: ["GovCMS"]
+tags: ["Drupal"]
 ---
 
 

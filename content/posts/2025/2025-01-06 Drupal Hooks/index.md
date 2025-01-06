@@ -1,7 +1,7 @@
 ---
 title: "[PENDING] Drupal Hook (Theme Hook & Module Hook)"
 date: "2025-01-06"
-tags: ["Drupal", "Hook"]
+tags: ["Drupal"]
 ---
 
 

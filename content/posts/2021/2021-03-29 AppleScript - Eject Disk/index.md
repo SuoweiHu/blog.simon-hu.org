@@ -1,7 +1,6 @@
 ---
 title: "AppleScript - Eject Disk"
 date: "2021-03-29"
-tags: ["AppleScript", "Utility"]
 ---
 
 ## Simple Versiom

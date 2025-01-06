@@ -1,7 +1,7 @@
 ---
 title: "jQuery dollar sign ($)"
 date: "2023-12-08"
-tags: ["jQuery"]
+tags: ["JavaScript", "Drupal"]
 ---
 
 ## jQuery dollar sign

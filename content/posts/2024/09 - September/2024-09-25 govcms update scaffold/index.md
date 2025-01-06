@@ -1,7 +1,7 @@
 ---
 title: "GovCMS Update Scaffold (PaaS only)"
 date: 2024-09-25
-tags: ["GovCMS"]
+tags: ["Drupal"]
 ---
 
 

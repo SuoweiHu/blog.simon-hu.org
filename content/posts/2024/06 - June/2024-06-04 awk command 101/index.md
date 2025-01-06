@@ -1,7 +1,7 @@
 ---
 title: "Awk command 101"
 date: "2024-06-04"
-tags: ["CLI", "Linux"]
+tags: ["Terminal"]
 ---
 
 

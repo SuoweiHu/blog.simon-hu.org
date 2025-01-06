@@ -1,7 +1,7 @@
 ---
 title: "[Note] Lightroom - 后期必做动作"
 date: "2024-10-13"
-tags: ["Lightroom"]
+tags: ["Photography"]
 ---
 
 

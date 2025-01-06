@@ -1,7 +1,7 @@
 ---
 title: "IP Address Cannot Access Website (How does DNS server work behind the theme to protect your website)"
 date: "2024-05-22"
-tags: ["DNS"]
+tags: ["#Other"]
 ---
 
 

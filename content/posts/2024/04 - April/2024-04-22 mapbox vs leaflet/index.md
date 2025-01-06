@@ -2,7 +2,7 @@
 title: "Leaflet vs Mapbox (mapbox-tile, mapbox-js, mapbox-gl-js)"
 date: "2024-04-22"
 draft: false
-tags: ["map"]
+tags: ["#Other"]
 ---
 
 

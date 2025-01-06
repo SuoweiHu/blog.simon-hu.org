@@ -1,7 +1,7 @@
 ---
 title: "Drupal X-Debug Twig Template 2: Setup of PhpStorm"
 date: "2023-11-23"
-tags: ["twig"]
+tags: ["Drupal"]
 ---
 
 > Note:

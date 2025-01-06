@@ -1,7 +1,7 @@
 ---
 title: "Lazigit Interactive-Rebase (e) - [PENDING]"
 date: "2024-04-26"
-tags: ["Git", "CLI"]
+tags: ["Terminal"]
 ---
 
 ![2024-04-26T152158](2024-04-26T152158.jpg)

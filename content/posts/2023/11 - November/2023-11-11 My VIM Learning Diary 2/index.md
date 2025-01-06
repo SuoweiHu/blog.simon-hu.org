@@ -1,8 +1,7 @@
 ---
 title: "My Vim Learning Diary 2"
 date: "2023-11-13"
-tags: ["Vim", "Vim Diary", "Vim Moiion", "Keybinding"]
-tags: ["Vim"]
+tags: ["Terminal"]
 ---
 
 ## Vim Motion / Keybinding

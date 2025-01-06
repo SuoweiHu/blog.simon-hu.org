@@ -1,7 +1,7 @@
 ---
 title: "Twig - Debug/Development Environment - Setting Configuration"
 date: "2023-11-22"
-tags: ["twig"]
+tags: ["Drupal"]
 ---
 
 ## Enable Twig Debug (Show source file)

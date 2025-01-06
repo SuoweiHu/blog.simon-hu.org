@@ -1,7 +1,7 @@
 ---
 title: "GovCMS Docker - No space left on device"
 date: 2024-06-20
-tags: ["GovCMS", "Bug/Fix"]
+tags: ["Drupal", "Patch"]
 ---
 
 
