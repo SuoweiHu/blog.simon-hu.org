@@ -10,6 +10,7 @@ tags: ["Photography"]
 - 几何的绝对中心（例如窗户的中心）
 - 散点构图（注意里被各种有意思的东西分散）
 - 鲜艳的颜色（突出的主体）
+- 框式的前景，突出主体。比如，通过车窗后视镜拍摄的风景。
 
 ### 街拍
 
@@ -29,3 +30,6 @@ tags: ["Photography"]
 
 - 地平线（四六/二分构图）
 - 冷暖对比（冷色会显得轻且远，暖色会显得重且近，可以通过这点加强空间感）
+
+## Reference 
+- [https://www.yeeyi.com/news/details/1544969/](https://www.yeeyi.com/news/details/1544969/)
