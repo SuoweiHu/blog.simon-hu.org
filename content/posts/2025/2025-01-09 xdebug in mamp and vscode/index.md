@@ -64,7 +64,7 @@ For now since I haven't used XDebug to debug my code a lot, I really don't have 
 
 ## 4 - Demonstrative Video
 
-[2025-01-09T160120 - Compress2 - 720P - 30frame.mp4](2025-01-09T160120 - Compress2 - 720P - 30frame.mp4)
+[demo-video](<2025-01-09T160120 - Compress2 - 720P - 30frame.mp4>)
 
 
 
