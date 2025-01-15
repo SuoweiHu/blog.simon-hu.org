@@ -4,6 +4,7 @@ date: "2025-01-09"
 categories: ["Drupal"]
 ---
 
+\*p.s. please utilise PHP version 8.2.13 or earlier, as XDebug compatibility issues have been identified (on my end) with PHP ≥8.3.0 versions at the time of writing.
 
 
 ## 1 - Configurae MAMP 
