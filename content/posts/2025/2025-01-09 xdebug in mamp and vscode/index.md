@@ -1,6 +1,6 @@
 ---
 title: "XDebug with MAMP + VSCode"
-date: "2025-01-09"
+date: "2025-01-17"
 categories: ["Drupal"]
 ---
 
