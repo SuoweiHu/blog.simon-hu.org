@@ -1,0 +1,13 @@
+Image Format,"No Compression 
+in Color Bits ?","No Compress 
+in Resolution ?",Continuous Shoot Mode Burst Speed,"Raw Sensor 
+Resolution","Output Image
+Resolution","Color Bit 
+in Single Shoot Mode","Color Bit 
+in Continous Shoot Mode","File Size
+(A7M4)"
+Uncompressed Raw ,Yes,Yes,≤ 6       shot / second,"7,008 x 4,672 = 32.7 MP","7,008 x 4,672 = 32.7 MP",14 bits,14 bits,≈ 65-70 MB
+Lossless Raw (L),Yes,Yes,≈ 6 ~ 7 shot / second,"7,008 x 4,672 = 32.7 MP","7,008 x 4,672 = 32.7 MP",14 bits,14 bits,≈ 40-45 MB
+Compressed Raw ,No (12bit in Continuous),Yes,≈10      shot / second,"7,008 x 4,672 = 32.7 MP","7,008 x 4,672 = 32.7 MP",14 bits,12 bits,≈ 35-40 MB
+Lossless Raw (M),Yes,No (14.2 MP),≈ 6 ~ 7 shot / second,"7,008 x 4,672 = 32.7 MP","4,608 x 3,072 =14.2 MP ",14 bits,14 bits,≈ 20-22 MB
+Lossless Raw (S),Yes,No (8.19 MP),≈ 6 ~ 7 shot / second,"7,008 x 4,672 = 32.7 MP","3,504 x 2,336 = 8.19 MP",14 bits,14 bits,≈ 15 MB
