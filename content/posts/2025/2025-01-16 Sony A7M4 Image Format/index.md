@@ -7,7 +7,7 @@ description: "Difference in Image Format for Sony A7M4"
 
 ## Intuition
 
-During a recent trip to Sydney, I found myself without a laptop and with only a single SD card in my camera. I was constantly worried about running out of memory, although I managed to capture all my photos without any issues. Once I returned home, I immediately began searching online for the largest SD card available. I was surprised to discover a dramatic difference in prices between V30 to V90 SD cards.
+During a recent trip to Sydney, I found myself in a condition where there's only a single SD card with me, and I've forgotten my laptop at home for data export. So... I had to make sure I take every single shot carefully and not to use burst short to bloat up the memory, but this seems challenging since I am mostly walking down the CBD avenue and doing stree photography, not to mention I was constantly worried about running out of memory, although I managed to capture all my photos without any issues. As a result, once I returned home, I immediately began searching online for the largest SD card available, so I won't have to be in the same dilemma agin. However, I was surprised to discover a dramatic difference in prices between V30 to V90 SD cards.
 
 
 | Storage Size | V30 | V60 | V90  |
