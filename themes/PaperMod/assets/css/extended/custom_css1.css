@@ -16,6 +16,17 @@
 }
 
 .first-entry{
-    margin-top:    calc(var(--gap) / 4);
-    margin-bottom: calc(var(--gap) / 4);
+    margin-top:    0px;
+    margin-bottom: 2.0rem;
+    justify-content: flex-start;
+    min-height: fit-content;
+}
+:root{
+    --nav-width: 1280px;
+    --main-width: 1280px;
+}
+
+header > nav > div.logo > a{
+    font-weight: 500;
+    font-size: 1.25rem;
 }
