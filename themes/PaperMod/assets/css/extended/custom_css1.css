@@ -21,10 +21,19 @@
     justify-content: flex-start;
     min-height: fit-content;
 }
+
+/* Width for generic pages */
 :root{
     --nav-width: 1280px;
+    --main-width: 1000px;
+}
+
+/* Width for home page */
+html:has(.first-entry){
     --main-width: 1280px;
 }
+
+
 
 header > nav > div.logo > a{
     font-weight: 500;
