@@ -70,7 +70,28 @@ header{
     margin-top: 2px;
 }
 #menu a{
+    font-weight: 400;
     &:hover{
         text-decoration: underline;
     }
 }
+#menu li a[title="Photo"]{
+	background: #1E1E1E;
+	padding-block: 5px;
+	transform: translate(0px, -5px);
+	padding-inline: 10px;
+	border-radius: 10px;
+	color: white;
+	transition: all 0.25s ease-in-out;
+    line-height: 20px;
+    transform: translate(0px, 15px);
+	&:hover{
+		text-decoration: none !important;
+		background: #D6D6D6;
+		color: #1E1E1E;
+	}
+    svg{
+        display: none;
+    }
+}
+

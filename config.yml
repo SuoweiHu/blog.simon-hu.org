@@ -142,6 +142,10 @@ menu:
       name: "Search"
       url: /search/
       weight: 90
+    - identifier: photo
+      name: Photo
+      url: "https://photo.simon-hu.org/"
+      weight: 91
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
