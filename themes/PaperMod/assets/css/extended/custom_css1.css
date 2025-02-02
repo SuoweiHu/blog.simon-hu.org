@@ -65,3 +65,10 @@ a[title="Linkedin"] > svg, a[title="LinkedIn"] > svg{
     width:  22px;
     transform: translate(0px, -2px);
 }
+
+
+#menu a{
+    &:hover{
+        text-decoration: underline;
+    }
+}
