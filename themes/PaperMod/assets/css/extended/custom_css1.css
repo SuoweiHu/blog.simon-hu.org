@@ -1,41 +1,61 @@
+/** @format */
 
 @keyframes cursor-blink {
 	0% {
-		opacity: 0
+		opacity: 0;
 	}
 }
 
 .home-info header h1::after {
 	content: "";
-	margin-inline-start:1rem;margin-bottom: -.1rem;
-	width: .8rem;
+	margin-inline-start: 1rem;
+	margin-bottom: -0.1rem;
+	width: 0.8rem;
 	height: 1.8rem;
 	background: var(--primary);
 	display: inline-block;
-	animation: cursor-blink 1.2s steps(2)infinite
+	animation: cursor-blink 1.2s steps(2) infinite;
 }
 
-.first-entry{
-    margin-top:    0px;
-    margin-bottom: 2.0rem;
-    justify-content: flex-start;
-    min-height: fit-content;
+.first-entry {
+	margin-top: 1.5rem;
+	margin-bottom: 2rem;
+	justify-content: flex-start;
+	min-height: fit-content;
+}
+
+.first-entry .entry-content {
+	padding-top: 0.3rem;
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+	text-wrap: balance;
+	font-weight: 300;
+}
+
+.first-entry .entry-header h1 {
+	font-size: 1.875rem;
+	line-height: 2.25rem;
+	font-weight: 700;
+}
+@media (min-width: 768px) {
+	.first-entry .entry-header h1 {
+		font-size: 2.25rem;
+		line-height: 2.5rem;
+	}
 }
 
 /* Width for generic pages */
-:root{
-    --nav-width: 1280px;
-    --main-width: 1000px;
+:root {
+	--nav-width: 1238px;
+	--main-width: 1000px;
 }
 
 /* Width for home page */
-html:has(.first-entry){
-    --main-width: 1280px;
+html:has(.first-entry) {
+	--main-width: 1238px;
 }
 
-
-
-header > nav > div.logo > a{
-    font-weight: 500;
-    font-size: 1.25rem;
+header > nav > div.logo > a {
+	font-weight: 500;
+	font-size: 1.25rem;
 }
