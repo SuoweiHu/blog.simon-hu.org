@@ -59,3 +59,9 @@ header > nav > div.logo > a {
 	font-weight: 500;
 	font-size: 1.25rem;
 }
+
+a[title="Linkedin"] > svg, a[title="LinkedIn"] > svg{
+    height: 22px;
+    width:  22px;
+    transform: translate(0px, -2px);
+}
