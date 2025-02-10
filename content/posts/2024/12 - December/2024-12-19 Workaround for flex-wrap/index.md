@@ -1,7 +1,7 @@
 ---
 title: "Problems and Workarounds for Flex-Wrap"
 date: "2024-12-19"
-tags: ["CSS"]
+tags: ["CSS/SCSS"]
 ---
 
 [TOC]
@@ -12,20 +12,20 @@ tags: ["CSS"]
 
 ### Problem
 
-This issue appear to be most common for me, when having items wrapping in a flex layout, the look of the last row is always somwhat non ideal (assuming you are using `flex-direction:row`): 
+This issue appear to be most common for me, when having items wrapping in a flex layout, the look of the last row is always somwhat non ideal (assuming you are using `flex-direction:row`):
 
 ![2024-12-19T223601](2024-12-19T223601.png)
 
--   **Problem-1a**: If you would want all the childrens in the same column to align up, then you may face the condition where the last column of have a bigger right gutter then the remainder of the columns; (see: [screenshot](2024-12-19T215837.png) or [file](problem-1a.html)) 
+-   **Problem-1a**: If you would want all the childrens in the same column to align up, then you may face the condition where the last column of have a bigger right gutter then the remainder of the columns; (see: [screenshot](2024-12-19T215837.png) or [file](problem-1a.html))
 -   **Problem-1b**: If you come from problem-1a and solves it with `justify-content:space-between`, then the problem of the big gutter for last column will be fixed, however the gutter in the middle seems to get to big, and the last row have a empty space in the middle (see: [screenshot](2024-12-19T215823.png) or [file](problem-1b.html))
 -   **Problem-1c**: if you come from problem-1b and solves it with `flex-grow:1`, congratulations you solved all the probelm in 1a and 1b, but then again, the last column looks over-sized and doesn't quite fit in the morder design styles. (see: [screenshot ](2024-12-19T220045.png)or [file](problem-1c.html))
 
-Of course you may play around and fix it with many method, to name a few: 
+Of course you may play around and fix it with many method, to name a few:
 
 -   **Solution-1**: by pixel matching `gap` and `flex-basis` using `calc`  (see: [screenshot](2024-12-19T221133.png) or [file](problem-1-solution-1.html))
 -   **Solution-2**: by adding `margins` to `:last-of-type`/`:nth-of-type(3n)`  (see [screenshot](2024-12-19T222601.png) or [file](problem-1-solution-2.html))
 
-But the above solution, will only work for one breakpoint, you will need to do repeat this for every breakpoint. Generally speaking this issue seem to bother me every time, and I don't seem to find a pattern on how to resolve it completely. 
+But the above solution, will only work for one breakpoint, you will need to do repeat this for every breakpoint. Generally speaking this issue seem to bother me every time, and I don't seem to find a pattern on how to resolve it completely.
 
 ### Solution
 
@@ -43,11 +43,11 @@ This is one also happens very common, but can be easily over-looked. Usually whe
 
 ### Solution
 
-You may resolve it via using `overflow-x` + `scroll-snap` as shown in  [Coding2GO's video](https://www.youtube.com/watch?v=qJpA6qiJoWs), see below (or [file](problem-2-solution-1.html)): 
+You may resolve it via using `overflow-x` + `scroll-snap` as shown in  [Coding2GO's video](https://www.youtube.com/watch?v=qJpA6qiJoWs), see below (or [file](problem-2-solution-1.html)):
 
 ![2024-12-19T225618](2024-12-19T225618.gif)
 
-Or via external library such as [slick-slider](https://kenwheeler.github.io/slick/), [glide.js](https://glidejs.com/) or [reveal.js](https://revealjs.com/#/1) to achieve the carousel effect through javascript: 
+Or via external library such as [slick-slider](https://kenwheeler.github.io/slick/), [glide.js](https://glidejs.com/) or [reveal.js](https://revealjs.com/#/1) to achieve the carousel effect through javascript:
 
 ![2024-12-19T225859](2024-12-19T225859.gif)
 

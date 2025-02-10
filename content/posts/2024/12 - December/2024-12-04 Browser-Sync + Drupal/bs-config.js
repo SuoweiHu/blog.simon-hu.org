@@ -32,7 +32,7 @@ module.exports = {
     // =========================================================================================================
     "port": 9998, // Default port is 443for HTTPS (sometime this is prohibited, and you may want to use something else)
     // =========================================================================================================
-    
+
     "middleware": false,
     "serveStatic": [],
     "ghostMode": {
@@ -95,7 +95,7 @@ module.exports = {
     "tagNames": {
         "less": "link",
         "scss": "link",
-        "css": "link",
+        "CSS/SCSS": "link",
         "jpg": "img",
         "jpeg": "img",
         "png": "img",

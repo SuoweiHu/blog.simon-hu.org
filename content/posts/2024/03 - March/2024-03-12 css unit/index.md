@@ -1,7 +1,7 @@
 ---
 title: "CSS Unit Reference"
 date: "2024-03-12"
-tags: ["CSS"]
+tags: ["CSS/SCSS"]
 ---
 
 | Unit   | Explaination                                                                                                                        |

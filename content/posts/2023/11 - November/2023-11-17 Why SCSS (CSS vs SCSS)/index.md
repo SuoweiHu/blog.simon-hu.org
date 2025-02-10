@@ -1,7 +1,7 @@
 ---
 title: Why SCSS ? (SCSS vs CSS)
 date: "2023-11-17"
-tags: ["CSS"]
+tags: ["CSS/SCSS"]
 ---
 
 > TLDR;

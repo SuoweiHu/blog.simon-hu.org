@@ -1,7 +1,7 @@
 ---
 title: "Difference between CSS and SCSS variables"
 date: 2023-05-10
-tags: ["CSS"]
+tags: ["CSS/SCSS"]
 ---
 
 

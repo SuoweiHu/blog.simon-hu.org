@@ -1,7 +1,7 @@
 ---
 title: "HTML/CSS Data Attribute"
 date: 2024-09-24
-tags: ["CSS"]
+tags: ["CSS/SCSS"]
 ---
 
 

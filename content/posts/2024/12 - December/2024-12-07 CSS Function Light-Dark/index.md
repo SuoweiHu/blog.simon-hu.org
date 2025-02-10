@@ -1,14 +1,14 @@
 ---
 title: "CSS Function Light-Dark"
 date: "2024-12-07"
-tags: ["CSS"]
+tags: ["CSS/SCSS"]
 ---
 
 
 
 ## Version 1: JavaSctipt Toggler + CSS Class-name
 
-For the longest time, I never know about the media query or light-dark function, so here's the approach I've been going with: 
+For the longest time, I never know about the media query or light-dark function, so here's the approach I've been going with:
 
 ![version-1](version-1.gif)
 
@@ -16,7 +16,7 @@ Below are the most relevant code snippets:
 
 ```html
 ...
-<!-- TOGGLER FOR CALSSNAME & ITS SCRIPT --> 
+<!-- TOGGLER FOR CALSSNAME & ITS SCRIPT -->
 <button onclick="toggleTheme()">Toggle Dark/Light</button>
 <script> toggleTheme = () => {
     document.querySelector("body").classList.toggle("theme-light");
@@ -42,7 +42,7 @@ The complete code can be found at: [version-1.html](version-1.html)
 
 ## Version-2: CSS Media Query - prefers-color-scheme
 
-Here's a more civilized way of implenting the dark/light feature that will display the website differently depending on the system setting: 
+Here's a more civilized way of implenting the dark/light feature that will display the website differently depending on the system setting:
 
 >    The `prefers-color-scheme` CSS media feature is used to detect if a user has requested light or dark color themes. A user indicates their preference through an operating system setting (e.g. light or dark mode) or a user agent setting.
 
@@ -80,7 +80,7 @@ The complete code can be found at: [version-2.html](version-2.html)
 
 I guess the the previous usecase should be able to cover all your needs, except for that it makes your codebase extremely messy, you would either have to seprate your `dark-theme` code and `light-theme` code in different sections (like shown in the above example), or have every single css rule to have this media query, which I am preety sure isn't a good practice (as it will blow up your css file size un-necessarily):
 
->   The `light-dark()` CSS `<color>` function enables setting two colors for a property - returning one of the two colors options by detecting if the developer has set a light or dark color scheme or the user has requested light or dark color theme - without needing to encase the theme colors within a prefers-color-scheme media feature query. 
+>   The `light-dark()` CSS `<color>` function enables setting two colors for a property - returning one of the two colors options by detecting if the developer has set a light or dark color scheme or the user has requested light or dark color theme - without needing to encase the theme colors within a prefers-color-scheme media feature query.
 
 ![gif](version-3.gif)
 

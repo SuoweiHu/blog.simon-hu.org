@@ -1,7 +1,7 @@
 ---
 title: "CSS Container Query"
 date: "2024-11-06"
-tags: ["CSS"]
+tags: ["CSS/SCSS"]
 ---
 
 

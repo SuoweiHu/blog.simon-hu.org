@@ -1,7 +1,7 @@
 ---
 title: "Website Page Patterns"
 date: "2024-03-05"
-categories: "CSS"
+categories: "CSS/SCSS"
 ---
 
 

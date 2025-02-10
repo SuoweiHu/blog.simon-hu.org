@@ -1,7 +1,7 @@
 ---
 title: "CSS Media Query"
 date: "2024-02-07"
-tags: ["CSS"]
+tags: ["CSS/SCSS"]
 ---
 
 

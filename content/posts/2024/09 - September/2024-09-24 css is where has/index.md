@@ -1,7 +1,7 @@
 ---
 title: "CSS Functional Pseudo-Classes: :is and :where "
 date: 2024-09-24
-tags: ["CSS"]
+tags: ["CSS/SCSS"]
 ---
 
 

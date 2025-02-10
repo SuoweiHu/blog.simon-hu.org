@@ -1,7 +1,7 @@
 ---
 title: "Common CSS Media Query Breakpoint"
 date: "2024-02-26"
-tags: ["CSS"]
+tags: ["CSS/SCSS"]
 ---
 
 

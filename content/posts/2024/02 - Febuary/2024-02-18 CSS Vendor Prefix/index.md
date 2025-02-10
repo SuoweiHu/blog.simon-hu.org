@@ -1,7 +1,7 @@
 ---
 title: "CSS Vendor Prefix (-webkit-, ms-, or moz-)"
 date: "2024-02-18"
-tags: ["CSS"]
+tags: ["CSS/SCSS"]
 ---
 
 
