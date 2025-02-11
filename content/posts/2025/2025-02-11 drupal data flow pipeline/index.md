@@ -156,25 +156,16 @@ The theme can use the **Theme Hooks** override preprocessor the renderr array (f
 
 Below is a brief demonstrative illustration for what could be happening in this layer: 
 
->   **Raw Render Array** 
->
->   ![1-render-array-outcome](1-render-array-outcome.png)
->
->   **Theme Manipulated Rendar Array** 
->
->   ![2-theme-hook-override-outcome](2-theme-hook-override-outcome.png)
->
->   **Twig Template Rendered HTML** 
->
->   ![3-render-using-twig-template-outcome](3-render-using-twig-template-outcome.png)
->
->   **Style HTML with CSS Sheet **
->
->   ![4-style-using-css-outcome](4-style-using-css-outcome.png)
->
->   **Interactivity using JavaScript (Slick Slider)**
->
->   ![5-interactivity-using-slick-javascript-outcome](5-interactivity-using-slick-javascript-outcome.png)
+**Raw Render Array** 
+![1-render-array-outcome](1-render-array-outcome.png)
+**Theme Manipulated Rendar Array** 
+![2-theme-hook-override-outcome](2-theme-hook-override-outcome.png)
+**Twig Template Rendered HTML** 
+![3-render-using-twig-template-outcome](3-render-using-twig-template-outcome.png)
+**Style HTML with CSS Sheet **
+![4-style-using-css-outcome](4-style-using-css-outcome.png)
+**Interactivity using JavaScript (Slick Slider)**
+![5-interactivity-using-slick-javascript-outcome](5-interactivity-using-slick-javascript-outcome.png)
 
 
 
