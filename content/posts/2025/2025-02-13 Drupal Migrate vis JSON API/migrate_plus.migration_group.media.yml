@@ -1,0 +1,10 @@
+uuid: 4ab8a408-b785-4c3d-868f-dc7d028fb859
+langcode: en
+status: true
+dependencies: {  }
+id: media
+label: 'Media (Docs/Images/etc)'
+description: 'A container for any migrations relating to media (documents/images/etc).'
+source_type: null
+module: null
+shared_configuration: null

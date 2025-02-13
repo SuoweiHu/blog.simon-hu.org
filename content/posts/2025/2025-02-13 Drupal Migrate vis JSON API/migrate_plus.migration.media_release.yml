@@ -1,0 +1,41 @@
+uuid: 2e631263-2a8d-41e8-9b48-03cf9ef742c3
+langcode: en
+status: true
+dependencies: {  }
+id: media_release
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: node
+label: 'media_release'
+source:
+  plugin: url
+  data_fetcher_plugin: http
+  data_parser_plugin: json
+  include_raw_data: true
+  headers:
+    Accept: application/json
+    Content-Type: application/json
+  urls:
+    - 'https://example.com/jsonapi/node/media_release?filter[drupal_internal__nid]=46'
+  item_selector: data
+  fields:
+    -
+      name: source_node_id
+      label: 'Source - NodeID'
+      selector: attributes/drupal_internal__nid
+    -
+      name: source_title
+      label: 'Source - TITLE'
+      selector: attributes/title
+  ids:
+    source_node_id:
+      type: string
+process:
+  drupal_internal__nid: source_node_id
+  title: source_title
+destination:
+  plugin: 'entity:node'
+  default_bundle: media_release
+migration_dependencies: {  }
